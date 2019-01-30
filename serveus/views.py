@@ -6,7 +6,8 @@ from flask import render_template, flash, redirect, request, url_for, make_respo
 from flask_login import login_user, current_user, LoginManager, logout_user, login_required
 #from flask.ext.wtf import Required
 #from flask.ext.wtf import Form
-from flask_wtf import Form
+#from flask_wtf import Form
+from flask.wtf import FlaskForm as Form
 from wtforms import TextField, BooleanField
 from wtforms.validators import Required
 from serveus import app
