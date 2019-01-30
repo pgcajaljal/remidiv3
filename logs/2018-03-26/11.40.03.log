@@ -1,0 +1,19 @@
+> Initialized logger
+> /home/annemirasol/remidiv2/serveus/views.py:5: ExtDeprecationWarning: Importing flask.ext.login is deprecated, use flask_login instead.
+>   from flask.ext.login import login_user, current_user, LoginManager, logout_user, login_required
+> /home/annemirasol/remidiv2/serveus/views.py:7: ExtDeprecationWarning: Importing flask.ext.wtf is deprecated, use flask_wtf instead.
+>   from flask.ext.wtf import Form
+> /home/annemirasol/remidiv2/serveus/admin.py:2: ExtDeprecationWarning: Importing flask.ext.admin is deprecated, use flask_admin instead.
+>   from flask.ext.admin import Admin, AdminIndexView, expose
+> /home/annemirasol/remidiv2/serveus/admin.py:3: ExtDeprecationWarning: Importing flask.ext.admin.base is deprecated, use flask_admin.base instead.
+>   from flask.ext.admin.base import MenuLink
+> /home/annemirasol/remidiv2/serveus/admin.py:4: ExtDeprecationWarning: Importing flask.ext.admin.contrib is deprecated, use flask_admin.contrib instead.
+>   from flask.ext.admin.contrib.sqla import ModelView
+> /home/annemirasol/remidiv2/serveus/admin.py:4: ExtDeprecationWarning: Importing flask.ext.admin.contrib.sqla is deprecated, use flask_admin.contrib.sqla instead.
+>   from flask.ext.admin.contrib.sqla import ModelView
+> /home/annemirasol/remidiv2/serveus/admin.py:5: ExtDeprecationWarning: Importing flask.ext.admin.contrib.fileadmin is deprecated, use flask_admin.contrib.fileadmin instead.
+>   from flask.ext.admin.contrib.fileadmin import FileAdmin
+> /home/annemirasol/remidiv2/serveus/admin.py:12: ExtDeprecationWarning: Importing flask.ext.admin.actions is deprecated, use flask_admin.actions instead.
+>   from flask.ext.admin.actions import action
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+>  * Restarting with stat

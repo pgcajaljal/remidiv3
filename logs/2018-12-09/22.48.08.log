@@ -1,0 +1,7 @@
+> Initialized logger
+> Traceback (most recent call last):
+>   File "reset.py", line 8, in <module>
+> os.remove('main.db')
+> WindowsError
+> :
+> [Error 32] The process cannot access the file because it is being used by another process: 'main.db'

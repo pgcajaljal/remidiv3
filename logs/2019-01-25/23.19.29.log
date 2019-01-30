@@ -1,0 +1,83 @@
+> Initialized logger
+>  * Debugger is active!
+>  * Debugger PIN: 456-115-780
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:83: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:83: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> 127.0.0.1 - - [25/Jan/2019 23:19:54] "GET / HTTP/1.1" 200 -
+> 127.0.0.1 - - [25/Jan/2019 23:20:01] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [25/Jan/2019 23:20:02] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [25/Jan/2019 23:20:02] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [25/Jan/2019 23:20:02] "GET /static/js/sha1.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [25/Jan/2019 23:20:02] "GET /static/js/jquery.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [25/Jan/2019 23:20:05] "GET /static/favicon.ico HTTP/1.1" 200 -
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:83: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:83: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> 192.168.137.9 - - [25/Jan/2019 23:21:29] "GET / HTTP/1.1" 200 -
+> 192.168.137.9 - - [25/Jan/2019 23:21:29] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 192.168.137.9 - - [25/Jan/2019 23:21:29] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 192.168.137.9 - - [25/Jan/2019 23:21:29] "GET /static/js/sha1.js HTTP/1.1" 200 -
+> 192.168.137.9 - - [25/Jan/2019 23:21:29] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+> 192.168.137.9 - - [25/Jan/2019 23:21:29] "GET /static/js/jquery.js HTTP/1.1" 200 -
+> 192.168.137.9 - - [25/Jan/2019 23:21:30] "GET /static/favicon.ico HTTP/1.1" 200 -
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:824: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   form = LoginForm()
+> 127.0.0.1 - - [25/Jan/2019 23:26:43] "POST /login/ HTTP/1.1" 302 -
+> 127.0.0.1 - - [25/Jan/2019 23:26:45] "GET /monitoring/1 HTTP/1.1" 301 -
+> 127.0.0.1 - - [25/Jan/2019 23:26:48] "GET /monitoring/1/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [25/Jan/2019 23:26:48] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [25/Jan/2019 23:26:48] "GET /static/js/eyecon-datepicker.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [25/Jan/2019 23:26:48] "GET /static/images/loading.gif HTTP/1.1" 200 -
+> 127.0.0.1 - - [25/Jan/2019 23:26:49] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [25/Jan/2019 23:26:49] "GET /static/images/bar.png HTTP/1.1" 200 -
+> 192.168.137.9 - - [25/Jan/2019 23:27:32] "POST /api/db/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1023, in update_db
+>     c.execute("DELETE FROM user")
+> OperationalError: no such table: user
+> 192.168.137.9 - - [25/Jan/2019 23:31:48] "POST /api/db/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1023, in update_db
+>     c.execute("DELETE FROM user")
+> OperationalError: no such table: user
+> 127.0.0.1 - - [25/Jan/2019 23:34:20] "GET / HTTP/1.1" 302 -
+> 127.0.0.1 - - [25/Jan/2019 23:35:24] "GET /monitoring/1/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [25/Jan/2019 23:35:38] "GET /api/db HTTP/1.1" 301 -
+> 127.0.0.1 - - [25/Jan/2019 23:35:40] "GET /api/db/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [25/Jan/2019 23:35:41] "GET /favicon.ico HTTP/1.1" 404 -

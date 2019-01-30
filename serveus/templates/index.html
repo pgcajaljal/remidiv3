@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="generator"
+        content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+        <title>Index</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Bootstrap -->
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+        <!-- Responsive -->
+        <link href="/static/css/bootstrap-responsive.css" rel="stylesheet" />
+        <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        <script src="/static/js/sha1.js"></script>
+        <script>
+        function hash()
+        {
+            var text = $('#password').val();
+            var hash = CryptoJS.SHA1(text);
+            $('#username').val($('#username').val().toLowerCase());
+            $('#password').val(hash);
+        }
+        </script>
+        <style type="text/css">
+            html,
+            body {
+               margin:0;
+               padding:0;
+               height:100%;
+            }
+            #super {
+               min-height:100%;
+               position:relative;
+            }
+            #body {
+               padding:10px;
+               padding-bottom: 20px;
+            }
+            #footer {
+               position:absolute;
+               bottom:0;
+               width:100%;
+               height: 15%;
+               text-align: center;
+               background-color: #183d16;
+               z-index:-1;
+            }
+        </style>
+    </head>
+    <body>
+    <div id="super">
+    <br>
+    <div class="container-fluid">
+        <div class="text-center" style="font-weight: bold; font-size: 200%; line-height: 110%">Multimedia Monitoring of Diseases by Medical Technologists trained on Integrated Microscopy</div>
+        <div class="row-fluid" style="width: 90%; margin-left: 5%">
+            <div class="span3">
+            &nbsp<br>
+                    <form action="/login/" method="post" name="login" class="well container-fluid" style="padding: 5%" onsubmit="return hash();">
+                    {{ login_form.hidden_tag() }}
+                    {{ login_form.username(placeholder="Username", class="span12") }}<br />
+                    {{ login_form.password(placeholder="Password", class="span12")}}<br />
+                    <!-- <a href="#" data-toggle="collapse" data-target="#recovery" style="color: grey">Forgot your password?</a>  -->
+                    <input class="btn pull-right" type="submit" value="Sign In" style="height: 30px" />
+                    </form>
+                    <!--
+                    <div id="recovery" class="collapse" style="max-height: 90px;">
+                        <hr />
+                        <form action="/recovery/" method="post" name="recovery" class="">
+                        {{ recovery_form.hidden_tag() }} 
+                        {{ recovery_form.username(size=35, placeholder="Enter your username", class="span9", style="display:inline-block") }} 
+                        <input class="btn pull-right span3" type="submit" value="Submit"
+                        style="height: 30px; display: inline-block" />
+                    </div>
+                    </form>
+                    -->
+                
+                {% if error_message %}
+                <div class="alert alert-error">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                {{ error_message }}
+                </div>
+                {% endif %}
+            </div>
+            <br>
+            <div class="well span9">
+                <p style="font-size: 16px">This website is part of the malaria surveillance project pioneered by the Computer
+                Vision and Machine Intelligence Group (CVMIG) of the University of the Philippines Diliman, College of Public Health and
+                the National Institute of Physics.
+                <br />
+                <br /></p>
+                <div class="row-fluid">
+                    <div class="span4">
+					<p style="font-weight:bold;">Video Image Processing Laboratory<br />
+					National Institute of Physics<br />
+					UP Diliman</p>
+					<span style="font-weight: bold">Mentor:</span><br /> Maricor N. Soriano, Ph.D<br />
+					<br />
+					<span style="font-weight: bold">Students:</span><br />
+					Mary Angelie M. Alagao<br />
+					Maria Isabel S. Saludares<br />
+					Elexis Mae A. Torres<br />
+					</div>
+                    <div class="span4">
+					<p style="font-weight:bold;">Computer Vision and Machine Intelligence Group<br />
+					Department of Computer Science<br />
+                    UP Diliman</p>
+					<span style="font-weight: bold">Mentors:</span><br /> Prospero C. Naval, Jr., Ph.D<br />
+					Kristofer E. delas Pe&ntilde;as
+                    <br />
+                    <br />
+					<span style="font-weight: bold">Students:</span><br />
+					Catherine Marie G. Angangco<br />
+					Jasper Ellis Deo T. Cacbay<br />
+					Juan Felipe M. Coronel<br />
+					Rodolfo S. Kirong Jr.<br />
+					Marven Paul Ray J. Sanchez<br />
+					Noel Nicanor Y. Sison II
+                    </div>
+                    <div class="span4">
+					<p style="font-weight:bold;">Department of Parasitology<br />
+					College of Public Health<br />
+					UP Manila</p>
+					Pilarita T. Rivera, MD Ph.D<br />
+					Elena A. Villacorte, M.Sc.<br />
+					Lolita L. Cavinta, M.S. P.H.<br />
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+    
+    </div>
+    </div>
+    <script src="/static/js/jquery.js"></script> 
+    <script src="/static/js/bootstrap.min.js"></script></body>
+</html>

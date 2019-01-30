@@ -1,0 +1,48 @@
+> Initialized logger
+>  * Debugger is active!
+>  * Debugger PIN: 456-115-780
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+> 127.0.0.1 - - [10/Dec/2018 00:26:23] "GET /monitoring/1/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:26:24] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:26:24] "GET /static/images/loading.gif HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:26:24] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:26:24] "GET /static/js/jquery.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:26:24] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:26:25] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:26:25] "GET /static/js/eyecon-datepicker.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:26:25] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:26:25] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:26:25] "GET /static/images/bar.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:26:28] "GET /detect/1 HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1816, in full_dispatch_request
+>     return self.finalize_request(rv)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1831, in finalize_request
+>     response = self.make_response(rv)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1982, in make_response
+>     reraise(TypeError, new_error, sys.exc_info()[2])
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1974, in make_response
+>     rv = self.response_class.force_type(rv, request.environ)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\werkzeug\wrappers.py", line 921, in force_type
+>     response = BaseResponse(*_run_wsgi_app(response, environ))
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\werkzeug\wrappers.py", line 59, in _run_wsgi_app
+>     return _run_wsgi_app(*args)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\werkzeug\test.py", line 923, in run_wsgi_app
+>     app_rv = app(environ, start_response)
+> TypeError: 'list' object is not callable
+> The view function did not return a valid response. The return type must be a string, tuple, Response instance, or WSGI callable, but it was a list.
+> 127.0.0.1 - - [10/Dec/2018 00:26:28] "GET /detect/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:26:28] "GET /detect/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:26:28] "GET /detect/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:26:28] "GET /detect/1?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:26:28] "GET /detect/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:26:29] "GET /detect/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+>  * Detected change in 'C:\\Users\\gherz-PC\\Desktop\\remidiv2\\serveus\\views.py', reloading

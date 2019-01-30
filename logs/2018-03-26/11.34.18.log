@@ -1,0 +1,116 @@
+> Initialized logger
+> /home/annemirasol/remidiv2/serveus/views.py:5: ExtDeprecationWarning: Importing flask.ext.login is deprecated, use flask_login instead.
+>   from flask.ext.login import login_user, current_user, LoginManager, logout_user, login_required
+> /home/annemirasol/remidiv2/serveus/views.py:7: ExtDeprecationWarning: Importing flask.ext.wtf is deprecated, use flask_wtf instead.
+>   from flask.ext.wtf import Form
+> /home/annemirasol/remidiv2/serveus/admin.py:2: ExtDeprecationWarning: Importing flask.ext.admin is deprecated, use flask_admin instead.
+>   from flask.ext.admin import Admin, AdminIndexView, expose
+> /home/annemirasol/remidiv2/serveus/admin.py:3: ExtDeprecationWarning: Importing flask.ext.admin.base is deprecated, use flask_admin.base instead.
+>   from flask.ext.admin.base import MenuLink
+> /home/annemirasol/remidiv2/serveus/admin.py:4: ExtDeprecationWarning: Importing flask.ext.admin.contrib is deprecated, use flask_admin.contrib instead.
+>   from flask.ext.admin.contrib.sqla import ModelView
+> /home/annemirasol/remidiv2/serveus/admin.py:4: ExtDeprecationWarning: Importing flask.ext.admin.contrib.sqla is deprecated, use flask_admin.contrib.sqla instead.
+>   from flask.ext.admin.contrib.sqla import ModelView
+> /home/annemirasol/remidiv2/serveus/admin.py:5: ExtDeprecationWarning: Importing flask.ext.admin.contrib.fileadmin is deprecated, use flask_admin.contrib.fileadmin instead.
+>   from flask.ext.admin.contrib.fileadmin import FileAdmin
+> /home/annemirasol/remidiv2/serveus/admin.py:12: ExtDeprecationWarning: Importing flask.ext.admin.actions is deprecated, use flask_admin.actions instead.
+>   from flask.ext.admin.actions import action
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+>  * Restarting with stat
+> Initialized logger
+> /home/annemirasol/remidiv2/serveus/views.py:5: ExtDeprecationWarning: Importing flask.ext.login is deprecated, use flask_login instead.
+>   from flask.ext.login import login_user, current_user, LoginManager, logout_user, login_required
+> /home/annemirasol/remidiv2/serveus/views.py:7: ExtDeprecationWarning: Importing flask.ext.wtf is deprecated, use flask_wtf instead.
+>   from flask.ext.wtf import Form
+> /home/annemirasol/remidiv2/serveus/admin.py:2: ExtDeprecationWarning: Importing flask.ext.admin is deprecated, use flask_admin instead.
+>   from flask.ext.admin import Admin, AdminIndexView, expose
+> /home/annemirasol/remidiv2/serveus/admin.py:3: ExtDeprecationWarning: Importing flask.ext.admin.base is deprecated, use flask_admin.base instead.
+>   from flask.ext.admin.base import MenuLink
+> /home/annemirasol/remidiv2/serveus/admin.py:4: ExtDeprecationWarning: Importing flask.ext.admin.contrib is deprecated, use flask_admin.contrib instead.
+>   from flask.ext.admin.contrib.sqla import ModelView
+> /home/annemirasol/remidiv2/serveus/admin.py:4: ExtDeprecationWarning: Importing flask.ext.admin.contrib.sqla is deprecated, use flask_admin.contrib.sqla instead.
+>   from flask.ext.admin.contrib.sqla import ModelView
+> /home/annemirasol/remidiv2/serveus/admin.py:5: ExtDeprecationWarning: Importing flask.ext.admin.contrib.fileadmin is deprecated, use flask_admin.contrib.fileadmin instead.
+>   from flask.ext.admin.contrib.fileadmin import FileAdmin
+> /home/annemirasol/remidiv2/serveus/admin.py:12: ExtDeprecationWarning: Importing flask.ext.admin.actions is deprecated, use flask_admin.actions instead.
+>   from flask.ext.admin.actions import action
+>  * Debugger is active!
+>  * Debugger PIN: 322-981-763
+> /home/annemirasol/remidiv2/serveus/views.py:77: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> /home/annemirasol/remidiv2/serveus/views.py:77: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> 127.0.0.1 - - [26/Mar/2018 11:34:53] "GET / HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:34:53] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:34:53] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:34:53] "GET /static/js/sha1.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:34:53] "GET /static/js/jquery.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:34:53] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:34:53] "GET /static/favicon.ico HTTP/1.1" 200 -
+> /home/annemirasol/remidiv2/serveus/views.py:725: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   form = LoginForm()
+> 127.0.0.1 - - [26/Mar/2018 11:35:00] "POST /login/ HTTP/1.1" 302 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:00] "GET /monitoring/1 HTTP/1.1" 301 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:00] "GET /monitoring/1/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:00] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:00] "GET /static/js/eyecon-datepicker.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:01] "GET /static/images/loading.gif HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:01] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:01] "GET /static/images/bar.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:12] "GET /records/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:12] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> 127.0.0.1 - - [26/Mar/2018 11:35:12] "GET /static/js/eyecon-datepicker.js HTTP/1.1" 200 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> 127.0.0.1 - - [26/Mar/2018 11:35:12] "GET /favicon.ico HTTP/1.1" 404 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:18] "GET /admin/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:18] "GET /admin/static/bootstrap/bootstrap2/swatch/default/bootstrap.min.css?v=2.3.2 HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:18] "GET /admin/static/vendor/jquery.min.js?v=2.1.4 HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:18] "GET /admin/static/admin/css/bootstrap2/admin.css?v=1.1.1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:18] "GET /admin/static/bootstrap/bootstrap2/css/bootstrap-responsive.css?v=2.3.2 HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:18] "GET /admin/static/vendor/moment.min.js?v=2.9.0 HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:18] "GET /admin/static/bootstrap/bootstrap2/js/bootstrap.min.js?v=2.3.2 HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:18] "GET /admin/static/vendor/select2/select2.min.js?v=3.5.2 HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:23] "GET /admin/infection/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:23] "GET /admin/static/vendor/select2/select2.css?v=3.5.2 HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:23] "GET /admin/static/vendor/bootstrap-daterangepicker/daterangepicker-bs2.css?v=1.3.22 HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:23] "GET /admin/static/vendor/bootstrap-daterangepicker/daterangepicker.js?v=1.3.22 HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:23] "GET /admin/static/admin/js/form.js?v=1.0.1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:23] "GET /admin/static/admin/js/filters.js?v=1.0.0 HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:23] "GET /admin/static/admin/js/actions.js?v=1.0.0 HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:23] "GET /admin/static/bootstrap/bootstrap2/swatch/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> /home/annemirasol/remidiv2/serveus/views.py:77: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> /home/annemirasol/remidiv2/serveus/views.py:77: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> 127.0.0.1 - - [26/Mar/2018 11:35:31] "GET / HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:31] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:31] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:31] "GET /static/js/sha1.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:31] "GET /static/js/jquery.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:31] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:34] "GET /admin/case/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:36] "GET /admin/partype/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:53] "GET /admin/partype/?sort=1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:57] "GET /admin/partype/?sort=1&desc=1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:35:58] "GET /admin/partype/?sort=1 HTTP/1.1" 200 -

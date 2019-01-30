@@ -1,0 +1,146 @@
+CREATE TABLE "database" (
+        id INTEGER NOT NULL,
+        modified DATETIME,
+        PRIMARY KEY (id)
+);
+CREATE TABLE usertype (
+        id INTEGER NOT NULL,
+        name VARCHAR(80),
+        PRIMARY KEY (id),
+        UNIQUE (name)
+);
+CREATE TABLE infection (
+        id INTEGER NOT NULL,
+        name VARCHAR(80),
+        specimen_type VARCHAR(80),
+        PRIMARY KEY (id)
+);
+CREATE TABLE "key" (
+        id INTEGER NOT NULL,
+        private_key VARCHAR(2000),
+        public_key VARCHAR(2000),
+        PRIMARY KEY (id)
+);
+CREATE TABLE region (
+        id INTEGER NOT NULL,
+        name VARCHAR(50),
+        code VARCHAR(10),
+        PRIMARY KEY (id)
+);
+CREATE TABLE province (
+        id INTEGER NOT NULL,
+        name VARCHAR(50),
+        code VARCHAR(10),
+        region_id INTEGER,
+        PRIMARY KEY (id),
+        FOREIGN KEY(region_id) REFERENCES region (id)
+);
+CREATE TABLE partype (
+        id INTEGER NOT NULL,
+        infection_id INTEGER,
+        name VARCHAR(80),
+        negative BOOLEAN,
+        PRIMARY KEY (id),
+        FOREIGN KEY(infection_id) REFERENCES infection (id),
+        CHECK (negative IN (0, 1))
+);
+CREATE TABLE user (
+        id INTEGER NOT NULL,
+        username VARCHAR(80),
+        password VARCHAR(120),
+        firstname VARCHAR(100),
+        lastname VARCHAR(100),
+        usertype_id INTEGER,
+        contact VARCHAR(80),
+        email VARCHAR(80),
+        test BOOLEAN,
+        PRIMARY KEY (id),
+        UNIQUE (username),
+        FOREIGN KEY(usertype_id) REFERENCES usertype (id),
+        UNIQUE (email),
+        CHECK (test IN (0, 1))
+);
+CREATE TABLE municipality (
+        id INTEGER NOT NULL,
+        name VARCHAR(50),
+        province_id INTEGER,
+        PRIMARY KEY (id),
+        FOREIGN KEY(province_id) REFERENCES province (id)
+);
+CREATE TABLE chunklist (
+        id INTEGER NOT NULL,
+        filename VARCHAR(100),
+        date DATETIME,
+        end_time DATETIME,
+        user_id INTEGER,
+        PRIMARY KEY (id),
+        FOREIGN KEY(user_id) REFERENCES user (id)
+);
+CREATE TABLE "case" (
+        id INTEGER NOT NULL,
+        date DATETIME,
+        description VARCHAR(1000),
+        comment VARCHAR(1000),
+        lat FLOAT,
+        lng FLOAT,
+        user_id INTEGER,
+        test BOOLEAN,
+        infection_id INTEGER,
+        region_id INTEGER,
+        province_id INTEGER,
+        municipality_id INTEGER,
+        chunklist_id INTEGER,
+        parasite_validator VARCHAR(100),
+        description_validator VARCHAR(1000),
+        patient_id VARCHAR(100),
+        PRIMARY KEY (id),
+        FOREIGN KEY(user_id) REFERENCES user (id),
+        CHECK (test IN (0, 1)),
+        FOREIGN KEY(infection_id) REFERENCES infection (id),
+        FOREIGN KEY(region_id) REFERENCES region (id),
+        FOREIGN KEY(province_id) REFERENCES province (id),
+        FOREIGN KEY(municipality_id) REFERENCES municipality (id),
+        FOREIGN KEY(chunklist_id) REFERENCES chunklist (id)
+);
+CREATE TABLE chunk (
+        id INTEGER NOT NULL,
+        filename VARCHAR(100),
+        checksum VARCHAR(50),
+        done BOOLEAN,
+        chunklist_id INTEGER,
+        PRIMARY KEY (id),
+        CHECK (done IN (0, 1)),
+        FOREIGN KEY(chunklist_id) REFERENCES chunklist (id)
+);
+CREATE TABLE image (
+        id INTEGER NOT NULL,
+        case_id INTEGER,
+        im BLOB,
+        number INTEGER,
+        PRIMARY KEY (id),
+        FOREIGN KEY(case_id) REFERENCES "case" (id)
+);
+CREATE TABLE validation (
+        id INTEGER NOT NULL,
+        diagnosis VARCHAR(100),
+        remarks VARCHAR(1000),
+        case_id INTEGER,
+        user_id INTEGER,
+        final BOOLEAN,
+        date DATETIME,
+        PRIMARY KEY (id),
+        FOREIGN KEY(case_id) REFERENCES "case" (id),
+        FOREIGN KEY(user_id) REFERENCES user (id),
+        CHECK (final IN (0, 1))
+);
+CREATE TABLE patch (
+        id INTEGER NOT NULL,
+        image_id INTEGER,
+        xcoord INTEGER,
+        ycoord INTEGER,
+        radius INTEGER,
+        partype_id INTEGER,
+        PRIMARY KEY (id),
+        FOREIGN KEY(image_id) REFERENCES image (id),
+        FOREIGN KEY(partype_id) REFERENCES partype (id)
+);

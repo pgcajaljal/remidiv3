@@ -1,0 +1,27 @@
+> Initialized logger
+> Traceback (most recent call last):
+>   File "run.py", line 3, in <module>
+> from serveus import app
+>   File "/home/annemirasol/remidiv2/serveus/__init__.py", line 71, in <module>
+> from serveus import views, models, admin
+>   File "/home/annemirasol/remidiv2/serveus/admin.py", line 193, in <module>
+> admin.add_view(FileAdmin(log_path, '/log/', name='Logs', url="/admin/logview"))
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/base.py", line 540, in add_view
+> self.app.register_blueprint(view.create_blueprint(self))
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 62, in wrapper_func
+> return f(self, *args, **kwargs)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 889, in register_blueprint
+> blueprint.register(self, options, first_registration)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/blueprints.py", line 153, in register
+> deferred(state)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/blueprints.py", line 172, in <lambda>
+> s.add_url_rule(rule, endpoint, view_func, **options))
+>   File "/usr/local/lib/python2.7/dist-packages/flask/blueprints.py", line 76, in add_url_rule
+> view_func, defaults=defaults, **options)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 62, in wrapper_func
+> return f(self, *args, **kwargs)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 984, in add_url_rule
+> 'existing endpoint function: %s' % endpoint)
+> AssertionError
+> :
+> View function mapping is overwriting an existing endpoint function: fileadmin.index

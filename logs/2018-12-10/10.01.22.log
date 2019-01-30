@@ -1,0 +1,14 @@
+> Initialized logger
+>  * Debugger is active!
+>  * Debugger PIN: 456-115-780
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+> 127.0.0.1 - - [10/Dec/2018 10:01:24] "POST /detect/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 10:01:26] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 10:01:26] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 10:01:26] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 10:01:26] "GET /static/js/jquery.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 10:01:26] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 10:01:26] "GET /static/js/eyecon-datepicker.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 10:01:26] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 10:01:27] "GET /static/favicon.ico HTTP/1.1" 200 -
+>  * Detected change in 'C:\\Users\\gherz-PC\\Desktop\\remidiv2\\serveus\\views.py', reloading

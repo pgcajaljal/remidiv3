@@ -1,0 +1,549 @@
+> Initialized logger
+> /home/annemirasol/remidiv2/serveus/views.py:5: ExtDeprecationWarning: Importing flask.ext.login is deprecated, use flask_login instead.
+>   from flask.ext.login import login_user, current_user, LoginManager, logout_user, login_required
+> /home/annemirasol/remidiv2/serveus/forms.py:2: ExtDeprecationWarning: Importing flask.ext.wtf is deprecated, use flask_wtf instead.
+>   from flask.ext.wtf import Form
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+>  * Restarting with stat
+> Initialized logger
+> /home/annemirasol/remidiv2/serveus/views.py:5: ExtDeprecationWarning: Importing flask.ext.login is deprecated, use flask_login instead.
+>   from flask.ext.login import login_user, current_user, LoginManager, logout_user, login_required
+> /home/annemirasol/remidiv2/serveus/forms.py:2: ExtDeprecationWarning: Importing flask.ext.wtf is deprecated, use flask_wtf instead.
+>   from flask.ext.wtf import Form
+>  * Debugger is active!
+>  * Debugger PIN: 322-981-763
+> 127.0.0.1 - - [12/Jun/2018 21:16:23] "[37mGET /imgtest/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:16:39] "[37mGET /imgtest/2/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:16:43] "[37mGET /imgtest/3/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:16:48] "[37mGET /case/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:16:52] "[32mGET /pic/1 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:16:52] "[37mGET /pic/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:16:58] "[37mGET /case/2/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:16:58] "[32mGET /thumb/pic/9 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:16:58] "[32mGET /thumb/pic/10 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:16:58] "[32mGET /thumb/pic/11 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:16:58] "[32mGET /thumb/pic/12 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:16:58] "[32mGET /thumb/pic/13 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:16:58] "[32mGET /thumb/pic/14 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:16:58] "[32mGET /thumb/pic/15 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:16:58] "[32mGET /thumb/pic/16 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:16:58] "[37mGET /thumb/pic/9/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:16:58] "[37mGET /thumb/pic/10/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:16:58] "[37mGET /thumb/pic/11/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:16:58] "[37mGET /thumb/pic/12/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:16:59] "[37mGET /thumb/pic/13/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:16:59] "[37mGET /thumb/pic/14/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:16:59] "[37mGET /thumb/pic/15/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:16:59] "[37mGET /thumb/pic/16/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:17:33] "[37mGET /case/3/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:17:33] "[32mGET /thumb/pic/17 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:17:33] "[32mGET /thumb/pic/18 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:17:33] "[32mGET /thumb/pic/22 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:17:33] "[32mGET /thumb/pic/21 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:17:33] "[32mGET /thumb/pic/20 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:17:33] "[32mGET /thumb/pic/19 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:17:33] "[32mGET /thumb/pic/23 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:17:33] "[32mGET /thumb/pic/24 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:17:33] "[37mGET /thumb/pic/17/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:17:33] "[37mGET /thumb/pic/18/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:17:33] "[37mGET /thumb/pic/22/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:17:33] "[37mGET /thumb/pic/21/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:17:33] "[37mGET /thumb/pic/20/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:17:33] "[37mGET /thumb/pic/19/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:17:33] "[37mGET /thumb/pic/23/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:17:33] "[37mGET /thumb/pic/24/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:02] "[37mGET /case/3/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:02] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:02] "[36mGET /static/css/bootstrap-responsive.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:02] "[36mGET /static/css/eyecon-datepicker.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:02] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:02] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:02] "[32mGET /thumb/pic/17 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:02] "[32mGET /thumb/pic/18 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:02] "[32mGET /thumb/pic/19 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:02] "[32mGET /thumb/pic/20 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:02] "[32mGET /thumb/pic/21 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:02] "[32mGET /thumb/pic/22 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:02] "[32mGET /thumb/pic/23 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:02] "[32mGET /thumb/pic/24 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:02] "[36mGET /static/img/glyphicons-halflings.png HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:03] "[37mGET /thumb/pic/17/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:03] "[37mGET /thumb/pic/22/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:03] "[37mGET /thumb/pic/20/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:03] "[37mGET /thumb/pic/19/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:03] "[37mGET /thumb/pic/18/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:03] "[37mGET /thumb/pic/21/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:03] "[37mGET /thumb/pic/23/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:03] "[37mGET /thumb/pic/24/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:08] "[37mGET /case/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:08] "[32mGET /thumb/pic/1 HTTP/1.1[0m" 301 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> 127.0.0.1 - - [12/Jun/2018 21:20:08] "[32mGET /thumb/pic/2 HTTP/1.1[0m" 301 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> 127.0.0.1 - - [12/Jun/2018 21:20:08] "[37mGET /thumb/pic/1/ HTTP/1.1[0m" 200 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> 127.0.0.1 - - [12/Jun/2018 21:20:15] "[37mGET /admin/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:15] "[37mGET /static/bootstrap/bootstrap2/css/bootstrap.css HTTP/1.1[0m" 200 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> 127.0.0.1 - - [12/Jun/2018 21:20:15] "[37mGET /static/bootstrap/bootstrap2/css/bootstrap-responsive.css HTTP/1.1[0m" 200 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> 127.0.0.1 - - [12/Jun/2018 21:20:18] "[37mGET /admin/user/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:18] "[37mGET /static/admin/js/filters-1.0.0.js HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:18] "[37mGET /static/admin/js/actions-1.0.0.js HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:18] "[37mGET /static/bootstrap/bootstrap2/img/glyphicons-halflings.png HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:23] "[37mGET /admin/user/edit/?url=%2Fadmin%2Fuser%2F&id=477 HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:23] "[37mGET /static/vendor/select2/select2.png HTTP/1.1[0m" 200 -
+> /usr/local/lib/python2.7/dist-packages/flask_admin/model/base.py:1524: UserWarning: <class 'serveus.models.User'>.on_model_change() now accepts third parameter is_created. Please update your code
+>   warnings.warn(msg)
+> 127.0.0.1 - - [12/Jun/2018 21:20:50] "[32mPOST /admin/user/edit/?url=%2Fadmin%2Fuser%2F&id=477 HTTP/1.1[0m" 302 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:50] "[37mGET /admin/user/edit/?url=%2Fadmin%2Fuser%2F&id=477 HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:20:58] "[37mGET /monitoring/1/ HTTP/1.1[0m" 200 -
+> /usr/local/lib/python2.7/dist-packages/sqlalchemy/sql/compiler.py:643: SAWarning: Can't resolve label reference '"case".date desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+>   util.ellipses_string(element.element))
+> 127.0.0.1 - - [12/Jun/2018 21:21:11] "[37mGET /records/1?region_selection=17&province_selection=99&municipality_selection=1638 HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:21:33] "[37mGET /case/2/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:21:33] "[32mGET /thumb/pic/9 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:21:42] "[37mGET /case/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:22:19] "[37mGET /timeline/1 HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:22:19] "[37mGET /static/css/iThing-min.css HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:22:19] "[37mGET /static/js/jquery-ui-1.10.3.custom.min.js HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:22:19] "[37mGET /static/js/jQDateRangeSlider-min.js HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:23:21] "[37mGET /timeline/1 HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:23:21] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:23:21] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:23:21] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:23:21] "[36mGET /static/css/iThing-min.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:23:21] "[36mGET /static/css/eyecon-datepicker.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:23:21] "[36mGET /static/css/bootstrap-responsive.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:23:21] "[37mGET /static/js/jquery-ui-1.10.3.custom.min.js HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:23:21] "[36mGET /static/js/eyecon-datepicker.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:23:21] "[37mGET /static/js/jQDateRangeSlider-min.js HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:23:21] "[36mGET /static/images/loading.gif HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:23:21] "[36mGET /static/img/glyphicons-halflings.png HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:25:12] "[37mGET /map/1 HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:25:22] "[37mGET /records/1 HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:25:33] "[37mGET /case/2/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:25:33] "[37mGET /thumb/pic/9/ HTTP/1.1[0m" 200 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> 127.0.0.1 - - [12/Jun/2018 21:25:33] "[37mGET /thumb/pic/12/ HTTP/1.1[0m" 200 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> 127.0.0.1 - - [12/Jun/2018 21:25:33] "[37mGET /thumb/pic/13/ HTTP/1.1[0m" 200 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> 127.0.0.1 - - [12/Jun/2018 21:25:33] "[37mGET /thumb/pic/14/ HTTP/1.1[0m" 200 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> 127.0.0.1 - - [12/Jun/2018 21:25:33] "[37mGET /thumb/pic/15/ HTTP/1.1[0m" 200 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> 127.0.0.1 - - [12/Jun/2018 21:25:33] "[37mGET /thumb/pic/16/ HTTP/1.1[0m" 200 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> 127.0.0.1 - - [12/Jun/2018 21:30:49] "[37mGET /case/2/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:30:49] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:30:49] "[36mGET /static/css/bootstrap-responsive.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:30:49] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:30:49] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:30:49] "[36mGET /static/css/eyecon-datepicker.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:30:49] "[32mGET /thumb/pic/9 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:30:49] "[32mGET /thumb/pic/10 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:30:49] "[32mGET /thumb/pic/11 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:30:49] "[32mGET /thumb/pic/12 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:30:49] "[32mGET /thumb/pic/13 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:30:49] "[32mGET /thumb/pic/14 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:30:49] "[32mGET /thumb/pic/15 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:30:49] "[32mGET /thumb/pic/16 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:30:49] "[36mGET /static/img/glyphicons-halflings.png HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:30:49] "[37mGET /thumb/pic/10/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:30:49] "[37mGET /thumb/pic/9/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:30:49] "[37mGET /thumb/pic/16/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:30:49] "[37mGET /thumb/pic/15/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:30:49] "[37mGET /thumb/pic/14/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:30:49] "[37mGET /thumb/pic/11/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:30:49] "[37mGET /thumb/pic/12/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:30:49] "[37mGET /thumb/pic/13/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:30:52] "[37mGET /case/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:30:52] "[37mGET /thumb/pic/1/ HTTP/1.1[0m" 200 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> 127.0.0.1 - - [12/Jun/2018 21:31:00] "[37mGET /pic/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:10] "[37mGET /case/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:10] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:10] "[36mGET /static/css/bootstrap-responsive.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:10] "[36mGET /static/css/eyecon-datepicker.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:10] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:10] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:10] "[32mGET /thumb/pic/1 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:10] "[32mGET /thumb/pic/2 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:10] "[36mGET /static/img/glyphicons-halflings.png HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:10] "[37mGET /thumb/pic/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:10] "[37mGET /thumb/pic/2/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:38] "[37mGET /case/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:38] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:38] "[36mGET /static/css/bootstrap-responsive.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:38] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:38] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:38] "[36mGET /static/css/eyecon-datepicker.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:38] "[32mGET /thumb/pic/1 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:38] "[32mGET /thumb/pic/2 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:38] "[36mGET /static/img/glyphicons-halflings.png HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:38] "[37mGET /thumb/pic/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:38] "[37mGET /thumb/pic/2/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:39] "[37mGET /case/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:39] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:39] "[36mGET /static/css/bootstrap-responsive.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:39] "[36mGET /static/css/eyecon-datepicker.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:39] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:39] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:39] "[32mGET /thumb/pic/1 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:39] "[32mGET /thumb/pic/2 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:39] "[36mGET /static/img/glyphicons-halflings.png HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:39] "[37mGET /thumb/pic/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:39] "[37mGET /thumb/pic/2/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:43] "[37mGET /case/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:43] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:43] "[36mGET /static/css/bootstrap-responsive.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:43] "[36mGET /static/css/eyecon-datepicker.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:43] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:43] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:43] "[32mGET /thumb/pic/1 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:43] "[32mGET /thumb/pic/2 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:43] "[36mGET /static/img/glyphicons-halflings.png HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:43] "[37mGET /thumb/pic/2/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:31:43] "[37mGET /thumb/pic/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:32:55] "[37mGET /case/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:32:55] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:32:55] "[36mGET /static/css/bootstrap-responsive.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:32:55] "[36mGET /static/css/eyecon-datepicker.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:32:55] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:32:55] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:32:55] "[32mGET /thumb/pic/1 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:32:55] "[32mGET /thumb/pic/2 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:32:55] "[36mGET /static/img/glyphicons-halflings.png HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:32:55] "[37mGET /thumb/pic/2/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:32:55] "[37mGET /thumb/pic/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:32:59] "[37mGET /case/2/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:33:03] "[37mGET /case/3/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:33:03] "[32mGET /thumb/pic/17 HTTP/1.1[0m" 301 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> 127.0.0.1 - - [12/Jun/2018 21:33:03] "[32mGET /thumb/pic/18 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:33:03] "[37mGET /thumb/pic/17/ HTTP/1.1[0m" 200 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> 127.0.0.1 - - [12/Jun/2018 21:33:03] "[37mGET /thumb/pic/18/ HTTP/1.1[0m" 200 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> 127.0.0.1 - - [12/Jun/2018 21:33:03] "[37mGET /thumb/pic/19/ HTTP/1.1[0m" 200 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> 127.0.0.1 - - [12/Jun/2018 21:33:03] "[37mGET /thumb/pic/22/ HTTP/1.1[0m" 200 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> 127.0.0.1 - - [12/Jun/2018 21:33:03] "[37mGET /thumb/pic/23/ HTTP/1.1[0m" 200 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> 127.0.0.1 - - [12/Jun/2018 21:33:03] "[37mGET /thumb/pic/24/ HTTP/1.1[0m" 200 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> 127.0.0.1 - - [12/Jun/2018 21:35:53] "[37mGET /case/3/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:53] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:53] "[36mGET /static/css/bootstrap-responsive.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:53] "[36mGET /static/css/eyecon-datepicker.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:53] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:53] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:53] "[32mGET /thumb/pic/17 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:53] "[32mGET /thumb/pic/22 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:53] "[32mGET /thumb/pic/21 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:53] "[32mGET /thumb/pic/20 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:53] "[32mGET /thumb/pic/19 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:53] "[32mGET /thumb/pic/18 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:53] "[32mGET /thumb/pic/23 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:53] "[32mGET /thumb/pic/24 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:53] "[36mGET /static/img/glyphicons-halflings.png HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:53] "[37mGET /thumb/pic/17/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:53] "[37mGET /thumb/pic/22/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:53] "[37mGET /thumb/pic/18/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:53] "[37mGET /thumb/pic/19/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:53] "[37mGET /thumb/pic/20/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:53] "[37mGET /thumb/pic/21/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:53] "[37mGET /thumb/pic/23/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:53] "[37mGET /thumb/pic/24/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:55] "[37mGET /case/3/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:55] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:55] "[36mGET /static/css/bootstrap-responsive.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:55] "[36mGET /static/css/eyecon-datepicker.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:55] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:55] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:55] "[32mGET /thumb/pic/17 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:55] "[32mGET /thumb/pic/18 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:55] "[32mGET /thumb/pic/19 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:55] "[32mGET /thumb/pic/20 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:55] "[32mGET /thumb/pic/21 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:55] "[32mGET /thumb/pic/22 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:55] "[32mGET /thumb/pic/23 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:55] "[32mGET /thumb/pic/24 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:55] "[36mGET /static/img/glyphicons-halflings.png HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:55] "[37mGET /thumb/pic/17/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:55] "[37mGET /thumb/pic/18/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:55] "[37mGET /thumb/pic/19/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:55] "[37mGET /thumb/pic/20/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:55] "[37mGET /thumb/pic/21/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:55] "[37mGET /thumb/pic/22/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:55] "[37mGET /thumb/pic/23/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:56] "[37mGET /thumb/pic/24/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:56] "[37mGET /case/3/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:56] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:56] "[36mGET /static/css/bootstrap-responsive.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:56] "[36mGET /static/css/eyecon-datepicker.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:56] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:56] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:56] "[32mGET /thumb/pic/17 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:56] "[32mGET /thumb/pic/18 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:56] "[32mGET /thumb/pic/19 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:56] "[32mGET /thumb/pic/22 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:56] "[32mGET /thumb/pic/21 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:57] "[32mGET /thumb/pic/20 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:57] "[32mGET /thumb/pic/23 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:57] "[32mGET /thumb/pic/24 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:57] "[36mGET /static/img/glyphicons-halflings.png HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:57] "[37mGET /thumb/pic/17/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:57] "[37mGET /thumb/pic/19/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:57] "[37mGET /thumb/pic/18/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:57] "[37mGET /thumb/pic/22/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:57] "[37mGET /thumb/pic/21/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:57] "[37mGET /thumb/pic/20/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:57] "[37mGET /thumb/pic/24/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:35:57] "[37mGET /thumb/pic/23/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:37:27] "[37mGET /case/2/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:37:27] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:37:27] "[36mGET /static/css/bootstrap-responsive.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:37:27] "[36mGET /static/css/eyecon-datepicker.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:37:27] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:37:27] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:37:27] "[32mGET /thumb/pic/10 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:37:27] "[32mGET /thumb/pic/9 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:37:27] "[32mGET /thumb/pic/11 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:37:27] "[32mGET /thumb/pic/12 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:37:27] "[32mGET /thumb/pic/13 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:37:27] "[32mGET /thumb/pic/14 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:37:27] "[32mGET /thumb/pic/15 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:37:27] "[32mGET /thumb/pic/16 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:37:27] "[36mGET /static/img/glyphicons-halflings.png HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:37:28] "[37mGET /thumb/pic/10/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:37:28] "[37mGET /thumb/pic/9/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:37:28] "[37mGET /thumb/pic/11/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:37:28] "[37mGET /thumb/pic/12/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:37:28] "[37mGET /thumb/pic/13/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:37:28] "[37mGET /thumb/pic/14/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:37:28] "[37mGET /thumb/pic/15/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:37:28] "[37mGET /thumb/pic/16/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:37:55] "[32mGET /pic/11 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:37:55] "[37mGET /pic/11/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:38:03] "[1m[35mPOST /case/2/ HTTP/1.1[0m" 500 -
+> Traceback (most recent call last):
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1997, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1985, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1540, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "/home/annemirasol/remidiv2/serveus/views.py", line 557, in case
+>     reportString = "Date: %s\nRegion: %s\nProvince: %s\nMunicipality: %s\nMicroscopist diagnosis: %s\nMicroscopist remarks: %s\nValidator diagnosis: %s\nValidator remarks: %s\nCoordinates: %s\nMicroscopist: %s\nContact details: %s\nSending duration: %s" % (case.date.strftime('%B %d, %Y %I:%M %p'), case.region, case.province, case.municipality, case.partype, case.description, case.parasite_validator, case.description_validator, "%s, %s" % (case.lat, case.lng), "%s %s (%s)" % (case.user.firstname, case.user.lastname, case.user.username), "%s / %s" % (case.user.contact, case.user.email), case.duration)
+> AttributeError: 'Case' object has no attribute 'partype'
+> 127.0.0.1 - - [12/Jun/2018 21:38:03] "[37mGET /case/2/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:38:03] "[37mGET /case/2/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:38:03] "[37mGET /case/2/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:38:03] "[37mGET /case/2/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:38:03] "[37mGET /case/2/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+>  * Detected change in '/home/annemirasol/remidiv2/serveus/views.py', reloading
+>  * Restarting with stat
+>  * Restarting with stat

@@ -1,0 +1,68 @@
+> Initialized logger
+> /home/annemirasol/remidiv2/serveus/views.py:5: ExtDeprecationWarning: Importing flask.ext.login is deprecated, use flask_login instead.
+>   from flask.ext.login import login_user, current_user, LoginManager, logout_user, login_required
+> /home/annemirasol/remidiv2/serveus/forms.py:2: ExtDeprecationWarning: Importing flask.ext.wtf is deprecated, use flask_wtf instead.
+>   from flask.ext.wtf import Form
+>  * Debugger is active!
+>  * Debugger PIN: 322-981-763
+> 127.0.0.1 - - [11/Jun/2018 18:00:40] "[1m[35mGET /monitoring/1/ HTTP/1.1[0m" 500 -
+> Traceback (most recent call last):
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1997, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1985, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1540, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "/usr/local/lib/python2.7/dist-packages/flask_login/utils.py", line 261, in decorated_view
+>     return func(*args, **kwargs)
+>   File "/home/annemirasol/remidiv2/serveus/views.py", line 63, in returned
+>     return function(*args, **kwargs)
+>   File "/home/annemirasol/remidiv2/serveus/views.py", line 400, in monitoring
+>     return render_template("monitoring.html", lat = lat, lng = lng, zoom = zoom, municipality_list = municipality_list,  bar_list = bar_list, week_start = week_start, week_end = week_end, location = location, cases_this_week = cases_this_week, cases_last_week= cases_last_week, user = current_user, menu_active='monitoring', disease_list = disease_list, disease_id = disease_id, specimen_types = specimen_types, GMAPS_APIKEY = os.getenv('GMAPS_APIKEYxxx', app.config['GMAPS_APIKEY']))
+> KeyError: 'GMAPS_APIKEY'
+> 127.0.0.1 - - [11/Jun/2018 18:00:40] "[37mGET /monitoring/1/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [11/Jun/2018 18:00:40] "[37mGET /monitoring/1/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [11/Jun/2018 18:00:40] "[37mGET /monitoring/1/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [11/Jun/2018 18:00:40] "[37mGET /monitoring/1/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [11/Jun/2018 18:00:40] "[37mGET /monitoring/1/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [11/Jun/2018 18:00:42] "[1m[35mGET /monitoring/1/ HTTP/1.1[0m" 500 -
+> Traceback (most recent call last):
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1997, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1985, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1540, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "/usr/local/lib/python2.7/dist-packages/flask_login/utils.py", line 261, in decorated_view
+>     return func(*args, **kwargs)
+>   File "/home/annemirasol/remidiv2/serveus/views.py", line 63, in returned
+>     return function(*args, **kwargs)
+>   File "/home/annemirasol/remidiv2/serveus/views.py", line 400, in monitoring
+>     return render_template("monitoring.html", lat = lat, lng = lng, zoom = zoom, municipality_list = municipality_list,  bar_list = bar_list, week_start = week_start, week_end = week_end, location = location, cases_this_week = cases_this_week, cases_last_week= cases_last_week, user = current_user, menu_active='monitoring', disease_list = disease_list, disease_id = disease_id, specimen_types = specimen_types, GMAPS_APIKEY = os.getenv('GMAPS_APIKEYxxx', app.config['GMAPS_APIKEY']))
+> KeyError: 'GMAPS_APIKEY'
+> 127.0.0.1 - - [11/Jun/2018 18:00:42] "[37mGET /monitoring/1/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [11/Jun/2018 18:00:42] "[37mGET /monitoring/1/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [11/Jun/2018 18:00:42] "[37mGET /monitoring/1/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [11/Jun/2018 18:00:42] "[37mGET /monitoring/1/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [11/Jun/2018 18:00:42] "[37mGET /monitoring/1/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+>  * Detected change in '/home/annemirasol/remidiv2/serveus/views.py', reloading

@@ -1,0 +1,35 @@
+> Initialized logger
+> Traceback (most recent call last):
+>   File "run.py", line 3, in <module>
+> from serveus import app
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\remidiv2\serveus\__init__.py", line 86, in <module>
+> from serveus import views, models, admin
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\remidiv2\serveus\views.py", line 5, in <module>
+> from flask.ext.login import login_user, current_user, LoginManager, logout_user, login_required
+> ImportError
+> :
+> No module named ext.login
+> Error in atexit._run_exitfuncs:
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\atexit.py", line 24, in _run_exitfuncs
+>     func(*targs, **kargs)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\logging\__init__.py", line 1675, in shutdown
+>     h.flush()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\logging\__init__.py", line 852, in flush
+>     self.stream.flush()
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\remidiv2\serveus\__init__.py", line 63, in flush
+>     self.logger.flush()
+> AttributeError: 'RootLogger' object has no attribute 'flush'
+> Error in sys.exitfunc:
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\atexit.py", line 24, in _run_exitfuncs
+> func(*targs, **kargs)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\logging\__init__.py", line 1675, in shutdown
+> h.flush()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\logging\__init__.py", line 852, in flush
+> self.stream.flush()
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\remidiv2\serveus\__init__.py", line 63, in flush
+> self.logger.flush()
+> AttributeError
+> :
+> 'RootLogger' object has no attribute 'flush'

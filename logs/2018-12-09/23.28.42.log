@@ -1,0 +1,411 @@
+> Initialized logger
+>  * Debugger is active!
+>  * Debugger PIN: 456-115-780
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+> 127.0.0.1 - - [09/Dec/2018 23:33:28] "GET / HTTP/1.1" 302 -
+> 127.0.0.1 - - [09/Dec/2018 23:33:28] "GET /monitoring/1/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:33:35] "GET /records/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:35:24] "GET /ajax/provinces?region=2 HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:35:26] "GET /records/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:35:30] "GET /ajax/provinces?region=3 HTTP/1.1" 200 -
+> C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\sql\compiler.py:643: SAWarning: Can't resolve label reference u'"case".date desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+>   util.ellipses_string(element.element))
+> 127.0.0.1 - - [09/Dec/2018 23:35:31] "GET /records/1?parasite_selection=&region_selection=3&province_selection=0&municipality_selection=&microscopist_selection=&date_start=The+Beginning&date_end=Today&description=&sort_by=date&order=desc&page=1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:37:04] "GET /admin/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:37:06] "GET /static/bootstrap/bootstrap2/css/bootstrap.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:37:06] "GET /static/bootstrap/bootstrap2/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:37:06] "GET /static/admin/css/bootstrap2/admin.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:37:06] "GET /static/bootstrap/bootstrap2/js/bootstrap.min.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:37:06] "GET /static/vendor/moment-2.8.4.min.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:37:06] "GET /static/vendor/jquery-2.1.1.min.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:37:06] "GET /static/vendor/select2/select2.min.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:37:11] "GET /log/latest/log/ HTTP/1.1" 404 -
+> 127.0.0.1 - - [09/Dec/2018 23:37:15] "GET /admin/user/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:37:15] "GET /static/vendor/select2/select2.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:37:16] "GET /static/vendor/bootstrap-daterangepicker/daterangepicker-bs2.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:37:16] "GET /static/admin/js/filters-1.0.0.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:37:16] "GET /static/admin/js/actions-1.0.0.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:37:16] "GET /static/vendor/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:37:16] "GET /static/admin/js/form-1.0.0.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:37:16] "GET /static/bootstrap/bootstrap2/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:37:32] "GET /admin/case/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:37:37] "GET /admin/chunklist/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:37:39] "GET /admin/chunk/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:37:41] "GET /admin/case/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:37:52] "GET /admin/infection/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:37:56] "GET /admin/logview/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:37:58] "GET /admin/logview/download/23.28.42.log HTTP/1.1" 302 -
+> 127.0.0.1 - - [09/Dec/2018 23:37:59] "GET /log/23.28.42.log HTTP/1.1" 404 -
+> 127.0.0.1 - - [09/Dec/2018 23:38:03] "GET /admin/logview/rename/?path=23.28.42.log HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:38:12] "GET /admin/user/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:38:28] "GET /monitoring/1/ HTTP/1.1" 200 -
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:92: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   changepass_form = ChangePassForm()
+> 127.0.0.1 - - [09/Dec/2018 23:38:31] "GET /profilepage/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:38:35] "GET /logout/ HTTP/1.1" 302 -
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:83: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:83: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> 127.0.0.1 - - [09/Dec/2018 23:38:35] "GET /index/ HTTP/1.1" 200 -
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:737: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   form = LoginForm()
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:752: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm(), error_message = error_message)
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:752: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm(), error_message = error_message)
+> 127.0.0.1 - - [09/Dec/2018 23:38:41] "POST /login/ HTTP/1.1" 200 -
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:737: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   form = LoginForm()
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:752: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm(), error_message = error_message)
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:752: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm(), error_message = error_message)
+> 127.0.0.1 - - [09/Dec/2018 23:38:48] "POST /login/ HTTP/1.1" 200 -
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:737: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   form = LoginForm()
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:752: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm(), error_message = error_message)
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:752: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm(), error_message = error_message)
+> 127.0.0.1 - - [09/Dec/2018 23:38:51] "POST /login/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:39:00] "GET /database HTTP/1.1" 404 -
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:737: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   form = LoginForm()
+> 127.0.0.1 - - [09/Dec/2018 23:39:14] "POST /login/ HTTP/1.1" 302 -
+> 127.0.0.1 - - [09/Dec/2018 23:39:14] "GET /monitoring/1 HTTP/1.1" 301 -
+> 127.0.0.1 - - [09/Dec/2018 23:39:14] "GET /monitoring/1/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:39:17] "GET /admin/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:39:20] "GET /admin/user/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:39:23] "GET /admin/user/new/?url=%2Fadmin%2Fuser%2F HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:39:23] "GET /static/vendor/select2/select2.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:39:52] "GET /static/vendor/select2/select2-spinner.gif HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:39:59] "POST /admin/user/new/?url=%2Fadmin%2Fuser%2F HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_admin\base.py", line 69, in inner
+>     return self._run_view(f, *args, **kwargs)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_admin\base.py", line 368, in _run_view
+>     return fn(self, *args, **kwargs)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_admin\model\base.py", line 2048, in create_view
+>     model = self.create_model(form)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_admin\contrib\sqla\view.py", line 1085, in create_model
+>     if not self.handle_view_exception(ex):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_admin\contrib\sqla\view.py", line 1068, in handle_view_exception
+>     return super(ModelView, self).handle_view_exception(exc)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_admin\contrib\sqla\view.py", line 1082, in create_model
+>     self._on_model_change(form, model, True)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_admin\model\base.py", line 1548, in _on_model_change
+>     self.on_model_change(form, model, is_created)
+> TypeError: on_model_change() takes exactly 3 arguments (4 given)
+> 127.0.0.1 - - [09/Dec/2018 23:39:59] "GET /admin/user/new/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:39:59] "GET /admin/user/new/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:39:59] "GET /admin/user/new/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:40:00] "GET /admin/user/new/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:40:00] "GET /admin/user/new/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:40:00] "GET /admin/user/new/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:40:19] "POST /admin/user/new/?url=%2Fadmin%2Fuser%2F HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+> 127.0.0.1 - - [09/Dec/2018 23:40:19] "GET /admin/user/new/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_admin\base.py", line 69, in inner
+>     return self._run_view(f, *args, **kwargs)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_admin\base.py", line 368, in _run_view
+>     return fn(self, *args, **kwargs)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_admin\model\base.py", line 2048, in create_view
+>     model = self.create_model(form)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_admin\contrib\sqla\view.py", line 1085, in create_model
+>     if not self.handle_view_exception(ex):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_admin\contrib\sqla\view.py", line 1068, in handle_view_exception
+>     return super(ModelView, self).handle_view_exception(exc)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_admin\contrib\sqla\view.py", line 1080, in create_model
+>     form.populate_obj(model)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\wtforms\form.py", line 96, in populate_obj
+>     field.populate_obj(obj, name)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\wtforms\fields\core.py", line 330, in populate_obj
+>     setattr(obj, name, self.data)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\attributes.py", line 229, in __set__
+>     instance_dict(instance), value, None)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\attributes.py", line 710, in set
+>     value, old, initiator)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\attributes.py", line 717, in fire_replace_event
+>     state, value, previous, initiator or self._replace_token)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\util.py", line 136, in set_
+>     return validator(state.obj(), key, value)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\models.py", line 80, in update_password
+>     Database.query.first().modified = datetime.datetime.now()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\query.py", line 2895, in first
+>     ret = list(self[0:1])
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\query.py", line 2687, in __getitem__
+>     return list(res)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\query.py", line 2994, in __iter__
+>     self.session._autoflush()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\session.py", line 1444, in _autoflush
+>     util.raise_from_cause(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\util\compat.py", line 265, in raise_from_cause
+>     reraise(type(exception), exception, tb=exc_tb, cause=cause)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\session.py", line 1434, in _autoflush
+>     self.flush()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\session.py", line 2254, in flush
+>     self._flush(objects)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\session.py", line 2380, in _flush
+>     transaction.rollback(_capture_exception=True)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\util\langhelpers.py", line 66, in __exit__
+>     compat.reraise(exc_type, exc_value, exc_tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\session.py", line 2344, in _flush
+>     flush_context.execute()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 391, in execute
+>     rec.execute(self)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 556, in execute
+>     uow
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\persistence.py", line 177, in save_obj
+>     mapper, table, update)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\persistence.py", line 768, in _emit_update_statements
+>     execute(statement, multiparams)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 948, in execute
+>     return meth(self, multiparams, params)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\sql\elements.py", line 269, in _execute_on_connection
+>     return connection._execute_clauseelement(self, multiparams, params)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 1060, in _execute_clauseelement
+>     compiled_sql, distilled_params
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 1200, in _execute_context
+>     context)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 1413, in _handle_dbapi_exception
+>     exc_info
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\util\compat.py", line 265, in raise_from_cause
+>     reraise(type(exception), exception, tb=exc_tb, cause=cause)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 1193, in _execute_context
+>     context)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\default.py", line 509, in do_execute
+>     cursor.execute(statement, parameters)
+> OperationalError: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely) (sqlite3.OperationalError) database is locked [SQL: u'UPDATE "database" SET modified=? WHERE "database".id = ?'] [parameters: ('2018-12-09 23:40:14.455000', 1)] (Background on this error at: http://sqlalche.me/e/e3q8)
+> 127.0.0.1 - - [09/Dec/2018 23:40:20] "GET /admin/user/new/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:40:20] "GET /admin/user/new/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:40:20] "GET /admin/user/new/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:40:20] "GET /admin/user/new/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:40:20] "GET /admin/user/new/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:40:31] "POST /admin/user/new/?url=%2Fadmin%2Fuser%2F HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+> 127.0.0.1 - - [09/Dec/2018 23:40:31] "GET /admin/user/new/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_admin\base.py", line 69, in inner
+>     return self._run_view(f, *args, **kwargs)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_admin\base.py", line 368, in _run_view
+>     return fn(self, *args, **kwargs)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_admin\model\base.py", line 2048, in create_view
+>     model = self.create_model(form)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_admin\contrib\sqla\view.py", line 1085, in create_model
+>     if not self.handle_view_exception(ex):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_admin\contrib\sqla\view.py", line 1068, in handle_view_exception
+>     return super(ModelView, self).handle_view_exception(exc)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_admin\contrib\sqla\view.py", line 1080, in create_model
+>     form.populate_obj(model)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\wtforms\form.py", line 96, in populate_obj
+>     field.populate_obj(obj, name)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\wtforms\fields\core.py", line 330, in populate_obj
+>     setattr(obj, name, self.data)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\attributes.py", line 229, in __set__
+>     instance_dict(instance), value, None)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\attributes.py", line 710, in set
+>     value, old, initiator)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\attributes.py", line 717, in fire_replace_event
+>     state, value, previous, initiator or self._replace_token)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\util.py", line 136, in set_
+>     return validator(state.obj(), key, value)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\models.py", line 80, in update_password
+>     Database.query.first().modified = datetime.datetime.now()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\query.py", line 2895, in first
+>     ret = list(self[0:1])
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\query.py", line 2687, in __getitem__
+>     return list(res)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\query.py", line 2994, in __iter__
+>     self.session._autoflush()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\session.py", line 1444, in _autoflush
+>     util.raise_from_cause(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\util\compat.py", line 265, in raise_from_cause
+>     reraise(type(exception), exception, tb=exc_tb, cause=cause)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\session.py", line 1434, in _autoflush
+>     self.flush()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\session.py", line 2254, in flush
+>     self._flush(objects)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\session.py", line 2380, in _flush
+>     transaction.rollback(_capture_exception=True)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\util\langhelpers.py", line 66, in __exit__
+>     compat.reraise(exc_type, exc_value, exc_tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\session.py", line 2344, in _flush
+>     flush_context.execute()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 391, in execute
+>     rec.execute(self)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 556, in execute
+>     uow
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\persistence.py", line 177, in save_obj
+>     mapper, table, update)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\persistence.py", line 768, in _emit_update_statements
+>     execute(statement, multiparams)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 948, in execute
+>     return meth(self, multiparams, params)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\sql\elements.py", line 269, in _execute_on_connection
+>     return connection._execute_clauseelement(self, multiparams, params)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 1060, in _execute_clauseelement
+>     compiled_sql, distilled_params
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 1200, in _execute_context
+>     context)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 1413, in _handle_dbapi_exception
+>     exc_info
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\util\compat.py", line 265, in raise_from_cause
+>     reraise(type(exception), exception, tb=exc_tb, cause=cause)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 1193, in _execute_context
+>     context)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\default.py", line 509, in do_execute
+>     cursor.execute(statement, parameters)
+> OperationalError: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely) (sqlite3.OperationalError) database is locked [SQL: u'UPDATE "database" SET modified=? WHERE "database".id = ?'] [parameters: ('2018-12-09 23:40:26.321000', 1)] (Background on this error at: http://sqlalche.me/e/e3q8)
+> 127.0.0.1 - - [09/Dec/2018 23:40:31] "GET /admin/user/new/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:40:31] "GET /admin/user/new/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:40:32] "GET /admin/user/new/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:40:32] "GET /admin/user/new/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:40:32] "GET /admin/user/new/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:40:43] "POST /admin/user/new/?url=%2Fadmin%2Fuser%2F HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+> 127.0.0.1 - - [09/Dec/2018 23:40:43] "GET /admin/user/new/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_admin\base.py", line 69, in inner
+>     return self._run_view(f, *args, **kwargs)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_admin\base.py", line 368, in _run_view
+>     return fn(self, *args, **kwargs)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_admin\model\base.py", line 2048, in create_view
+>     model = self.create_model(form)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_admin\contrib\sqla\view.py", line 1085, in create_model
+>     if not self.handle_view_exception(ex):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_admin\contrib\sqla\view.py", line 1068, in handle_view_exception
+>     return super(ModelView, self).handle_view_exception(exc)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_admin\contrib\sqla\view.py", line 1080, in create_model
+>     form.populate_obj(model)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\wtforms\form.py", line 96, in populate_obj
+>     field.populate_obj(obj, name)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\wtforms\fields\core.py", line 330, in populate_obj
+>     setattr(obj, name, self.data)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\attributes.py", line 229, in __set__
+>     instance_dict(instance), value, None)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\attributes.py", line 710, in set
+>     value, old, initiator)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\attributes.py", line 717, in fire_replace_event
+>     state, value, previous, initiator or self._replace_token)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\util.py", line 136, in set_
+>     return validator(state.obj(), key, value)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\models.py", line 80, in update_password
+>     Database.query.first().modified = datetime.datetime.now()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\query.py", line 2895, in first
+>     ret = list(self[0:1])
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\query.py", line 2687, in __getitem__
+>     return list(res)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\query.py", line 2994, in __iter__
+>     self.session._autoflush()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\session.py", line 1444, in _autoflush
+>     util.raise_from_cause(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\util\compat.py", line 265, in raise_from_cause
+>     reraise(type(exception), exception, tb=exc_tb, cause=cause)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\session.py", line 1434, in _autoflush
+>     self.flush()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\session.py", line 2254, in flush
+>     self._flush(objects)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\session.py", line 2380, in _flush
+>     transaction.rollback(_capture_exception=True)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\util\langhelpers.py", line 66, in __exit__
+>     compat.reraise(exc_type, exc_value, exc_tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\session.py", line 2344, in _flush
+>     flush_context.execute()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 391, in execute
+>     rec.execute(self)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 556, in execute
+>     uow
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\persistence.py", line 177, in save_obj
+>     mapper, table, update)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\persistence.py", line 768, in _emit_update_statements
+>     execute(statement, multiparams)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 948, in execute
+>     return meth(self, multiparams, params)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\sql\elements.py", line 269, in _execute_on_connection
+>     return connection._execute_clauseelement(self, multiparams, params)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 1060, in _execute_clauseelement
+>     compiled_sql, distilled_params
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 1200, in _execute_context
+>     context)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 1413, in _handle_dbapi_exception
+>     exc_info
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\util\compat.py", line 265, in raise_from_cause
+>     reraise(type(exception), exception, tb=exc_tb, cause=cause)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 1193, in _execute_context
+>     context)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\default.py", line 509, in do_execute
+>     cursor.execute(statement, parameters)
+> OperationalError: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely) (sqlite3.OperationalError) database is locked [SQL: u'UPDATE "database" SET modified=? WHERE "database".id = ?'] [parameters: ('2018-12-09 23:40:38.844000', 1)] (Background on this error at: http://sqlalche.me/e/e3q8)
+> 127.0.0.1 - - [09/Dec/2018 23:40:44] "GET /admin/user/new/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:40:44] "GET /admin/user/new/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:40:44] "GET /admin/user/new/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:40:44] "GET /admin/user/new/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:40:44] "GET /admin/user/new/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:41:05] "GET /admin/user/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:41:09] "GET /monitoring/1/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:41:16] "GET /detect/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 23:41:33] "GET /monitoring/1/ HTTP/1.1" 200 -
+>  * Detected change in 'C:\\Users\\gherz-PC\\Desktop\\remidiv2\\serveus\\views.py', reloading

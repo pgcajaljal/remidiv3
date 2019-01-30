@@ -1,0 +1,15 @@
+> Initialized logger
+> Traceback (most recent call last):
+>   File "run.py", line 3, in <module>
+> from serveus import app
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\__init__.py", line 87, in <module>
+> from serveus import views, models, admin
+>   File "
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py
+> ", line
+> 189
+> cmd = ["dir",".'']
+> ^
+> SyntaxError
+> :
+> EOL while scanning string literal

@@ -1,0 +1,27 @@
+> Initialized logger
+> /home/annemirasol/remidiv2/serveus/views.py:5: ExtDeprecationWarning: Importing flask.ext.login is deprecated, use flask_login instead.
+>   from flask.ext.login import login_user, current_user, LoginManager, logout_user, login_required
+> /home/annemirasol/remidiv2/serveus/forms.py:2: ExtDeprecationWarning: Importing flask.ext.wtf is deprecated, use flask_wtf instead.
+>   from flask.ext.wtf import Form
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+>  * Restarting with stat
+> Initialized logger
+> /home/annemirasol/remidiv2/serveus/views.py:5: ExtDeprecationWarning: Importing flask.ext.login is deprecated, use flask_login instead.
+>   from flask.ext.login import login_user, current_user, LoginManager, logout_user, login_required
+> /home/annemirasol/remidiv2/serveus/forms.py:2: ExtDeprecationWarning: Importing flask.ext.wtf is deprecated, use flask_wtf instead.
+>   from flask.ext.wtf import Form
+>  * Debugger is active!
+>  * Debugger PIN: 322-981-763
+> 127.0.0.1 - - [12/Jun/2018 20:24:30] "[37mGET /map/1 HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 20:24:30] "[37mGET /static/images/loading.gif HTTP/1.1[0m" 200 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe

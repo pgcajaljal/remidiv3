@@ -1,0 +1,61 @@
+> Initialized logger
+>  * Debugger is active!
+>  * Debugger PIN: 456-115-780
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:79: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:79: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> 127.0.0.1 - - [07/Dec/2018 01:41:47] "GET / HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:41:48] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:41:49] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:41:49] "GET /static/js/jquery.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:41:49] "GET /static/js/sha1.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:41:49] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:41:50] "GET /static/favicon.ico HTTP/1.1" 200 -
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:727: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   form = LoginForm()
+> 127.0.0.1 - - [07/Dec/2018 01:44:27] "POST /login/ HTTP/1.1" 302 -
+> 127.0.0.1 - - [07/Dec/2018 01:44:27] "GET /monitoring/1 HTTP/1.1" 301 -
+> 127.0.0.1 - - [07/Dec/2018 01:44:28] "GET /monitoring/1/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:44:28] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:44:28] "GET /static/images/loading.gif HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:44:28] "GET /static/js/eyecon-datepicker.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:44:28] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:44:28] "GET /static/images/bar.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:47:36] "GET /monitoring/1/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:47:37] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:47:44] "GET /map/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:47:44] "GET /static/js/markerwithlabel.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:47:53] "GET /monitoring/2 HTTP/1.1" 301 -
+> 127.0.0.1 - - [07/Dec/2018 01:47:53] "GET /monitoring/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:48:06] "GET /monitoring/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:48:07] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:48:13] "GET /records/3 HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:48:18] "GET /timeline/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:48:18] "GET /static/css/iThing-min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:48:18] "GET /static/js/jquery-ui-1.10.3.custom.min.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:48:18] "GET /static/js/jQDateRangeSlider-min.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:48:31] "GET /timeline/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:48:31] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:49:37] "GET /timeline/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:49:37] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:49:46] "GET /map/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:49:52] "GET /records/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:49:57] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:49:57] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [07/Dec/2018 01:49:58] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [07/Dec/2018 01:49:58] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [07/Dec/2018 01:49:58] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [07/Dec/2018 01:49:58] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [07/Dec/2018 01:49:58] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [07/Dec/2018 01:49:59] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [07/Dec/2018 01:49:59] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:49:59] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:49:59] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:49:59] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:49:59] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:49:59] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [07/Dec/2018 01:49:59] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:49:59] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [07/Dec/2018 01:49:59] "GET /thumb/pic/14/ HTTP/1.1" 200 -

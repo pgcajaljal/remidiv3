@@ -1,0 +1,17 @@
+> Initialized logger
+> Traceback (most recent call last):
+>   File "run.py", line 3, in <module>
+> from serveus import app
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\__init__.py", line 87, in <module>
+> from serveus import views, models, admin
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 143, in <module>
+> @app.route('/')
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1250, in decorator
+> self.add_url_rule(rule, endpoint, f, **options)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 66, in wrapper_func
+> return f(self, *args, **kwargs)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1221, in add_url_rule
+> 'existing endpoint function: %s' % endpoint)
+> AssertionError
+> :
+> View function mapping is overwriting an existing endpoint function: index

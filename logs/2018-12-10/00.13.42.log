@@ -1,0 +1,37 @@
+> Initialized logger
+>  * Debugger is active!
+>  * Debugger PIN: 456-115-780
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+> 127.0.0.1 - - [10/Dec/2018 00:14:14] "GET /records/ HTTP/1.1" 404 -
+> 127.0.0.1 - - [10/Dec/2018 00:14:17] "GET /records/ HTTP/1.1" 404 -
+> 127.0.0.1 - - [10/Dec/2018 00:14:17] "GET /records/ HTTP/1.1" 404 -
+> 127.0.0.1 - - [10/Dec/2018 00:14:18] "GET /records/ HTTP/1.1" 404 -
+> 127.0.0.1 - - [10/Dec/2018 00:14:18] "GET /records/ HTTP/1.1" 404 -
+> 127.0.0.1 - - [10/Dec/2018 00:14:24] "GET / HTTP/1.1" 302 -
+> 127.0.0.1 - - [10/Dec/2018 00:14:25] "GET /monitoring/1/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:14:29] "GET /detect/2 HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:14:35] "GET /detect/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:14:42] "POST /records/1 HTTP/1.1" 405 -
+> 127.0.0.1 - - [10/Dec/2018 00:15:00] "GET /detect/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:15:02] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:15:02] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:15:02] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:15:02] "GET /static/js/jquery.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:15:02] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:15:02] "GET /static/js/eyecon-datepicker.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:15:03] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:15:03] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:15:07] "POST /detect/1 HTTP/1.1" 302 -
+> 127.0.0.1 - - [10/Dec/2018 00:15:07] "GET /detect/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:15:09] "POST /detect/1 HTTP/1.1" 302 -
+> 127.0.0.1 - - [10/Dec/2018 00:15:09] "GET /detect/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:15:58] "POST /detect/1 HTTP/1.1" 302 -
+> 127.0.0.1 - - [10/Dec/2018 00:15:58] "GET /detect/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:16:33] "POST /detect/1 HTTP/1.1" 302 -
+> 127.0.0.1 - - [10/Dec/2018 00:16:53] "GET /detect/1 HTTP/1.1" 200 -
+>  * Detected change in 'C:\\Users\\gherz-PC\\Desktop\\remidiv2\\serveus\\views.py', reloading
+> 127.0.0.1 - - [10/Dec/2018 00:20:24] "GET /detect/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:20:35] "GET / HTTP/1.1" 302 -
+> 127.0.0.1 - - [10/Dec/2018 00:20:42] "GET / HTTP/1.1" 302 -
+> Traceback (most recent call last):
+> Traceback (most recent call last):

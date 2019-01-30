@@ -1,0 +1,12 @@
+> Initialized logger
+> /home/annemirasol/remidiv2/serveus/views.py:5: ExtDeprecationWarning: Importing flask.ext.login is deprecated, use flask_login instead.
+>   from flask.ext.login import login_user, current_user, LoginManager, logout_user, login_required
+> /home/annemirasol/remidiv2/serveus/forms.py:2: ExtDeprecationWarning: Importing flask.ext.wtf is deprecated, use flask_wtf instead.
+>   from flask.ext.wtf import Form
+>  * Debugger is active!
+>  * Debugger PIN: 322-981-763
+> 127.0.0.1 - - [11/Jun/2018 17:47:10] "[37mGET /timeline/1 HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [11/Jun/2018 17:47:10] "[37mGET /static/css/iThing-min.css HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [11/Jun/2018 17:47:10] "[37mGET /static/js/jquery-ui-1.10.3.custom.min.js HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [11/Jun/2018 17:47:10] "[37mGET /static/js/jQDateRangeSlider-min.js HTTP/1.1[0m" 200 -
+>  * Detected change in '/home/annemirasol/remidiv2/serveus/views.py', reloading

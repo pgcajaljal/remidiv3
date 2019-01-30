@@ -1,0 +1,168 @@
+{% extends "layout.html" %}
+{% block title %}Outbreak Monitoring{% endblock %}
+
+{% block script %}
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?key={{ GMAPS_APIKEY }}&v=3.exp&sensor=false&libraries=places&components=country:Philippines"></script> -->
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places&components=country:Philippines"></script>
+{% endblock %}
+
+{% block style %}
+		<style>
+		html, body {
+			height: 100%;
+			margin: 0 0 0;
+            padding: 0 0 0;
+            overflow: hidden;
+        }
+
+        #monitoring_timeframe{
+            color:#FFFFFF;
+            text-shadow:2px 2px 4px #000000;
+        }
+		</style>
+{% endblock %}
+
+{% block content %}
+        
+        <div id="loading_block" style="height: 100px; width: 100%; margin-top: 15%; text-align: center">
+            <img src="/static/images/loading.gif"/>
+        </div>
+        
+        <div id="map-canvas" class="google-maps" style="height: calc(100% - 42px); width: 100%; margin: -20px 0 0; display: none">
+        </div>
+
+        <div id="helpModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">close</button>
+                <h3 id="helpModalLabel">Map</h3>
+            </div>
+            <div class="modal-body">
+                <p>This page shows all instances of cases in the past week. <br> The height of the bar signifies how many cases there are in that area. <br><br> The + or - indicates either the increase or decrease of cases compared to the previous week. The number shows by how many. <br><br> 
+            </div>
+        </div>
+
+        <canvas id="myCanvas" width="0" height="0"></canvas> 
+
+        <span id="monitoring_timeframe">
+            <br>
+            <input type="text" id="autocomplete">
+            <!-- <h1>{{location}}</h1> -->
+            <h4>{{week_start}} - {{week_end}}</h4>
+            <!-- <h5> <font color="yellow"> This week: {{cases_this_week}} cases </font>
+            Last week: {{cases_last_week}} cases</h5> -->
+        </span>  
+        <script>
+            function initialize() {
+                var myLatlng = new google.maps.LatLng({{lat}},{{lng}});
+                var mapOptions = {
+                    zoom: {{zoom}},
+                    center: myLatlng,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+                               
+                function addMarker(latLng, markerType,label, region, province, municipality, disease) {
+                    var marker = new google.maps.Marker({
+                        position: latLng,
+                        icon: markerType,
+                        map: map,
+                        url: "/records/" + disease + "?region_selection=" + region + "&province_selection=" + province + "&municipality_selection=" + municipality
+                    });
+                    var infowindow = new google.maps.InfoWindow({
+                      content: label
+                    });
+                    google.maps.event.addListener(marker, 'mouseover', function() {
+                        infowindow.open(map,marker);
+                    }); 
+                    google.maps.event.addListener(marker, 'mouseout', function(){
+                        infowindow.close();
+                    });
+                    google.maps.event.addListener(marker, 'click', function() {
+                        window.location.href = marker.url;
+                    });
+                return marker;
+                }
+                var barImage = new Image();
+                var bar_space = 2;
+                barImage.src = '/static/images/bar.png';
+                function makeIcon(size){
+		    size = 1;
+                    var c = document.getElementById("myCanvas");
+                    var ctx = c.getContext("2d");
+                    c.height = (size*20)+20+((size-1)*bar_space);
+                    c.width = 5;
+                    
+                    // for (var i=0; i<size; i++) {
+                        // ctx.drawImage(barImage, 0,(i*20)+(i*bar_space), 10, 10);
+                    // }
+
+                    ctx.drawImage(barImage, 0, 0, 10, 100);
+
+                    var img = c.toDataURL("image/png");
+                    var image = {
+                        url: img,
+                        size: new google.maps.Size(10,((size-1)*20)+20+((size-1)*bar_space)),
+                        origin: new google.maps.Point(0,0),
+                        anchor: new google.maps.Size(5,((size-1)*20)+20+((size-1)*bar_space))
+                    };
+                    
+                    return img;
+                }
+                barImage.onload = function(){
+                    {% for i in municipality_list %}
+                        addMarker(
+                            new google.maps.LatLng({{i[0][0]}},{{i[0][1]}}),
+                            new google.maps.MarkerImage(
+                                makeIcon({{i[1]}}),
+                                // new google.maps.Size(10,(({{i[1]}}-1)*20)+20+(({{i[1]}}-1)*bar_space)),
+                                new google.maps.Size(10,100),
+                                new google.maps.Point(0,0),
+                                //new google.maps.Point(5,(({{i[1]}}-1)*20)+20+(({{i[1]}}-1)*bar_space))
+                                new google.maps.Point(5,100)
+                            ),
+                            "{{i[2]}} : {{i[1]}} &nbsp;","{{i[3]}}","{{i[4]}}","{{i[5]}}","{{disease_id}}"
+                        )
+                    {% endfor %}
+                }
+                var monitoring_timeframe=document.getElementById('monitoring_timeframe')
+                map.controls[google.maps.ControlPosition.TOP_LEFT].push(monitoring_timeframe);
+
+                var acOptions = {
+                    types: ['geocode']
+                };
+                var autocomplete = new google.maps.places.Autocomplete(document.getElementById('autocomplete'),acOptions);
+                autocomplete.bindTo('bounds',map);
+                var infoWindow = new google.maps.InfoWindow();
+
+                google.maps.event.addListener(autocomplete, 'place_changed', function() {
+                  infoWindow.close();
+                  var place = autocomplete.getPlace();
+                  if (place.geometry.viewport) {
+                    map.fitBounds(place.geometry.viewport);
+                  } else {
+                    map.setCenter(place.geometry.location);
+                    map.setZoom(17);
+                  }
+                  marker.setPosition(place.geometry.location);
+                  infoWindow.setContent('<div><strong>' + place.name + '</strong><br>');
+                  infoWindow.open(map, marker);
+                  google.maps.event.addListener(marker,'click',function(e){
+
+                    infoWindow.open(map, marker);
+
+                  });
+                });
+                
+            }
+            google.maps.event.addDomListener(window, 'load', initialize); 
+        </script>
+		<script src="/static/js/jquery.js"></script>
+		<script src="/static/js/bootstrap.min.js"></script>
+        <script src="/static/js/eyecon-datepicker.js"></script>
+        
+        <script>
+            document.getElementById('loading_block').style.display = 'None';
+            document.getElementById('map-canvas').style.display = '';
+        </script>
+
+{% endblock %}

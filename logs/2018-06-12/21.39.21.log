@@ -1,0 +1,55 @@
+> Initialized logger
+> /home/annemirasol/remidiv2/serveus/views.py:5: ExtDeprecationWarning: Importing flask.ext.login is deprecated, use flask_login instead.
+>   from flask.ext.login import login_user, current_user, LoginManager, logout_user, login_required
+> /home/annemirasol/remidiv2/serveus/forms.py:2: ExtDeprecationWarning: Importing flask.ext.wtf is deprecated, use flask_wtf instead.
+>   from flask.ext.wtf import Form
+>  * Debugger is active!
+>  * Debugger PIN: 322-981-763
+> 127.0.0.1 - - [12/Jun/2018 21:39:24] "[37mGET /case/2/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:39:24] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:39:24] "[36mGET /static/css/bootstrap-responsive.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:39:24] "[36mGET /static/css/eyecon-datepicker.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:39:24] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:39:24] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:39:24] "[32mGET /thumb/pic/9 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:39:24] "[32mGET /thumb/pic/10 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:39:24] "[32mGET /thumb/pic/11 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:39:24] "[32mGET /thumb/pic/12 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:39:24] "[32mGET /thumb/pic/13 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:39:24] "[32mGET /thumb/pic/14 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:39:24] "[32mGET /thumb/pic/15 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:39:24] "[32mGET /thumb/pic/16 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:39:24] "[36mGET /static/img/glyphicons-halflings.png HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:39:24] "[37mGET /thumb/pic/9/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:39:24] "[37mGET /thumb/pic/10/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:39:24] "[37mGET /thumb/pic/11/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:39:24] "[37mGET /thumb/pic/14/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:39:24] "[37mGET /thumb/pic/15/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:39:24] "[37mGET /thumb/pic/16/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:39:24] "[37mGET /thumb/pic/12/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:39:24] "[37mGET /thumb/pic/13/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:39:25] "[37mPOST /case/2/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:40:08] "[33mGET /map/?lat=14.5995&lng=120.9842&zoom=13&date_start=1/1/1970&date_end=Today HTTP/1.1[0m" 404 -
+> 127.0.0.1 - - [12/Jun/2018 21:40:50] "[37mGET /case/2/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:40:50] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:40:50] "[36mGET /static/css/bootstrap-responsive.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:40:50] "[36mGET /static/css/eyecon-datepicker.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:40:50] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:40:50] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:40:50] "[32mGET /thumb/pic/9 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:40:50] "[32mGET /thumb/pic/10 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:40:50] "[32mGET /thumb/pic/12 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:40:50] "[32mGET /thumb/pic/11 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:40:50] "[32mGET /thumb/pic/13 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:40:50] "[32mGET /thumb/pic/14 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:40:50] "[32mGET /thumb/pic/15 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:40:50] "[32mGET /thumb/pic/16 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:40:50] "[36mGET /static/img/glyphicons-halflings.png HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 21:40:50] "[37mGET /thumb/pic/10/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:40:50] "[37mGET /thumb/pic/9/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:40:50] "[37mGET /thumb/pic/11/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:40:50] "[37mGET /thumb/pic/12/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:40:50] "[37mGET /thumb/pic/13/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:40:50] "[37mGET /thumb/pic/14/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:40:50] "[37mGET /thumb/pic/15/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:40:50] "[37mGET /thumb/pic/16/ HTTP/1.1[0m" 200 -

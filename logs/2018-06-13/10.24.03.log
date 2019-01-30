@@ -1,0 +1,139 @@
+> Initialized logger
+> /home/annemirasol/remidiv2/serveus/views.py:5: ExtDeprecationWarning: Importing flask.ext.login is deprecated, use flask_login instead.
+>   from flask.ext.login import login_user, current_user, LoginManager, logout_user, login_required
+> /home/annemirasol/remidiv2/serveus/forms.py:2: ExtDeprecationWarning: Importing flask.ext.wtf is deprecated, use flask_wtf instead.
+>   from flask.ext.wtf import Form
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+>  * Restarting with stat
+> Initialized logger
+> /home/annemirasol/remidiv2/serveus/views.py:5: ExtDeprecationWarning: Importing flask.ext.login is deprecated, use flask_login instead.
+>   from flask.ext.login import login_user, current_user, LoginManager, logout_user, login_required
+> /home/annemirasol/remidiv2/serveus/forms.py:2: ExtDeprecationWarning: Importing flask.ext.wtf is deprecated, use flask_wtf instead.
+>   from flask.ext.wtf import Form
+>  * Debugger is active!
+>  * Debugger PIN: 322-981-763
+> 127.0.0.1 - - [13/Jun/2018 10:25:05] "[37mGET /admin/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [13/Jun/2018 10:25:08] "[37mGET /admin/user/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [13/Jun/2018 10:25:08] "[37mGET /static/admin/js/form-1.0.0.js HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [13/Jun/2018 10:25:08] "[37mGET /static/vendor/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [13/Jun/2018 10:25:08] "[37mGET /static/admin/js/filters-1.0.0.js HTTP/1.1[0m" 200 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> 127.0.0.1 - - [13/Jun/2018 10:25:08] "[37mGET /static/bootstrap/bootstrap2/img/glyphicons-halflings.png HTTP/1.1[0m" 200 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> 127.0.0.1 - - [13/Jun/2018 10:25:08] "[37mGET /static/admin/js/actions-1.0.0.js HTTP/1.1[0m" 200 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> 127.0.0.1 - - [13/Jun/2018 10:25:29] "[37mGET /admin/user/edit/?url=%2Fadmin%2Fuser%2F&id=478 HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [13/Jun/2018 10:25:29] "[37mGET /static/vendor/select2/select2.png HTTP/1.1[0m" 200 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> /usr/local/lib/python2.7/dist-packages/flask_admin/model/base.py:1524: UserWarning: <class 'serveus.models.User'>.on_model_change() now accepts third parameter is_created. Please update your code
+>   warnings.warn(msg)
+> 127.0.0.1 - - [13/Jun/2018 10:25:34] "[32mPOST /admin/user/edit/?url=%2Fadmin%2Fuser%2F&id=478 HTTP/1.1[0m" 302 -
+> 127.0.0.1 - - [13/Jun/2018 10:25:34] "[37mGET /admin/user/edit/?url=%2Fadmin%2Fuser%2F&id=478 HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [13/Jun/2018 11:14:56] "[37mGET /monitoring/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [13/Jun/2018 11:14:56] "[37mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [13/Jun/2018 11:14:56] "[37mGET /static/img/glyphicons-halflings.png HTTP/1.1[0m" 200 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> 127.0.0.1 - - [13/Jun/2018 11:14:56] "[37mGET /static/images/bar.png HTTP/1.1[0m" 200 -
+> /usr/local/lib/python2.7/dist-packages/sqlalchemy/sql/compiler.py:643: SAWarning: Can't resolve label reference '"case".date desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+>   util.ellipses_string(element.element))
+> 127.0.0.1 - - [13/Jun/2018 11:15:26] "[37mGET /records/1?region_selection=17&province_selection=99&municipality_selection=1638 HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [13/Jun/2018 11:15:34] "[37mGET /records/1 HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [13/Jun/2018 11:28:04] "[37mGET /monitoring/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [13/Jun/2018 11:28:47] "[37mGET /records/1?region_selection=17&province_selection=99&municipality_selection=1638 HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [13/Jun/2018 11:29:09] "[37mGET /case/2/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [13/Jun/2018 11:29:09] "[37mGET /thumb/pic/9/ HTTP/1.1[0m" 200 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> 127.0.0.1 - - [13/Jun/2018 11:29:30] "[37mGET /map/1 HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [13/Jun/2018 11:29:30] "[37mGET /static/js/markerwithlabel.js HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [13/Jun/2018 11:30:00] "[37mGET /timeline/1 HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [13/Jun/2018 13:57:36] "[37mGET /static/img/glyphicons-halflings-white.png HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [13/Jun/2018 13:57:36] "[32mGET /logout/ HTTP/1.1[0m" 302 -
+> 127.0.0.1 - - [13/Jun/2018 13:57:36] "[32mGET /index HTTP/1.1[0m" 301 -
+> /home/annemirasol/remidiv2/serveus/views.py:78: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> /home/annemirasol/remidiv2/serveus/views.py:78: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> 127.0.0.1 - - [13/Jun/2018 13:57:36] "[37mGET /index/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [13/Jun/2018 13:57:36] "[37mGET /static/js/sha1.js HTTP/1.1[0m" 200 -

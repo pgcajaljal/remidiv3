@@ -1,0 +1,50 @@
+> Initialized logger
+>  * Debugger is active!
+>  * Debugger PIN: 456-115-780
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:83: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:83: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> 192.168.137.38 - - [27/Jan/2019 20:38:50] "GET / HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 20:39:02] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 20:39:02] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 20:39:02] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 20:39:02] "GET /static/js/sha1.js HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 20:39:03] "GET /static/js/jquery.js HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 20:39:57] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 20:40:28] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 20:40:44] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 20:44:25] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 20:47:41] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 20:49:09] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 20:49:22] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 20:50:36] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 20:53:11] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 20:53:24] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 20:56:35] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 20:56:51] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 21:08:55] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 21:11:49] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 21:15:53] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 21:16:53] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 21:18:20] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 21:20:16] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 21:23:05] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 21:27:53] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 21:28:39] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 21:28:46] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 21:36:16] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 21:36:26] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 21:39:03] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 21:39:51] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 21:41:28] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 21:45:15] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 21:45:24] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 21:46:09] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.38 - - [27/Jan/2019 21:46:49] "POST /api/db/ HTTP/1.1" 200 -
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:83: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:83: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> 192.168.137.38 - - [27/Jan/2019 21:49:54] "GET / HTTP/1.1" 200 -

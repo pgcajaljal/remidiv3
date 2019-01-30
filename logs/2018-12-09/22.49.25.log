@@ -1,0 +1,7 @@
+> Initialized logger
+> Traceback (most recent call last):
+>   File "reset.py", line 14, in <module>
+> b.create_all()
+> NameError
+> :
+> name 'b' is not defined

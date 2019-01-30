@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{% block title %}{% endblock %} - Remote Microscopy</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="/static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="/static/css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="/static/css/eyecon-datepicker.css" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+		{% block style %}
+		{% endblock %}
+
+		{% block script %}
+		{% endblock %}
+	</head>
+	<body>
+		<div class="navbar" style="width: 100%;">
+			<div class="navbar-inner">
+				<a class="btn btn-navbar pull-right" data-toggle="collapse" data-target=".nav-collapse" style="padding: 4px 10px 4px; font-size: 14px; font-weight: bold">
+				Menu
+				</a>
+                <ul class="nav pull-right">
+                    <div class="btn-group">
+                        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+							{{user.usertype.name}} <b>{{user.firstname}} {{user.lastname}}</b> ({{ user.username }})
+                        <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a href="/profilepage/">Profile</a></li>
+                        {% if user.is_administrator() or user.is_localadmin() %}<li><a href="/admin/">Admin Page</a></li>{% endif %}
+                        <li><a href="/logout/">Logout<i class="icon-off"></i></a></li>
+                        </ul>
+                    </div>
+                </ul>
+                <div class="nav-collapse collapse">
+                    <div>
+                        <ul class="nav">
+                            <li>&nbsp</li>
+                            {% if not user.is_microscopist() %}
+                            <li class="dropdown {% if menu_active == 'monitoring' %}active{% endif %}" >
+                                {% if menu_active == 'monitoring' %}
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-eye-open"></i> Monitoring - {{ disease_list[disease_id-1].name }}<span class="caret"></span></a>
+                                {% else %}
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-eye-open"></i> Monitoring<span class="caret"></span></a>
+                                {% endif %}
+                                <ul class="dropdown-menu">
+				    {% for k in specimen_types %}
+                                    <li class="menu-item dropdown dropdown-submenu">
+                            		<a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ k.specimen_type }}</a>
+                                	<ul class="dropdown-menu">
+                                    	{% for i in disease_list %}
+						{% if i.specimen_type == k.specimen_type %}
+						<li class="menu-item"><a href="/monitoring/{{ i.id }}">{{ i.name }}</a></li>
+						{% endif %}
+					{% endfor %}
+					</ul>
+				    </li>
+				    {% endfor %}
+                                </ul>
+                            </li>
+                            {% endif %}
+
+                            <li class="dropdown {% if menu_active == 'records' %}active{% endif %}" >
+                                {% if menu_active == 'records' %}
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-book"></i> Records - {{ disease_list[disease_id-1].name }}<span class="caret"></span></a>
+                                {% else %}
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-book"></i> Records<span class="caret"></span></a>
+                                {% endif %}
+				<ul class="dropdown-menu">
+				    {% for k in specimen_types %}
+                                    <li class="menu-item dropdown dropdown-submenu">
+                            		<a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ k.specimen_type }}</a>
+                                	<ul class="dropdown-menu">
+                                    	{% for i in disease_list %}
+						{% if i.specimen_type == k.specimen_type %}
+						<li class="menu-item"><a href="/records/{{ i.id }}">{{ i.name }}</a></li>
+						{% endif %}
+					{% endfor %}
+					</ul>
+				    </li>
+				    {% endfor %}
+                                </ul>
+				<!--
+                                <ul class="dropdown-menu">
+                                    {% for i in disease_list %}
+                                    <li><a href="/records/{{ i.id }}">{{ i.name }}</a></li>
+                                    {% endfor %}
+                                </ul>
+				-->
+                            </li>
+
+                            {% if not user.is_microscopist() %}
+                            <li class="dropdown {% if menu_active == 'map' %}active{% endif %}" >
+                                {% if menu_active == 'map' %}
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-map-marker"></i> Map - {{ disease_list[disease_id-1].name }}<span class="caret"></span></a>
+                                {% else %}
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-map-marker"></i> Map<span class="caret"></span></a>
+                                {% endif %}
+				<ul class="dropdown-menu">
+				    {% for k in specimen_types %}
+                                    <li class="menu-item dropdown dropdown-submenu">
+                            		<a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ k.specimen_type }}</a>
+                                	<ul class="dropdown-menu">
+                                    	{% for i in disease_list %}
+						{% if i.specimen_type == k.specimen_type %}
+						<li class="menu-item"><a href="/map/{{ i.id }}">{{ i.name }}</a></li>
+						{% endif %}
+					{% endfor %}
+					</ul>
+				    </li>
+				    {% endfor %}
+                                </ul>
+				<!--
+                                <ul class="dropdown-menu">
+                                    {% for i in disease_list %}
+                                    <li><a href="/map/{{ i.id }}">{{ i.name }}</a></li>
+                                    {% endfor %}
+                                </ul>
+				-->
+                            </li>
+                            {% endif %}
+
+                            {% if not user.is_microscopist() %}
+                            <li class="dropdown {% if menu_active == 'timeline' %}active{% endif %}" >
+                                {% if menu_active == 'timeline' %}
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-globe"></i> Timeline - {{ disease_list[disease_id-1].name }}<span class="caret"></span></a>
+                                {% else %}
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-globe"></i> Timeline<span class="caret"></span></a>
+                                {% endif %}
+				<ul class="dropdown-menu">
+				    {% for k in specimen_types %}
+                                    <li class="menu-item dropdown dropdown-submenu">
+                            		<a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ k.specimen_type }}</a>
+                                	<ul class="dropdown-menu">
+                                    	{% for i in disease_list %}
+						{% if i.specimen_type == k.specimen_type %}
+						<li class="menu-item"><a href="/timeline/{{ i.id }}">{{ i.name }}</a></li>
+						{% endif %}
+					{% endfor %}
+					</ul>
+				    </li>
+				    {% endfor %}
+                                </ul>
+				<!--
+                                <ul class="dropdown-menu">
+                                    {% for i in disease_list %}
+                                    <li><a href="/timeline/{{ i.id }}">{{ i.name }}</a></li>
+                                    {% endfor %}
+                                </ul>
+				-->
+                            </li>
+                            {% endif %}
+
+                            <li class="dropdown {% if menu_active == 'detect' %}active{% endif %}" >
+                                {% if menu_active == 'detect' %}
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-search"></i> Detect - {{ disease_list[disease_id-1].name }}<span class="caret"></span></a>
+                                {% else %}
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-search"></i> Detect<span class="caret"></span></a>
+                                {% endif %}
+                            <ul class="dropdown-menu">
+                                 {% for k in specimen_types %}
+                                    <li class="menu-item dropdown dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ k.specimen_type }}</a>
+                                    <ul class="dropdown-menu">
+                                        {% for i in disease_list %}
+                                            {% if i.specimen_type == k.specimen_type %}
+                                             <li class="menu-item"><a href="/detect/{{ i.id }}">{{ i.name }}</a></li>
+                                        {% endif %}
+                                        {% endfor %}
+                                   </ul>
+                                    </li>
+                                 {% endfor %}
+                                </ul>
+                            </li>
+
+                            
+                            <li><a href="#helpModal" id="help" data-toggle="modal"><i class="icon-question-sign"></i> Help</a></li>
+                        </ul>
+                    </div>
+                    <!--
+                    {% if not user.is_microscopist() %}<li {% if menu_active == 'monitoring' %}class="active"{% endif %}><a href="/monitoring/"><i class="icon-eye-open"></i> Monitoring</a></li>{% endif %}
+                            <li {% if menu_active == 'records' %}class="active"{% endif %}><a href="/records/"><i class="icon-book"></i> Records</a></li>
+                            {% if not user.is_microscopist() %}<li {% if menu_active == 'map' %}class="active"{% endif %}><a href="/map/"><i class="icon-map-marker"></i> Map</a></li>{% endif %}
+                            {% if not user.is_microscopist() %}<li {% if menu_active == 'timeline' %}class="active"{% endif %}><a href="/timeline/"><i class="icon-globe"></i> Timeline</a></li>{% endif %}
+                            <li><a href="#helpModal" id="help" data-toggle="modal"><i class="icon-question-sign"></i> Help</a></li>
+                            
+
+
+                    <div>
+                        <ul class="nav pull-left">
+                            <li class="active">
+                                <button class="nav pull-left dropdown-toggle" data-toggle="dropdown"><i class="icon-eye-open"></i>Monitoring<span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">HTML</a></li>
+                                    <li><a href="#">CSS</a></li>
+                                    <li><a href="#">JavaScript</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    -->
+                </div>
+			</div>
+		</div>
+		{% block content %}
+		{% endblock %}
+	</body>
+</html>

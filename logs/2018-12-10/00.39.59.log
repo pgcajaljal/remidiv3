@@ -1,0 +1,7 @@
+> Initialized logger
+>  * Debugger is active!
+>  * Debugger PIN: 456-115-780
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+> 127.0.0.1 - - [10/Dec/2018 00:40:01] "POST /detect/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [10/Dec/2018 00:40:01] "GET /favicon.ico HTTP/1.1" 404 -
+>  * Detected change in 'C:\\Users\\gherz-PC\\Desktop\\remidiv2\\serveus\\views.py', reloading

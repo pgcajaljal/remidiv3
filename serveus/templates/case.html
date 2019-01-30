@@ -1,0 +1,160 @@
+{% extends "layout.html" %}
+{% block title %}Case{% endblock %}
+
+{% block content %}
+    <form id="super" action="" method="post">
+		<div class="container-fluid" style="background-color: white; position: relative; height: 100%; padding: 5px; padding-top: 0;">
+			<div class="row-fluid" style="background-color: white; position: relative; height: 100%">
+                <div class="span10 row">
+                    <div class="well container span12" style="background-color: white; padding-top: 0;">
+                        <div>
+                            <h4 class="span4 pull-left">{{case.code}}</h4>
+                            <h4 class="span4" style="text-align: center">Case Information</h4>
+                            <h4 class="span4" style="text-align: right">{{case.date.strftime('%B %d, %Y %I:%M %p')}}</h4>
+                        </div>
+                        
+                        <table class="table table-condensed table-bordered" style="width: 100%">
+                            <tr><th class="span4">Region<th class="span2">Province<th class="span2">Municipality<th class="span4">GPS
+                            <tr><td>{{case.region}}<td>{{case.province}}<td>{{case.municipality}}<td><span id="location"></span> ({{case.lat}}, {{case.lng}})
+                        </table>
+                        
+                        <table class="table table-condensed table-bordered" style="width: 100%">
+                            <tr><th class="span2">Microscopist<td class="span4">{% if not user.is_doctor() or not hide_microscopist %}{{case.user.firstname}} {{case.user.lastname}} ({{case.user.username}}){% else %} [HIDDEN] {% endif %}<th class="span2">Contact Details<td class="span4">{% if not user.is_doctor() or not hide_microscopist %}{{case.user.contact}} / {{case.user.email}}{% else %} [HIDDEN] {% endif %}
+                            <!--<tr><th>Diagnosis<td colspan="3">{{case.partype}} -->
+                            <tr><th>Remarks<td colspan="3">{{case.description}}
+                        </table>
+                        
+                        <table class="table table-condensed table-bordered" style="width: 100%">
+                            <tr><th class="span2">Validator<td class="span4">{{case.validator}}<th class="span2">Contact Details<td class="span4">{{case.validator_contacts}}
+                            <tr><th>Diagnosis<td colspan="3">{{case.parasite_validator}}
+                            <tr><th>Remarks<td colspan="3">{{case.description_validator}}
+                            {% if user.is_doctor() %}<tr><td colspan="4" style="text-align: left"><a href="#">View validation history...</a>{% endif %}
+                        </table>
+                        
+                        <table class="table table-condensed table-bordered" style="width: 100%">
+                            <tr><th class="span2">Sending duration<td class="span10">{{case.duration}} 
+                        </table>
+                        <table style="width: 100%">
+                            <tr>
+                            <td><input class="btn btn-medium pull-left" name="choice" type="submit" value="Download as PDF" style="height: 30px">
+                            <!--<td align="center">{% if not user.is_microscopist() %}<a style="text-align: center" class="btn btn-medium" href="/map/?lat={{case.lat}}&lng={{case.lng}}&zoom=13&date_start=1/1/1970&date_end=Today">View on Map</a>{% endif %} -->
+                            <td><a class="btn btn-medium pull-right" name="choice" onclick=openSelectedImages();>View Image(s)</a>
+                        </table>
+                    </div>
+                    <br><br><br>
+					{% if user.is_doctor() %}
+                    <div class="well container span12" style="background-color: white; padding-top: 10px; margin-left: 0">
+                        <h4>Validator Form: </h4>
+                        <input type="text" id="validator_diagnosis" name="validator_diagnosis" placeholder="Enter your diagnosis here">
+                        <!--<input type="text" id="validator_diagnosis" name="validator_diagnosis" value="{{case.parasite_validator}}" placeholder="Enter your diagnosis here">-->
+                        <br />
+                        <textarea style="resize:none; width: 500px; height: 150px;" id="validator_remarks" name="validator_remarks"  placeholder="Enter your remarks here"></textarea>
+                        <!--<textarea style="resize:none; width: 500px; height: 150px;" id="validator_remarks" name="validator_remarks">{{case.description_validator}}</textarea>-->
+                        <br />
+                        <input class="btn btn-medium" name="choice" type="submit" value="Submit" style="height: 30px">
+                    </div>
+					{% endif %}
+                </div>
+				<div class="span2 well" style="background-color: white; overflow-y: auto; overflow-x:hidden; position: relative; height: 100%; padding: 5px; padding-top: 0;">
+                    <!--
+                    <ul class="nav nav-tabs" id="image_tabs">
+                        <li class="active"><a href="#raw_images" data-toggle="tab">Raw Images</a></li>
+                    </ul>
+                    -->
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="raw_images">
+                            <table class="table-condensed" style="width: 100%; vertical-align: bottom; padding: 0; margin: 0">
+                            <tr>
+                            <td><h5 class="pull-right">Select all</h5> 
+                            <td style="width: 2%; padding: 0%"><input id="selectAll" class=" pull-right" type="checkbox" onclick="toggleAll()" style="margin-bottom: 5px">
+                            
+                            </table>
+                            <div class="row-fluid" id="gallery" style="padding: 0">
+                                <ul class="thumbnails">
+                                 {% for j, i in images %}
+                                <li class="span12" style="margin: 0; margin-left: 0; margin-right: 1.2%; margin-bottom: 1.2%">
+                                    <div class="container span12">
+										<input class="pull-left" type="checkbox" name="checkbox_{{loop.index0}}" id="chkbox_{{loop.index0}}" onchange="toggleSelectAll({{loop.index0}})">
+										<p>&nbsp;Image #{{j}}</p>
+										<a href="/{{i}}" id="link_{{loop.index0}}" target="_blank" class="thumbnail" >
+                                          <img src="/thumb/{{i}}" alt="">
+                                        </a>
+                                    </div>
+                                     {% if loop.index0 == (loop.length-1) %}
+                                          <script>
+                                                window.currentGalleryLength = {{ loop.length }}
+                                                function checkGalleryImage(increment) {
+                                                    var i = (window.currentImageIndex+increment+window.currentGalleryLength)%window.currentGalleryLength;
+                                                    checkGalleryImage.chkbox_print.checked = document.getElementById("chkbox_"+i).checked;
+                                                    window.currentImageIndex = i;
+                                                }
+                                                checkGalleryImage.chkbox_print = document.getElementById("currentlyViewed_chkbox_printing");
+                                          </script>
+                                     {% endif %}
+                                 {% endfor %}
+                                 </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+    </form>
+    <div id="helpModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">close</button>
+        <h3 id="helpModalLabel">View Case</h3>
+        </div>
+        <div class="modal-body">
+        <p>This page shows the details of a specific case. <br><br> The "View on Map" button brings you to the map and zooms in on the location of this case. <br><br>The "Print" button prints the details of this case along with the selected images.</p>
+        </div>
+    </div>
+        <script>
+             function toggleAll()
+             {
+                for (var i=0; i<window.currentGalleryLength; i++)
+                {
+                    document.getElementById("chkbox_"+i).checked = document.getElementById("selectAll").checked;
+                }
+             }
+             function toggleSelectAll(x)
+             {
+                if(document.getElementById("chkbox_"+x).checked == false)
+                {
+                    document.getElementById("selectAll").checked = false;
+                }
+             }
+             function openSelectedImages()
+             {
+                for (var i=0; i<window.currentGalleryLength; i++)
+                {
+                    if(document.getElementById("chkbox_"+i).checked){
+                        window.open(document.getElementById("link_"+i).href, '_blank');
+                    }
+                    window.focus();
+                }
+             }
+        </script>
+		<script src="/static/js/jquery.js"></script>
+         <script>
+            var url = 'https://maps.googleapis.com/maps/api/geocode/json?latlng={{case.lat}},{{case.lng}}&sensor=false'
+            $.getJSON(url, function(data){
+                if (data['status'] == "OK"){
+                    document.getElementById('location').innerHTML = data['results'][0]['formatted_address'];
+                }
+            });
+        </script>
+		<script src="/static/js/bootstrap.min.js"></script>
+        <script>
+            function var_dump(x) {
+                var s = "";
+                for (var i in x) {
+                    s += i+" = "+x[i]+"\n";
+                 }
+                 alert(s);
+            }
+        </script>
+        <script>
+    </script>
+{% endblock %}

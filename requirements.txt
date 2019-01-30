@@ -1,0 +1,13 @@
+flask
+flask-sqlalchemy
+flask-admin
+flask-wtf
+reportlab
+pycrypto
+flask-mail
+flask-login
+Pillow
+flask-testing
+selenium
+flask-script
+flask-migrate

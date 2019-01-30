@@ -1,0 +1,438 @@
+{% extends "layout.html" %}
+{% block title %}Timeline{% endblock %}
+
+{% block script %}
+        <link href="/static/css/iThing-min.css" rel="stylesheet">
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?key={{ GMAPS_APIKEY }}&v=3.exp&sensor=false&libraries=places&components=country:Philippines"></script> -->
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places&components=country:Philippines"></script>
+{% endblock %}
+
+{% block style %}
+		<style>
+		html, body {
+			height: 100%;
+			margin: 0 0 0;
+            padding: 0 0 0;
+		}
+        #filter { 
+        background-color: transparent; 
+        right: 20px;
+        width: 150px;
+        background: white; 
+        border: 1px solid;
+        border-color: #999999;
+        padding: 5px;
+        padding-left: 7px;
+        padding-bottom: 3px;
+        margin-right: 5px;
+        -webkit-box-shadow: 0px 7px 6px -6px #0F0F0F;
+	    -moz-box-shadow: 0px 7px 6px -6px #0F0F0F;
+        box-shadow: 0px 7px 6px -6px #0F0F0F;
+        }
+        #slider_controls { 
+        background-color: transparent; 
+        right: 20px;
+        width: 80px;
+        background: white; 
+        border: 1px solid;
+        border-color: #999999;
+        padding: 5px;
+        padding-left: 7px;
+        padding-right: 7px;
+        padding-bottom: 3px;
+        margin-right: 5px;
+        -webkit-box-shadow: 0px 7px 6px -6px #0F0F0F;
+	    -moz-box-shadow: 0px 7px 6px -6px #0F0F0F;
+        box-shadow: 0px 7px 6px -6px #0F0F0F;
+        }
+        #total_container { 
+        background-color: transparent; 
+        width: 85px;
+        background: white; 
+        border: 1px solid;
+        border-color: #999999;
+        padding: 5px;
+        padding-left: 7px;
+        padding-bottom: 3px;
+        margin-right: 5px;
+        -webkit-box-shadow: 0px 7px 6px -6px #0F0F0F;
+	    -moz-box-shadow: 0px 7px 6px -6px #0F0F0F;
+        box-shadow: 0px 7px 6px -6px #0F0F0F;
+        }
+        #coordinates_container { 
+        background-color: transparent; 
+        width: 83px;
+        background: white; 
+        border: 1px solid;
+        border-color: #999999;
+        padding: 5px;
+        padding-left: 7px;
+        padding-bottom: 3px;
+        margin-left: 5px;
+        -webkit-box-shadow: 0px 7px 6px -6px #0F0F0F;
+	    -moz-box-shadow: 0px 7px 6px -6px #0F0F0F;
+        box-shadow: 0px 7px 6px -6px #0F0F0F;
+        }
+        #extra_controls { 
+        background-color: transparent; 
+        margin-top: 27px;
+        }
+        #autocomplete[type='text']{
+        font-size: 12px;
+        -webkit-box-shadow: 0px 7px 6px -6px #0F0F0F;
+	    -moz-box-shadow: 0px 7px 6px -6px #0F0F0F;
+        box-shadow: 0px 7px 6px -6px #0F0F0F;
+        }
+        #checkbox{
+            margin-bottom: 5px;
+        }
+        .ui-rangeSlider-innerBar{
+            width: 100%;
+            max-width:100%;
+        }
+        #date_slider{
+            margin-bottom: 22px;
+        }
+        #loading_block {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index:99;
+        }
+		</style>
+{% endblock %}
+
+{% block content %}
+        <div id="loading_block" style="height: 100px; width: 100%; margin-top: 15%; text-align: center; z-index: 100;"><img src="/static/images/loading.gif"/></div>
+        
+        <div id="map-canvas" class="google-maps" style="height: calc(100% - 42px); width: 100%; margin: -20px 0 0; display: "></div>
+        
+        <div id="extra_controls" style="display: none;">
+            <input type="text" id="autocomplete">
+        </div>
+
+        <div id="date_slider" style="width:70%; display: none;"></div>
+        
+        <div id="filter" class="container" style="display: none">
+            Showing cases:<br>
+            <span id="filter_container">
+            </span>
+            <form action="/timeline/{{ disease_id }}" method="get" style="padding: 0; margin: 0;">
+            From:<br>
+            <input type="text" style="width: calc(100% - 15px); margin-bottom: 0" value="{{bound_start.month}}/{{bound_start.day}}/{{bound_start.year}}" id="dpd1" name="date_start">
+            <br>
+            To:<br>
+            <input type="text" style="width: calc(100% - 15px); margin-bottom: 3px" value="{{bound_end.month}}/{{bound_end.day}}/{{bound_end.year}}" id="dpd2" name="date_end">
+            <div class="" style="padding: 0; margin: 0">
+            <input class="btn btn-medium" type="reset" value="Reset" onclick="window.location='/timeline/{{ disease_id }}';"  style="display: inline-block; width: 48%"/>
+            <input class="btn btn-medium" type="submit" id="submit_button" value="Filter" style="display: inline-block; width: 48%" onclick="document.getElementById('lat').value=null;document.getElementById('lng').value=null"/>
+            </div>
+            <input type="text" id="disease_id" name="lng" value="{{ disease_id }}" style="display: None">
+            <input type="text" id="lng" name="lng" value="{{ lng }}" style="display: None">
+            <input type="text" id="lat" name="lat" value="{{ lat }}" style="display: None">
+            <input type="text" id="zoom" name="zoom" value="{{ zoom }}" style="display: None">
+            </form>
+        </div>
+        
+        <div id="total_container" class="container" style="display: none">
+        Cases displayed:<br><div class="pull-right" id="marker_total" name="total" style="margin-right: 5px; font-weight: bold">0</div>
+        </div>
+        <div id="coordinates_container" class="container" style="display: none">
+            Lat:<span id="lat_container"></span><br>Long:<span id="lng_container"></span>
+        </div>
+        <div id="helpModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">close</button>
+        <h3 id="helpModalLabel">Timeline</h3>
+        </div>
+        <div class="modal-body">
+        <p>This page shows the distribution of all recorded cases in the country. <br><br> Use the filters to narrow down the results. <br><br> The slider on the bottom controls the date range of cases displayed. <br> Change the start and end dates by dragging the date bubbles. <br> Range of dates is adjusted by dragging the blue area of the slider.<br><br>
+        <span style="font-weight: bold">Legend: </span><br>
+        &nbsp;&nbsp;&nbsp;<img src="http://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=|FF0000|000000"/> Any Diagnosis &nbsp;&nbsp;&nbsp;
+        
+        <img src="http://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=|FFFFFF|000000" /> Test Data</p>
+        </div>
+        </div>
+        <script src="/static/js/jquery.js"></script>
+		<script src="/static/js/bootstrap.min.js"></script>
+        <script src="/static/js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="/static/js/jQDateRangeSlider-min.js"></script>
+        <script src="/static/js/eyecon-datepicker.js"></script>
+        <script>
+            var markerColors = ["FF0000","FFFFFF"]
+            var pinImage = ["http://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=|" + markerColors[0] + "|000000","http://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=|" + markerColors[1] + "|000000"]
+            
+            var infectedPin = new google.maps.MarkerImage(pinImage[0], new google.maps.Size(21, 34), new google.maps.Point(0,0), new google.maps.Point(10, 34));
+                       
+            var testDataPin = new google.maps.MarkerImage(pinImage[1], new google.maps.Size(21, 34), new google.maps.Point(0,0), new google.maps.Point(10, 34));
+            
+            var min_date = new Date({{date_start.year}}, {{date_start.month}}-1, {{date_start.day}});
+            var max_date = new Date({{date_end.year}}, {{date_end.month}}-1, {{date_end.day}});
+            
+            var total_shown = 0;
+            
+            function MarkerList(name, list, dates, markerImage) {
+                this.name = name;
+                this.list = list;
+                this.dates = dates;
+                this.markerImage = markerImage;
+                this.show = true;
+                this.setVisible = function(b) {
+                    this.show = b;
+                    for (var i=0; i<this.list.length; i++)
+                    {
+                        if (this.dates[i] >= min_date && this.dates[i] <= max_date && this.show) {
+                            if (!this.list[i].getVisible()) {
+                                total_shown += 1;
+                            }
+                            this.list[i].setVisible(true);
+                        }
+                        else {
+                            if (this.list[i].getVisible()) {
+                                total_shown -= 1;
+                            }
+                            this.list[i].setVisible(false);
+                        }
+                    }
+                    document.getElementById("marker_total").innerHTML = total_shown;
+                }
+                this.toggleVisible = function() {
+                    this.setVisible(!this.show);
+                }
+            }
+            var markers = [
+                new MarkerList("Any Diagnosis", [{% for i in case_list['Any Diagnosis'] %} new google.maps.LatLng({{i[0]}}) {% if loop.index0 != (loop.length-1) %},{% endif %}{% endfor %}], [{% for i in case_list['Any Diagnosis'] %} new Date({{i[1].year}},{{i[1].month - 1}},{{i[1].day}}) {% if loop.index0 != (loop.length-1) %},{% endif %}{% endfor %}], infectedPin),
+                new MarkerList("Test Data", [{% for i in case_list['Test Data'] %}new google.maps.LatLng({{i[0]}}){% if loop.index0 != (loop.length-1) %},{% endif %}{% endfor %}], [{% for i in case_list['Test Data'] %} new Date({{i[1].year}},{{i[1].month - 1}},{{i[1].day}}) {% if loop.index0 != (loop.length-1) %},{% endif %}{% endfor %}], testDataPin)
+            ]
+            
+            function initialize() {
+              var myLatlng = new google.maps.LatLng({{lat}},{{lng}});
+              var mapOptions = {
+                zoom: {{zoom}},
+                center: myLatlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+              }
+              var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+              
+                google.maps.event.addListener(map, "mousemove", function(event) {
+                    var lat = event.latLng.lat().toFixed(5);
+                    var lng = event.latLng.lng().toFixed(5);
+                    document.getElementById("lat_container").innerHTML = lat;
+                    document.getElementById("lng_container").innerHTML = lng;
+                });
+                
+                
+
+              function addMarker(latLng, markerType) {
+                    return new google.maps.Marker({
+                    position: latLng,
+                    icon: markerType,
+                    map: map
+                  });
+              }
+              for (var j=0;j<markers.length;j++) {
+                    for (var i=0, marker_category=markers[j]; i<marker_category.list.length; i++){marker_category.list[i] = addMarker(marker_category.list[i], marker_category.markerImage);
+                    total_shown += 1;
+                    }
+              }
+              document.getElementById("marker_total").innerHTML = total_shown;
+              var filter = document.getElementById('filter')
+              map.controls[google.maps.ControlPosition.RIGHT_TOP].push(filter);
+              var total = document.getElementById('total_container')
+              map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(total);
+              var slider = document.getElementById('date_slider')
+              map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(slider);
+              var slider_controls = document.getElementById('slider_controls');
+              map.controls[google.maps.ControlPosition.RIGHT].push(slider_controls);
+              var coordinates_container = document.getElementById('coordinates_container');
+              map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(coordinates_container);
+              
+                var extra_controls=document.getElementById('extra_controls')
+                map.controls[google.maps.ControlPosition.TOP_LEFT].push(extra_controls);
+
+                var acOptions = {
+                    types: ['geocode']
+                };
+                var autocomplete = new google.maps.places.Autocomplete(document.getElementById('autocomplete'),acOptions);
+                autocomplete.bindTo('bounds',map);
+                var infoWindow = new google.maps.InfoWindow();
+
+                google.maps.event.addListener(autocomplete, 'place_changed', function() {
+                  infoWindow.close();
+                  var place = autocomplete.getPlace();
+                  if (place.geometry.viewport) {
+                    map.fitBounds(place.geometry.viewport);
+                  } else {
+                    map.setCenter(place.geometry.location);
+                    map.setZoom(17);
+                  }
+                  marker.setPosition(place.geometry.location);
+                  infoWindow.setContent('<div><strong>' + place.name + '</strong><br>');
+                  infoWindow.open(map, marker);
+                  google.maps.event.addListener(marker,'click',function(e){
+
+                    infoWindow.open(map, marker);
+
+                  });
+                });
+                
+                google.maps.event.addListenerOnce(map, 'idle', function(){
+                    document.getElementById('loading_block').style.display = 'None';
+                    document.getElementById('map-canvas').style.display = '';
+                    document.getElementById('date_slider').style.display = '';
+                    document.getElementById('slider_controls').style.display = '';
+                    document.getElementById('filter').style.display = '';
+                    document.getElementById('total_container').style.display = '';
+                    document.getElementById('coordinates_container').style.display = '';
+                    document.getElementById('extra_controls').style.display = '';
+                    $('#date_slider').dateRangeSlider('min', min_date);
+                    $('#date_slider').dateRangeSlider('max', max_date);
+                });
+                
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+           
+            function triggerMarker(x)
+              {
+                var markerclass = markers[x-1];
+                if (markerclass) {
+                    markerclass.toggleVisible();
+                }
+              }
+        </script>
+        
+        <script>
+            var markerFilters = document.getElementById("filter_container");
+            for (var i=0;i<markers.length;i++) {
+                var tmpdiv = document.createElement("div");
+                var colorbox = document.createElement("span");
+                colorbox.style.backgroundColor = "#"+markerColors[i];
+                colorbox.innerHTML = "&nbsp;&nbsp;";
+                colorbox.style.display = "inline-block";
+                colorbox.style.height = "11px";
+                colorbox.style.border = "1px solid Black"
+                colorbox.style.verticalAlign = "middle"
+                tmpdiv.appendChild(colorbox);
+            
+                var chkbox = document.createElement("input");
+                chkbox.id = "checkbox";
+                chkbox.type = "checkbox";
+                chkbox.index = i+1;
+                chkbox.onclick = function(e) {
+                    triggerMarker(this.index);
+                }
+                chkbox.checked = true;
+                tmpdiv.appendChild(chkbox);
+                
+                var chkname = document.createElement("span");
+                chkname.innerHTML = " "+markers[i].name;
+                tmpdiv.appendChild(chkname);
+                
+                tmpdiv.appendChild(document.createElement("br"));
+                markerFilters.appendChild(tmpdiv)
+            }
+            triggerMarker();
+        </script>
+        <script>
+            var slider = $("#date_slider").dateRangeSlider({
+            defaultValues:{
+                min: min_date,
+                max: max_date
+            }},
+            {
+            bounds:{
+                min: new Date({{bound_start.year}}, {{bound_start.month - 1}}, {{bound_start.day}}),
+                max: new Date({{bound_end.year}}, {{bound_end.month - 1}}, {{bound_end.day}})
+            }});
+            $("#date_slider").dateRangeSlider('resize');
+            $("#date_slider").bind("valuesChanging", function(e, data){
+                min_date = data.values.min;
+                max_date = data.values.max;
+                for (var i=0; i<markers.length; i++)
+                {
+                    if (markers[i].show == true) {
+                        markers[i].setVisible(true);
+                    }
+                }
+            });
+            
+            function setMin(s){
+                s = s.toLowerCase()
+                var a, b, c;
+                a = b = c = 0;
+                if (s == 'year'){
+                    a = 1
+                }
+                else if(s == 'month'){
+                    b = 1
+                }
+                else{
+                    c = 7
+                }
+                
+                $('#date_slider').dateRangeSlider('min', new Date($('#date_slider').dateRangeSlider('max').getFullYear()-a, $('#date_slider').dateRangeSlider('max').getMonth()-b, $('#date_slider').dateRangeSlider('max').getDate()-c))
+                
+                min_date = $('#date_slider').dateRangeSlider('min');
+                max_date = $('#date_slider').dateRangeSlider('max');
+                
+                for (var i=0; i<markers.length; i++)
+                {
+                    if (markers[i].show == true) {
+                        markers[i].setVisible(true);
+                    }
+                }
+                
+            }
+        </script>
+        
+        <div id="slider_controls" class="row-fluid" style="display: None">
+            Slider size: <br />
+            <input class="btn btn-medium span12" type="submit" value="7 Days" onclick="setMin('Week')"><br/>
+            <input class="btn btn-medium span12" type="submit" value="30 Days" onclick="setMin('Month')"><br/>
+            <input class="btn btn-medium span12" type="submit" value="1 Year" onclick="setMin('Year')"><br/>
+        </div>
+        <script>
+        function getCurrentWidth()
+        {
+            return "innerHeight" in window 
+               ? window.innerWidth
+               : document.documentElement.offsetWidth;
+        }
+        document.getElementById('date_slider').style.width = String(Math.round(getCurrentWidth()*0.70)) + 'px';
+        window.onresize=function(){
+        document.getElementById('date_slider').style.width = '70%';
+        };
+        </script>
+        <script>
+            var clicked = false;
+            var checkin = $('#dpd1').datepicker({
+            onRender: function(date) {
+            return date.valueOf();
+            }
+            }).on('changeDate', function(ev) {
+            clicked = true;
+            if (true) {
+            var newDate = new Date(ev.date)
+            newDate.setDate(newDate.getDate());
+            checkout.setValue(newDate);
+            }
+            checkin.hide();
+            $('#dpd2')[0].focus();
+            }).data('datepicker');
+            var checkout = $('#dpd2').datepicker({
+            onRender: function(date) {
+            if (clicked)
+                return date.valueOf() <= checkin.date.valueOf() - 1 ? 'disabled' : '';
+            else
+                return date.valueOf()
+            }
+            }).on('changeDate', function(ev) {
+            checkout.hide();
+            }).data('datepicker');
+        </script>
+        <script>
+            
+        </script>
+{% endblock %}

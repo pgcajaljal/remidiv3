@@ -1,0 +1,19 @@
+> Initialized logger
+> /home/annemirasol/remidiv2/serveus/views.py:5: ExtDeprecationWarning: Importing flask.ext.login is deprecated, use flask_login instead.
+>   from flask.ext.login import login_user, current_user, LoginManager, logout_user, login_required
+> /home/annemirasol/remidiv2/serveus/forms.py:2: ExtDeprecationWarning: Importing flask.ext.wtf is deprecated, use flask_wtf instead.
+>   from flask.ext.wtf import Form
+> Traceback (most recent call last):
+>   File "run.py", line 11, in <module>
+> app.run('0.0.0.0', port=80, debug = True)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 841, in run
+> run_simple(host, port, self, **options)
+>   File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 795, in run_simple
+> s.bind(get_sockaddr(hostname, port, address_family))
+>   File "/usr/lib/python2.7/socket.py", line 228, in meth
+> return getattr(self._sock,name)(*args)
+> socket
+> .
+> error
+> :
+> [Errno 13] Permission denied

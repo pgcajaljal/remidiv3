@@ -1,0 +1,16 @@
+> Initialized logger
+> /home/annemirasol/remidiv2/serveus/views.py:5: ExtDeprecationWarning: Importing flask.ext.login is deprecated, use flask_login instead.
+>   from flask.ext.login import login_user, current_user, LoginManager, logout_user, login_required
+> /home/annemirasol/remidiv2/serveus/forms.py:2: ExtDeprecationWarning: Importing flask.ext.wtf is deprecated, use flask_wtf instead.
+>   from flask.ext.wtf import Form
+>  * Debugger is active!
+>  * Debugger PIN: 322-981-763
+> 127.0.0.1 - - [26/Mar/2018 15:30:19] "GET /admin/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 15:30:19] "GET /admin/static/bootstrap/bootstrap2/swatch/default/bootstrap.min.css?v=2.3.2 HTTP/1.1" 304 -
+> 127.0.0.1 - - [26/Mar/2018 15:30:19] "GET /admin/static/bootstrap/bootstrap2/css/bootstrap-responsive.css?v=2.3.2 HTTP/1.1" 304 -
+> 127.0.0.1 - - [26/Mar/2018 15:30:19] "GET /admin/static/admin/css/bootstrap2/admin.css?v=1.1.1 HTTP/1.1" 304 -
+> 127.0.0.1 - - [26/Mar/2018 15:30:19] "GET /admin/static/vendor/jquery.min.js?v=2.1.4 HTTP/1.1" 304 -
+> 127.0.0.1 - - [26/Mar/2018 15:30:19] "GET /admin/static/bootstrap/bootstrap2/js/bootstrap.min.js?v=2.3.2 HTTP/1.1" 304 -
+> 127.0.0.1 - - [26/Mar/2018 15:30:19] "GET /admin/static/vendor/moment.min.js?v=2.9.0 HTTP/1.1" 304 -
+> 127.0.0.1 - - [26/Mar/2018 15:30:19] "GET /admin/static/vendor/select2/select2.min.js?v=3.5.2 HTTP/1.1" 304 -
+> 127.0.0.1 - - [26/Mar/2018 15:30:26] "GET /log/latest/log/ HTTP/1.1" 404 -

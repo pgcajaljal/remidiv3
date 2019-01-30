@@ -1,0 +1,49 @@
+> Initialized logger
+> Traceback (most recent call last):
+>   File "reset.py", line 26, in <module>
+> db.session.commit()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\scoping.py", line 153, in do
+> return getattr(self.registry(), name)(*args, **kwargs)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\session.py", line 943, in commit
+> self.transaction.commit()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\session.py", line 467, in commit
+> self._prepare_impl()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\session.py", line 447, in _prepare_impl
+> self.session.flush()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\session.py", line 2254, in flush
+> self._flush(objects)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\session.py", line 2380, in _flush
+> transaction.rollback(_capture_exception=True)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\util\langhelpers.py", line 66, in __exit__
+> compat.reraise(exc_type, exc_value, exc_tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\session.py", line 2344, in _flush
+> flush_context.execute()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 391, in execute
+> rec.execute(self)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 556, in execute
+> uow
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\persistence.py", line 181, in save_obj
+> mapper, table, insert)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\persistence.py", line 866, in _emit_insert_statements
+> execute(statement, params)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 948, in execute
+> return meth(self, multiparams, params)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\sql\elements.py", line 269, in _execute_on_connection
+> return connection._execute_clauseelement(self, multiparams, params)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 1060, in _execute_clauseelement
+> compiled_sql, distilled_params
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 1200, in _execute_context
+> context)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 1413, in _handle_dbapi_exception
+> exc_info
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\util\compat.py", line 265, in raise_from_cause
+> reraise(type(exception), exception, tb=exc_tb, cause=cause)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 1193, in _execute_context
+> context)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\default.py", line 509, in do_execute
+> cursor.execute(statement, parameters)
+> sqlalchemy.exc
+> .
+> OperationalError
+> :
+> (sqlite3.OperationalError) no such table: database [SQL: u'INSERT INTO "database" (modified) VALUES (?)'] [parameters: ('2018-12-09 22:48:39.983000',)] (Background on this error at: http://sqlalche.me/e/e3q8)

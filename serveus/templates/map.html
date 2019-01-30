@@ -1,0 +1,358 @@
+
+{% extends "layout.html" %}
+{% block title %}Visualization{% endblock %}
+
+{% block script %}
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?key={{ GMAPS_APIKEY }}&v=3.exp&sensor=false&libraries=places&components=country:Philippines"></script> -->
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places&components=country:Philippines"></script>
+{% endblock %}
+        
+{% block style %}
+		<style>
+		html, body {
+			height: 100%;
+			margin: 0 0 0;
+            padding: 0 0 0;
+		}
+        #filter { 
+        background-color: transparent; 
+        right: 20px;
+        width: 150px;
+        background: white; 
+        border: 1px solid;
+        border-color: #999999;
+        padding: 5px;
+        padding-left: 7px;
+        padding-bottom: 3px;
+        margin-right: 5px;
+        -webkit-box-shadow: 0px 7px 6px -6px #0F0F0F;
+	    -moz-box-shadow: 0px 7px 6px -6px #0F0F0F;
+        box-shadow: 0px 7px 6px -6px #0F0F0F;
+        }
+        #total_container { 
+        background-color: transparent; 
+        
+        width: 85px;
+        background: white; 
+        border: 1px solid;
+        border-color: #999999;
+        padding: 5px;
+        padding-left: 7px;
+        padding-bottom: 3px;
+        margin-right: 5px;
+        -webkit-box-shadow: 0px 7px 6px -6px #0F0F0F;
+	    -moz-box-shadow: 0px 7px 6px -6px #0F0F0F;
+        box-shadow: 0px 7px 6px -6px #0F0F0F;
+        }
+        #coordinates_container { 
+        background-color: transparent; 
+        
+        width: 83px;
+        background: white; 
+        border: 1px solid;
+        border-color: #999999;
+        padding: 5px;
+        padding-left: 7px;
+        padding-bottom: 3px;
+        margin-left: 5px;
+        -webkit-box-shadow: 0px 7px 6px -6px #0F0F0F;
+	    -moz-box-shadow: 0px 7px 6px -6px #0F0F0F;
+        box-shadow: 0px 7px 6px -6px #0F0F0F;
+        }
+        #extra_controls { 
+        background-color: transparent; 
+        margin-top: 27px;
+        }
+        #autocomplete[type='text']{
+        font-size: 12px;
+        -webkit-box-shadow: 0px 7px 6px -6px #0F0F0F;
+	    -moz-box-shadow: 0px 7px 6px -6px #0F0F0F;
+        box-shadow: 0px 7px 6px -6px #0F0F0F;
+        }
+        #checkbox{
+            margin-bottom: 5px;
+        }
+        #loading_block {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index:99;
+        }
+        .infectedLabel {
+         color: black;
+         background-color: red;
+         font-family: "Lucida Grande", "Arial", sans-serif;
+         font-size: 10px;
+         font-weight: bold;
+         text-align: center;
+         padding-top: -10px;
+         padding-left: 3px;
+         padding-right: 3px;
+         border: 1px solid black;
+         border-radius: 50%;
+         white-space: nowrap;
+       }
+       .testDataLabel {
+         color: black;
+         background-color: white;
+         font-family: "Lucida Grande", "Arial", sans-serif;
+         font-size: 10px;
+         font-weight: bold;
+         text-align: center;
+         padding-top: -10px;
+         padding-left: 3px;
+         padding-right: 3px;
+         border: 1px solid black;
+         border-radius: 50%;
+         white-space: nowrap;
+       }
+		</style>
+{% endblock %}
+
+{% block content %}
+        <div id="loading_block" style="height: 100px; width: 100%; margin-top: 15%; text-align: center; z-index:100;"><img src="/static/images/loading.gif"/></div>
+        
+        <div id="map-canvas" class="google-maps" style="height: calc(100% - 42px); width: 100%; margin: -20px 0 0; display: "></div>
+        <div id="extra_controls" style="display: none;">
+            <input type="text" id="autocomplete">
+        </div>
+        <div id="filter" class="container" style="display: none">
+        Showing cases:<br>
+        <span id="filter_container">
+        </span>
+        <form action="/map/{{ disease_id }}" method="get" style="padding: 0; margin: 0;">
+        From:<br>
+        <input type="text" style="width: calc(100% - 15px); margin-bottom: 0" value="{{date_start}}" id="dpd1" name="date_start">
+        <br>
+        To:<br>
+        <input type="text" style="width: calc(100% - 15px); margin-bottom: 3px" value="{{date_end}}" id="dpd2" name="date_end">
+        <div class="" style="padding: 0; margin: 0">
+        <input class="btn btn-medium" type="reset" value="Reset" onclick="window.location='/map/{{ disease_id }}';"  style="display: inline-block; width: 48%"/>
+        <input class="btn btn-medium" type="submit" id="submit_button" value="Filter" style="display: inline-block; width: 48%" onclick="document.getElementById('lat').value=null;document.getElementById('lng').value=null"/>
+        </div>
+        <input type="text" id="lng" name="lng" value="{{ lng }}" style="display: None">
+        <input type="text" id="lat" name="lat" value="{{ lat }}" style="display: None">
+        <input type="text" id="zoom" name="zoom" value="{{ zoom }}" style="display: None">
+        </form>
+        </div>
+            
+        <div id="total_container" class="container" style="display: none">
+        Cases displayed:<br><div class="pull-right" id="marker_total" name="total" style="margin-right: 5px; font-weight: bold">0</div>
+        </div>
+        
+        <div id="coordinates_container" class="container" style="display: none">
+            Lat:<span id="lat_container"></span><br>Long:<span id="lng_container"></span>
+        </div>
+        
+        <div id="helpModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">close</button>
+        <h3 id="helpModalLabel">Map</h3>
+        </div>
+        <div class="modal-body">
+        <p>This page shows the distribution of recorded cases all over the country. <br> Cases from the last 30 days are shown by default. <br><br> Use the filters to narrow down the results. <br><br> <span style="font-weight: bold">Legend: </span><br>
+        &nbsp;&nbsp;&nbsp;<img src="http://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=|FF0000|000000"/> Any Diagnosis &nbsp;&nbsp;&nbsp; 
+       
+        <img src="http://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=|FFFFFF|000000" /> Test Data</p>
+        </div>
+        </div>
+        <script>
+            var markerColors = ["FF0000","FFFFFF"]
+            var pinImage = ["http://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=|" + markerColors[0] + "|000000","http://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=|" + markerColors[1] + "|000000"]
+            
+            var infectedPin = new google.maps.MarkerImage(pinImage[0], new google.maps.Size(0, 0), new google.maps.Point(0,0), new google.maps.Point(10, 34));
+            
+            var testDataPin = new google.maps.MarkerImage(pinImage[1], new google.maps.Size(0, 0), new google.maps.Point(0,0), new google.maps.Point(10, 34));
+            
+            function MarkerList(name, list, ids, markerImage, labelClass) {
+                this.name = name;
+                this.list = list;
+                this.ids = ids;
+                this.markerImage = markerImage;
+                this.labelClass = labelClass;
+                this.show = true;
+                this.setVisible = function(b) {
+                    this.show = b;
+                    for (var i=0; i<this.list.length; i++){this.list[i].setVisible(this.show)}
+                }
+                this.toggleVisible = function() {
+                    this.setVisible(!this.show);
+                }
+            }
+            var markers = [
+                new MarkerList("Any Diagnosis", [{% for i in case_list['Any Diagnosis'] %}new google.maps.LatLng({{i[1]}}){% if loop.index0 != (loop.length-1) %},{% endif %}{% endfor %}], [{% for i in case_list['Any Diagnosis'] %}{{i[0]}}{% if loop.index0 != (loop.length-1) %},{% endif %}{% endfor %}],infectedPin, "infectedLabel"),
+                new MarkerList("Test Data", [{% for i in case_list['Test Data'] %}new google.maps.LatLng({{i[1]}}){% if loop.index0 != (loop.length-1) %},{% endif %}{% endfor %}], [{% for i in case_list['Test Data'] %}{{i[0]}}{% if loop.index0 != (loop.length-1) %},{% endif %}{% endfor %}], testDataPin, "testDataLabel")
+            ]
+            
+            function initialize() {
+              var myLatlng = new google.maps.LatLng({{lat}},{{lng}});
+              var mapOptions = {
+                zoom: {{zoom}},
+                center: myLatlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+              }
+              var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+              
+              
+                google.maps.event.addListener(map, "mousemove", function(event) {
+                    var lat = event.latLng.lat().toFixed(5);
+                    var lng = event.latLng.lng().toFixed(5);
+                    document.getElementById("lat_container").innerHTML = lat;
+                    document.getElementById("lng_container").innerHTML = lng;
+                });
+            
+              
+              function addMarker(latLng, markerType, id, labelClass) {
+                    var marker = new MarkerWithLabel({
+                    position: latLng,
+                    icon: markerType,
+                    map: map,
+                    url: '/case/' + id,
+                    labelContent: id,
+                    labelAnchor: new google.maps.Point(id.length*3, 0),
+                    labelClass: labelClass, // the CSS class for the label
+                    labelStyle: {opacity: 0.75}
+                  });
+                  google.maps.event.addListener(marker, 'click', function() {
+                        window.location.href = marker.url;
+                    });
+                  return marker;
+              }
+             
+              for (var j=0;j<markers.length;j++) {
+                    for (var i=0, marker_category=markers[j]; i<marker_category.list.length; i++){
+                        marker_category.list[i] = addMarker(marker_category.list[i], infectedPin,marker_category.ids[i], marker_category.labelClass)
+                    }
+                    
+              }
+              var filter = document.getElementById('filter')
+              map.controls[google.maps.ControlPosition.RIGHT_TOP].push(filter);
+              var total = document.getElementById('total_container')
+              map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(total);
+              var coordinates_container = document.getElementById('coordinates_container');
+              map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(coordinates_container);
+              var extra_controls=document.getElementById('extra_controls')
+                map.controls[google.maps.ControlPosition.TOP_LEFT].push(extra_controls);
+
+                var acOptions = {
+                    types: ['geocode']
+                };
+                var autocomplete = new google.maps.places.Autocomplete(document.getElementById('autocomplete'),acOptions);
+                autocomplete.bindTo('bounds',map);
+                var infoWindow = new google.maps.InfoWindow();
+
+                google.maps.event.addListener(autocomplete, 'place_changed', function() {
+                  infoWindow.close();
+                  var place = autocomplete.getPlace();
+                  if (place.geometry.viewport) {
+                    map.fitBounds(place.geometry.viewport);
+                  } else {
+                    map.setCenter(place.geometry.location);
+                    map.setZoom(17);
+                  }
+                  marker.setPosition(place.geometry.location);
+                  infoWindow.setContent('<div><strong>' + place.name + '</strong><br>');
+                  infoWindow.open(map, marker);
+                  google.maps.event.addListener(marker,'click',function(e){
+
+                    infoWindow.open(map, marker);
+
+                  });
+                });
+                
+                google.maps.event.addListenerOnce(map, 'tilesloaded', function(){
+                    document.getElementById('loading_block').style.display = 'None';
+                    document.getElementById('map-canvas').style.display = '';
+                    document.getElementById('filter').style.display = '';
+                    document.getElementById('total_container').style.display = '';
+                    document.getElementById('coordinates_container').style.display = '';
+                    document.getElementById('extra_controls').style.display = '';
+                });
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+            var show1 = true, show2 = true, show3 = true, show4 = true, show5 = true
+            function triggerMarker(x)
+              {
+                var markerclass = markers[x-1];
+                if (markerclass) {
+                    markerclass.toggleVisible();
+                }
+                
+                var total = 0;
+                for (var i=0;i<markers.length;i++) {
+                    if (markers[i].show) {
+                        total += markers[i].list.length;
+                    }
+                }
+                document.getElementById("marker_total").innerHTML = total;
+              }
+        </script>
+        <script>
+            var markerFilters = document.getElementById("filter_container");
+            for (var i=0;i<markers.length;i++) {
+                var tmpdiv = document.createElement("div");
+                var colorbox = document.createElement("span");
+                colorbox.style.backgroundColor = "#"+markerColors[i];
+                colorbox.innerHTML = "&nbsp;&nbsp;";
+                colorbox.style.display = "inline-block";
+                colorbox.style.height = "11px";
+                colorbox.style.border = "1px solid Black"
+                colorbox.style.verticalAlign = "middle"
+                tmpdiv.appendChild(colorbox);
+            
+                var chkbox = document.createElement("input");
+                chkbox.id = "checkbox";
+                chkbox.type = "checkbox";
+                chkbox.index = i+1;
+                chkbox.onclick = function(e) {
+                    triggerMarker(this.index);
+                }
+                chkbox.checked = true;
+                tmpdiv.appendChild(chkbox);
+                
+                var chkname = document.createElement("span");
+                chkname.innerHTML = " "+markers[i].name;
+                tmpdiv.appendChild(chkname);
+                
+                tmpdiv.appendChild(document.createElement("br"));
+                markerFilters.appendChild(tmpdiv)
+            }
+            triggerMarker();
+        </script>
+		<script src="/static/js/jquery.js"></script>
+		<script src="/static/js/bootstrap.min.js"></script>
+        <script src="/static/js/eyecon-datepicker.js"></script>
+        <script src="/static/js/markerwithlabel.js"></script>
+        <script>
+            var clicked = false;
+            var checkin = $('#dpd1').datepicker({
+            onRender: function(date) {
+            return date.valueOf();
+            }
+            }).on('changeDate', function(ev) {
+            clicked = true;
+            if (true) {
+            var newDate = new Date(ev.date)
+            newDate.setDate(newDate.getDate());
+            checkout.setValue(newDate);
+            }
+            checkin.hide();
+            $('#dpd2')[0].focus();
+            }).data('datepicker');
+            var checkout = $('#dpd2').datepicker({
+            onRender: function(date) {
+            if (clicked)
+                return date.valueOf() <= checkin.date.valueOf() - 1 ? 'disabled' : '';
+            else
+                return date.valueOf()
+            }
+            }).on('changeDate', function(ev) {
+            checkout.hide();
+            }).data('datepicker');
+        </script>
+        <script>
+        
+        </script>
+{% endblock %}

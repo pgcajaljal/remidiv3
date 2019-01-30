@@ -1,0 +1,17 @@
+> Initialized logger
+> Traceback (most recent call last):
+>   File "run.py", line 3, in <module>
+> from serveus import app
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\__init__.py", line 87, in <module>
+> from serveus import views, models, admin
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\admin.py", line 10, in <module>
+> from flask_admin.contrib.sqla import ModelView
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_admin\contrib\sqla\__init__.py", line 2, in <module>
+> from .view import ModelView
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_admin\contrib\sqla\view.py", line 23, in <module>
+> from flask_admin.contrib.sqla import form, filters as sqla_filters, tools
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_admin\contrib\sqla\form.py", line 2, in <module>
+> from enum import Enum
+> ImportError
+> :
+> No module named enum

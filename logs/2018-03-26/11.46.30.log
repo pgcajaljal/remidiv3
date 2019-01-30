@@ -1,0 +1,214 @@
+> Initialized logger
+> /home/annemirasol/remidiv2/serveus/views.py:5: ExtDeprecationWarning: Importing flask.ext.login is deprecated, use flask_login instead.
+>   from flask.ext.login import login_user, current_user, LoginManager, logout_user, login_required
+> /home/annemirasol/remidiv2/serveus/views.py:7: ExtDeprecationWarning: Importing flask.ext.wtf is deprecated, use flask_wtf instead.
+>   from flask.ext.wtf import Form
+> /home/annemirasol/remidiv2/serveus/admin.py:2: ExtDeprecationWarning: Importing flask.ext.admin is deprecated, use flask_admin instead.
+>   from flask.ext.admin import Admin, AdminIndexView, expose
+> /home/annemirasol/remidiv2/serveus/admin.py:3: ExtDeprecationWarning: Importing flask.ext.admin.base is deprecated, use flask_admin.base instead.
+>   from flask.ext.admin.base import MenuLink
+> /home/annemirasol/remidiv2/serveus/admin.py:4: ExtDeprecationWarning: Importing flask.ext.admin.contrib is deprecated, use flask_admin.contrib instead.
+>   from flask.ext.admin.contrib.sqla import ModelView
+> /home/annemirasol/remidiv2/serveus/admin.py:4: ExtDeprecationWarning: Importing flask.ext.admin.contrib.sqla is deprecated, use flask_admin.contrib.sqla instead.
+>   from flask.ext.admin.contrib.sqla import ModelView
+> /home/annemirasol/remidiv2/serveus/admin.py:5: ExtDeprecationWarning: Importing flask.ext.admin.contrib.fileadmin is deprecated, use flask_admin.contrib.fileadmin instead.
+>   from flask.ext.admin.contrib.fileadmin import FileAdmin
+> /home/annemirasol/remidiv2/serveus/admin.py:12: ExtDeprecationWarning: Importing flask.ext.admin.actions is deprecated, use flask_admin.actions instead.
+>   from flask.ext.admin.actions import action
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+>  * Restarting with stat
+> Initialized logger
+> /home/annemirasol/remidiv2/serveus/views.py:5: ExtDeprecationWarning: Importing flask.ext.login is deprecated, use flask_login instead.
+>   from flask.ext.login import login_user, current_user, LoginManager, logout_user, login_required
+> /home/annemirasol/remidiv2/serveus/views.py:7: ExtDeprecationWarning: Importing flask.ext.wtf is deprecated, use flask_wtf instead.
+>   from flask.ext.wtf import Form
+> /home/annemirasol/remidiv2/serveus/admin.py:2: ExtDeprecationWarning: Importing flask.ext.admin is deprecated, use flask_admin instead.
+>   from flask.ext.admin import Admin, AdminIndexView, expose
+> /home/annemirasol/remidiv2/serveus/admin.py:3: ExtDeprecationWarning: Importing flask.ext.admin.base is deprecated, use flask_admin.base instead.
+>   from flask.ext.admin.base import MenuLink
+> /home/annemirasol/remidiv2/serveus/admin.py:4: ExtDeprecationWarning: Importing flask.ext.admin.contrib is deprecated, use flask_admin.contrib instead.
+>   from flask.ext.admin.contrib.sqla import ModelView
+> /home/annemirasol/remidiv2/serveus/admin.py:4: ExtDeprecationWarning: Importing flask.ext.admin.contrib.sqla is deprecated, use flask_admin.contrib.sqla instead.
+>   from flask.ext.admin.contrib.sqla import ModelView
+> /home/annemirasol/remidiv2/serveus/admin.py:5: ExtDeprecationWarning: Importing flask.ext.admin.contrib.fileadmin is deprecated, use flask_admin.contrib.fileadmin instead.
+>   from flask.ext.admin.contrib.fileadmin import FileAdmin
+> /home/annemirasol/remidiv2/serveus/admin.py:12: ExtDeprecationWarning: Importing flask.ext.admin.actions is deprecated, use flask_admin.actions instead.
+>   from flask.ext.admin.actions import action
+>  * Debugger is active!
+>  * Debugger PIN: 322-981-763
+> 127.0.0.1 - - [26/Mar/2018 11:46:33] "GET /admin/user/?sort=2 HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:33] "GET /admin/static/bootstrap/bootstrap2/swatch/default/bootstrap.min.css?v=2.3.2 HTTP/1.1" 304 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:33] "GET /admin/static/bootstrap/bootstrap2/css/bootstrap-responsive.css?v=2.3.2 HTTP/1.1" 304 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:33] "GET /admin/static/admin/css/bootstrap2/admin.css?v=1.1.1 HTTP/1.1" 304 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:33] "GET /admin/static/vendor/select2/select2.css?v=3.5.2 HTTP/1.1" 304 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:33] "GET /admin/static/vendor/bootstrap-daterangepicker/daterangepicker-bs2.css?v=1.3.22 HTTP/1.1" 304 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:33] "GET /admin/static/vendor/jquery.min.js?v=2.1.4 HTTP/1.1" 304 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:33] "GET /admin/static/bootstrap/bootstrap2/js/bootstrap.min.js?v=2.3.2 HTTP/1.1" 304 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:33] "GET /admin/static/vendor/moment.min.js?v=2.9.0 HTTP/1.1" 304 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:33] "GET /admin/static/vendor/select2/select2.min.js?v=3.5.2 HTTP/1.1" 304 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:33] "GET /admin/static/vendor/bootstrap-daterangepicker/daterangepicker.js?v=1.3.22 HTTP/1.1" 304 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:33] "GET /admin/static/admin/js/form.js?v=1.0.1 HTTP/1.1" 304 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:33] "GET /admin/static/admin/js/filters.js?v=1.0.0 HTTP/1.1" 304 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:33] "GET /admin/static/admin/js/actions.js?v=1.0.0 HTTP/1.1" 304 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:33] "GET /admin/static/bootstrap/bootstrap2/swatch/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:35] "GET /admin/user/?sort=1 HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1997, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1985, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1540, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/base.py", line 69, in inner
+>     return self._run_view(f, *args, **kwargs)
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/base.py", line 368, in _run_view
+>     return fn(self, *args, **kwargs)
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/model/base.py", line 1882, in index_view
+>     view_args.search, view_args.filters, page_size=page_size)
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/contrib/sqla/view.py", line 1033, in get_list
+>     query, joins = self._apply_sorting(query, joins, sort_column, sort_desc)
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/contrib/sqla/view.py", line 863, in _apply_sorting
+>     query, joins = self._order_by(query, joins, sort_joins, sort_field, sort_desc)
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/contrib/sqla/view.py", line 830, in _order_by
+>     column = sort_field if alias is None else getattr(alias, sort_field.key)
+>   File "/usr/local/lib/python2.7/dist-packages/sqlalchemy/orm/util.py", line 431, in __getattr__
+>     raise AttributeError(key)
+> AttributeError: usertype
+> 127.0.0.1 - - [26/Mar/2018 11:46:35] "GET /admin/user/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:35] "GET /admin/user/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:35] "GET /admin/user/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:35] "GET /admin/user/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:35] "GET /admin/user/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:43] "GET /admin/user/?sort=1 HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1997, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1985, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1540, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/base.py", line 69, in inner
+>     return self._run_view(f, *args, **kwargs)
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/base.py", line 368, in _run_view
+>     return fn(self, *args, **kwargs)
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/model/base.py", line 1882, in index_view
+>     view_args.search, view_args.filters, page_size=page_size)
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/contrib/sqla/view.py", line 1033, in get_list
+>     query, joins = self._apply_sorting(query, joins, sort_column, sort_desc)
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/contrib/sqla/view.py", line 863, in _apply_sorting
+>     query, joins = self._order_by(query, joins, sort_joins, sort_field, sort_desc)
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/contrib/sqla/view.py", line 830, in _order_by
+>     column = sort_field if alias is None else getattr(alias, sort_field.key)
+>   File "/usr/local/lib/python2.7/dist-packages/sqlalchemy/orm/util.py", line 431, in __getattr__
+>     raise AttributeError(key)
+> AttributeError: usertype
+> 127.0.0.1 - - [26/Mar/2018 11:46:43] "GET /admin/user/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:43] "GET /admin/user/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:43] "GET /admin/user/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:43] "GET /admin/user/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:43] "GET /admin/user/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:46] "GET /admin/user/?sort=2&desc=1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:48] "GET /admin/user/?sort=1 HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1997, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1985, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1540, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/base.py", line 69, in inner
+>     return self._run_view(f, *args, **kwargs)
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/base.py", line 368, in _run_view
+>     return fn(self, *args, **kwargs)
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/model/base.py", line 1882, in index_view
+>     view_args.search, view_args.filters, page_size=page_size)
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/contrib/sqla/view.py", line 1033, in get_list
+>     query, joins = self._apply_sorting(query, joins, sort_column, sort_desc)
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/contrib/sqla/view.py", line 863, in _apply_sorting
+>     query, joins = self._order_by(query, joins, sort_joins, sort_field, sort_desc)
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/contrib/sqla/view.py", line 830, in _order_by
+>     column = sort_field if alias is None else getattr(alias, sort_field.key)
+>   File "/usr/local/lib/python2.7/dist-packages/sqlalchemy/orm/util.py", line 431, in __getattr__
+>     raise AttributeError(key)
+> AttributeError: usertype
+> 127.0.0.1 - - [26/Mar/2018 11:46:48] "GET /admin/user/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:48] "GET /admin/user/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:48] "GET /admin/user/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:48] "GET /admin/user/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:48] "GET /admin/user/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:53] "GET /admin/user/?sort=3 HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:55] "GET /admin/user/?sort=0 HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:58] "GET /admin/user/?sort=1 HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1997, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1985, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1540, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/base.py", line 69, in inner
+>     return self._run_view(f, *args, **kwargs)
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/base.py", line 368, in _run_view
+>     return fn(self, *args, **kwargs)
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/model/base.py", line 1882, in index_view
+>     view_args.search, view_args.filters, page_size=page_size)
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/contrib/sqla/view.py", line 1033, in get_list
+>     query, joins = self._apply_sorting(query, joins, sort_column, sort_desc)
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/contrib/sqla/view.py", line 863, in _apply_sorting
+>     query, joins = self._order_by(query, joins, sort_joins, sort_field, sort_desc)
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/contrib/sqla/view.py", line 830, in _order_by
+>     column = sort_field if alias is None else getattr(alias, sort_field.key)
+>   File "/usr/local/lib/python2.7/dist-packages/sqlalchemy/orm/util.py", line 431, in __getattr__
+>     raise AttributeError(key)
+> AttributeError: usertype
+> 127.0.0.1 - - [26/Mar/2018 11:46:58] "GET /admin/user/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:58] "GET /admin/user/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:58] "GET /admin/user/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:58] "GET /admin/user/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Mar/2018 11:46:58] "GET /admin/user/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+>  * Detected change in '/home/annemirasol/remidiv2/serveus/admin.py', reloading
+>  * Restarting with stat
+>  * Restarting with stat
+>  * Restarting with stat
+>  * Restarting with stat
+>  * Restarting with stat

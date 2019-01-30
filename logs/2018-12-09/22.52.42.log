@@ -1,0 +1,62 @@
+> Initialized logger
+>  * Debugger is active!
+>  * Debugger PIN: 456-115-780
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:79: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:79: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> 127.0.0.1 - - [09/Dec/2018 22:52:56] "GET / HTTP/1.1" 200 -
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:727: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   form = LoginForm()
+> 127.0.0.1 - - [09/Dec/2018 22:53:05] "POST /login/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 733, in login
+>     user = User.query.filter_by(username=username,password=password).first()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\query.py", line 2895, in first
+>     ret = list(self[0:1])
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\query.py", line 2687, in __getitem__
+>     return list(res)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\query.py", line 2995, in __iter__
+>     return self._execute_and_instances(context)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\query.py", line 3018, in _execute_and_instances
+>     result = conn.execute(querycontext.statement, self._params)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 948, in execute
+>     return meth(self, multiparams, params)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\sql\elements.py", line 269, in _execute_on_connection
+>     return connection._execute_clauseelement(self, multiparams, params)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 1060, in _execute_clauseelement
+>     compiled_sql, distilled_params
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 1200, in _execute_context
+>     context)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 1413, in _handle_dbapi_exception
+>     exc_info
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\util\compat.py", line 265, in raise_from_cause
+>     reraise(type(exception), exception, tb=exc_tb, cause=cause)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 1193, in _execute_context
+>     context)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\default.py", line 509, in do_execute
+>     cursor.execute(statement, parameters)
+> OperationalError: (sqlite3.OperationalError) no such table: user [SQL: u'SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.firstname AS user_firstname, user.lastname AS user_lastname, user.usertype_id AS user_usertype_id, user.contact AS user_contact, user.email AS user_email, user.test AS user_test \nFROM user \nWHERE user.username = ? AND user.password = ?\n LIMIT ? OFFSET ?'] [parameters: (u'ivy1', u'a4a6304bf98cb5fa65d74bf5f65e7bea28fa2d00', 1, 0)] (Background on this error at: http://sqlalche.me/e/e3q8)
+> 127.0.0.1 - - [09/Dec/2018 22:53:06] "GET /login/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 22:53:06] "GET /login/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 22:53:06] "GET /login/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 22:53:07] "GET /login/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 22:53:07] "GET /login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [09/Dec/2018 22:53:07] "GET /login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -

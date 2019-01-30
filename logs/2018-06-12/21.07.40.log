@@ -1,0 +1,44 @@
+> Initialized logger
+> /home/annemirasol/remidiv2/serveus/views.py:5: ExtDeprecationWarning: Importing flask.ext.login is deprecated, use flask_login instead.
+>   from flask.ext.login import login_user, current_user, LoginManager, logout_user, login_required
+> /home/annemirasol/remidiv2/serveus/forms.py:2: ExtDeprecationWarning: Importing flask.ext.wtf is deprecated, use flask_wtf instead.
+>   from flask.ext.wtf import Form
+>  * Debugger is active!
+>  * Debugger PIN: 322-981-763
+> 127.0.0.1 - - [12/Jun/2018 21:07:42] "[37mGET /imgtest/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:08:21] "[37mGET /imgtest/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:08:31] "[37mGET /imgtest/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:08:37] "[37mGET /monitoring/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:08:37] "[37mGET /static/favicon.ico HTTP/1.1[0m" 200 -
+> Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+> /usr/local/lib/python2.7/dist-packages/sqlalchemy/sql/compiler.py:643: SAWarning: Can't resolve label reference '"case".date desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+>   util.ellipses_string(element.element))
+> 127.0.0.1 - - [12/Jun/2018 21:08:41] "[37mGET /records/1?region_selection=17&province_selection=99&municipality_selection=1638 HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:08:44] "[37mGET /case/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:08:44] "[32mGET /thumb/pic/1 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:08:44] "[32mGET /thumb/pic/2 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:08:44] "[32mGET /thumb/pic/3 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:08:44] "[32mGET /thumb/pic/4 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:08:44] "[32mGET /thumb/pic/5 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:08:44] "[32mGET /thumb/pic/6 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:08:44] "[32mGET /thumb/pic/7 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:08:44] "[32mGET /thumb/pic/8 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [12/Jun/2018 21:08:44] "[37mGET /thumb/pic/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:08:44] "[37mGET /thumb/pic/2/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:08:44] "[37mGET /thumb/pic/3/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:08:44] "[37mGET /thumb/pic/4/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:08:44] "[37mGET /thumb/pic/5/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:08:44] "[37mGET /thumb/pic/6/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:08:44] "[37mGET /thumb/pic/7/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 21:08:44] "[37mGET /thumb/pic/8/ HTTP/1.1[0m" 200 -
+>  * Detected change in '/home/annemirasol/remidiv2/serveus/views.py', reloading

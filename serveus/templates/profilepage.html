@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+{% block title %}Profile{% endblock %}
+
+{% block script %}
+		<script src="/static/js/sha1.js"></script>
+		<script>
+			function hash() {
+				var hash = CryptoJS.SHA1($('#oldpassword').val());
+				$('#oldpassword').val(hash);
+                if ($('#newpassword').val().length > 0)
+                {
+                    hash = CryptoJS.SHA1($('#newpassword').val());
+                    $('#newpassword').val(hash);
+                }
+                if ($('#confirmpassword').val().length > 0)
+                {
+                    hash = CryptoJS.SHA1($('#confirmpassword').val());
+                    $('#confirmpassword').val(hash);
+                }
+			}
+		</script>
+{% endblock %}
+
+{% block style %}
+        <style>
+            html,
+            body {
+               margin:0;
+               padding:0;
+               height:100%;
+            }
+        </style>
+{% endblock %}
+
+{% block content %}
+        <div class="well" style="max-width: 370px; margin-left: auto; margin-right: auto">
+			<h4>Change Password</h4>
+            {% if message %}
+            <div class="alert alert-success">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            {{ message }}
+            </div>
+            {% endif %}
+            {% if error %}
+            <div class="alert alert-error">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            {{ error }}
+            </div>
+            {% endif %}
+                <form action= "/profilepage/" name="cp" method="post" onsubmit="hash();">
+                {{ changepass_form.hidden_tag() }}
+                {{changepass_form.oldpassword(size=40, placeholder="Old Password", class="span4", type="password")}} <br>
+                {{changepass_form.newpassword(size=40, placeholder="New Password", class="span4", type="password")}} <br>
+                {{changepass_form.confirmpassword(size=40, placeholder="Confirm New Password", class="span4", type="password")}} <br>
+                <input class="btn pull-right" type="submit" value="Submit" style="height: 30px">
+                <a class="btn pull-left" href={%if user.is_microscopist() %}'/records/1' {%else%}'/monitoring/1'{%endif%}>Cancel</a>
+                </form>
+        </div>
+    <script src="/static/js/jquery.js"></script>
+	<script src="/static/js/bootstrap.min.js"></script>
+{% endblock %}

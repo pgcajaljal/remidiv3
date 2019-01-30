@@ -1,0 +1,15 @@
+> Initialized logger
+> Traceback (most recent call last):
+>   File "run.py", line 3, in <module>
+> from serveus import app
+>   File "/home/annemirasol/remidiv2/serveus/__init__.py", line 86, in <module>
+> from serveus import views, models, admin
+>   File "
+> /home/annemirasol/remidiv2/serveus/views.py
+> ", line
+> 1511
+> for img_file in glob.glob(os.path.join('reset_images/', "*.jpg")):
+> ^
+> IndentationError
+> :
+> unexpected indent

@@ -1,0 +1,69 @@
+> Initialized logger
+> /home/annemirasol/remidiv2/serveus/views.py:5: ExtDeprecationWarning: Importing flask.ext.login is deprecated, use flask_login instead.
+>   from flask.ext.login import login_user, current_user, LoginManager, logout_user, login_required
+> /home/annemirasol/remidiv2/serveus/forms.py:2: ExtDeprecationWarning: Importing flask.ext.wtf is deprecated, use flask_wtf instead.
+>   from flask.ext.wtf import Form
+>  * Debugger is active!
+>  * Debugger PIN: 322-981-763
+> 127.0.0.1 - - [12/Jun/2018 20:34:51] "[37mGET /monitoring/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 20:34:51] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 20:34:51] "[36mGET /static/css/bootstrap-responsive.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 20:34:51] "[36mGET /static/css/eyecon-datepicker.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 20:34:51] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 20:34:51] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 20:34:51] "[36mGET /static/js/eyecon-datepicker.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 20:34:51] "[36mGET /static/images/loading.gif HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 20:34:51] "[36mGET /static/img/glyphicons-halflings.png HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 20:34:51] "[37mGET /static/images/bar.png HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 20:40:38] "[37mGET /monitoring/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 20:40:38] "[36mGET /static/css/eyecon-datepicker.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 20:40:38] "[36mGET /static/css/bootstrap-responsive.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 20:40:38] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 20:40:38] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 20:40:38] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 20:40:38] "[36mGET /static/js/eyecon-datepicker.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 20:40:39] "[36mGET /static/images/loading.gif HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 20:40:39] "[36mGET /static/img/glyphicons-halflings.png HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 20:40:39] "[36mGET /static/images/bar.png HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:21] "[37mGET /monitoring/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:21] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:21] "[36mGET /static/css/bootstrap-responsive.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:21] "[36mGET /static/css/eyecon-datepicker.css HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:21] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:21] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:21] "[36mGET /static/js/eyecon-datepicker.js HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:21] "[36mGET /static/images/loading.gif HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:21] "[36mGET /static/img/glyphicons-halflings.png HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:21] "[36mGET /static/images/bar.png HTTP/1.1[0m" 304 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:34] "[37mGET /admin/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:34] "[37mGET /static/bootstrap/bootstrap2/css/bootstrap.css HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:34] "[37mGET /static/bootstrap/bootstrap2/css/bootstrap-responsive.css HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:34] "[37mGET /static/admin/css/bootstrap2/admin.css HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:34] "[37mGET /static/vendor/jquery-2.1.1.min.js HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:34] "[37mGET /static/bootstrap/bootstrap2/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:34] "[37mGET /static/vendor/moment-2.8.4.min.js HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:34] "[37mGET /static/vendor/select2/select2.min.js HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:38] "[37mGET /admin/user/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:38] "[37mGET /static/vendor/select2/select2.css HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:38] "[37mGET /static/vendor/bootstrap-daterangepicker/daterangepicker-bs2.css HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:38] "[37mGET /static/vendor/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:38] "[37mGET /static/admin/js/form-1.0.0.js HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:38] "[37mGET /static/admin/js/filters-1.0.0.js HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:38] "[37mGET /static/admin/js/actions-1.0.0.js HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:38] "[37mGET /static/bootstrap/bootstrap2/img/glyphicons-halflings.png HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:46] "[37mGET /admin/user/new/?url=%2Fadmin%2Fuser%2F HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:46] "[37mGET /static/vendor/select2/select2.png HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 20:41:58] "[37mGET /static/vendor/select2/select2-spinner.gif HTTP/1.1[0m" 200 -
+> /usr/local/lib/python2.7/dist-packages/flask_admin/model/base.py:1524: UserWarning: <class 'serveus.models.User'>.on_model_change() now accepts third parameter is_created. Please update your code
+>   warnings.warn(msg)
+> 127.0.0.1 - - [12/Jun/2018 20:42:35] "[32mPOST /admin/user/new/?url=%2Fadmin%2Fuser%2F HTTP/1.1[0m" 302 -
+> 127.0.0.1 - - [12/Jun/2018 20:42:35] "[37mGET /admin/user/new/?url=%2Fadmin%2Fuser%2F HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 20:42:59] "[32mPOST /admin/user/new/?url=%2Fadmin%2Fuser%2F HTTP/1.1[0m" 302 -
+> 127.0.0.1 - - [12/Jun/2018 20:42:59] "[37mGET /admin/user/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 20:43:50] "[37mGET /monitoring/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 20:43:51] "[37mGET /static/favicon.ico HTTP/1.1[0m" 200 -
+> /usr/local/lib/python2.7/dist-packages/sqlalchemy/sql/compiler.py:643: SAWarning: Can't resolve label reference '"case".date desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+>   util.ellipses_string(element.element))
+> 127.0.0.1 - - [12/Jun/2018 20:43:54] "[37mGET /records/1?region_selection=17&province_selection=99&municipality_selection=1638 HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [12/Jun/2018 20:44:07] "[37mGET /case/2/ HTTP/1.1[0m" 200 -
+>  * Detected change in '/home/annemirasol/remidiv2/serveus/views.py', reloading

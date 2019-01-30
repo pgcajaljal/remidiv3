@@ -1,0 +1,29 @@
+> Initialized logger
+> /home/annemirasol/remidiv2/serveus/views.py:5: ExtDeprecationWarning: Importing flask.ext.login is deprecated, use flask_login instead.
+>   from flask.ext.login import login_user, current_user, LoginManager, logout_user, login_required
+> /home/annemirasol/remidiv2/serveus/forms.py:2: ExtDeprecationWarning: Importing flask.ext.wtf is deprecated, use flask_wtf instead.
+>   from flask.ext.wtf import Form
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+>  * Restarting with stat
+> Initialized logger
+> /home/annemirasol/remidiv2/serveus/views.py:5: ExtDeprecationWarning: Importing flask.ext.login is deprecated, use flask_login instead.
+>   from flask.ext.login import login_user, current_user, LoginManager, logout_user, login_required
+> /home/annemirasol/remidiv2/serveus/forms.py:2: ExtDeprecationWarning: Importing flask.ext.wtf is deprecated, use flask_wtf instead.
+>   from flask.ext.wtf import Form
+>  * Debugger is active!
+>  * Debugger PIN: 322-981-763
+> 127.0.0.1 - - [13/Jun/2018 10:22:12] "[37mGET /monitoring/1/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [13/Jun/2018 10:22:15] "[32mGET /monitoring/3 HTTP/1.1[0m" 301 -
+> 127.0.0.1 - - [13/Jun/2018 10:22:15] "[37mGET /monitoring/3/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [13/Jun/2018 10:22:18] "[37mGET /monitoring/1/ HTTP/1.1[0m" 200 -
+> /usr/local/lib/python2.7/dist-packages/sqlalchemy/sql/compiler.py:643: SAWarning: Can't resolve label reference '"case".date desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+>   util.ellipses_string(element.element))
+> 127.0.0.1 - - [13/Jun/2018 10:22:27] "[37mGET /records/1?region_selection=2&province_selection=7&municipality_selection=186 HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [13/Jun/2018 10:22:33] "[37mGET /records/1 HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [13/Jun/2018 10:22:40] "[37mGET /timeline/1 HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [13/Jun/2018 10:22:40] "[36mGET /static/css/iThing-min.css HTTP/1.1[0m" 304 -
+> /home/annemirasol/remidiv2/serveus/views.py:87: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   changepass_form = ChangePassForm()
+> 127.0.0.1 - - [13/Jun/2018 10:22:55] "[37mGET /profilepage/ HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [13/Jun/2018 10:22:55] "[37mGET /static/js/sha1.js HTTP/1.1[0m" 200 -
+> 127.0.0.1 - - [13/Jun/2018 10:22:58] "[37mGET /monitoring/1/ HTTP/1.1[0m" 200 -

@@ -1,0 +1,35 @@
+> Initialized logger
+> /home/annemirasol/remidiv2/serveus/views.py:5: ExtDeprecationWarning: Importing flask.ext.login is deprecated, use flask_login instead.
+>   from flask.ext.login import login_user, current_user, LoginManager, logout_user, login_required
+> /home/annemirasol/remidiv2/serveus/views.py:7: ExtDeprecationWarning: Importing flask.ext.wtf is deprecated, use flask_wtf instead.
+>   from flask.ext.wtf import Form
+> /home/annemirasol/remidiv2/serveus/admin.py:2: ExtDeprecationWarning: Importing flask.ext.admin is deprecated, use flask_admin instead.
+>   from flask.ext.admin import Admin, AdminIndexView, expose
+> /home/annemirasol/remidiv2/serveus/admin.py:3: ExtDeprecationWarning: Importing flask.ext.admin.base is deprecated, use flask_admin.base instead.
+>   from flask.ext.admin.base import MenuLink
+> /home/annemirasol/remidiv2/serveus/admin.py:4: ExtDeprecationWarning: Importing flask.ext.admin.contrib is deprecated, use flask_admin.contrib instead.
+>   from flask.ext.admin.contrib.sqla import ModelView
+> /home/annemirasol/remidiv2/serveus/admin.py:4: ExtDeprecationWarning: Importing flask.ext.admin.contrib.sqla is deprecated, use flask_admin.contrib.sqla instead.
+>   from flask.ext.admin.contrib.sqla import ModelView
+> /home/annemirasol/remidiv2/serveus/admin.py:5: ExtDeprecationWarning: Importing flask.ext.admin.contrib.fileadmin is deprecated, use flask_admin.contrib.fileadmin instead.
+>   from flask.ext.admin.contrib.fileadmin import FileAdmin
+> /home/annemirasol/remidiv2/serveus/admin.py:12: ExtDeprecationWarning: Importing flask.ext.admin.actions is deprecated, use flask_admin.actions instead.
+>   from flask.ext.admin.actions import action
+> Traceback (most recent call last):
+>   File "reset.py", line 5, in <module>
+> from serveus.models import *
+>   File "/home/annemirasol/remidiv2/serveus/__init__.py", line 71, in <module>
+> from serveus import views, models, admin
+>   File "/home/annemirasol/remidiv2/serveus/admin.py", line 179, in <module>
+> admin.add_view(UserView(User, db.session, category='Accounts', name='User Accounts'))
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/contrib/sqla/view.py", line 329, in __init__
+> menu_icon_value=menu_icon_value)
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/model/base.py", line 782, in __init__
+> self._refresh_cache()
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/model/base.py", line 860, in _refresh_cache
+> self._sortable_columns = self.get_sortable_columns()
+>   File "/usr/local/lib/python2.7/dist-packages/flask_admin/contrib/sqla/view.py", line 499, in get_sortable_columns
+> "Failed on: {0}".format(c))
+> Exception
+> :
+> For sorting columns in a related table, column_sortable_list requires a string like '<relation name>.<column name>'. Failed on: ('usertype.name', <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7f39d3e513b0>)

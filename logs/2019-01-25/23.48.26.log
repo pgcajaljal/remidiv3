@@ -1,0 +1,39 @@
+> Initialized logger
+>  * Debugger is active!
+>  * Debugger PIN: 456-115-780
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+> 127.0.0.1 - - [25/Jan/2019 23:48:32] "GET / HTTP/1.1" 302 -
+> 127.0.0.1 - - [25/Jan/2019 23:48:33] "GET /monitoring/1 HTTP/1.1" 301 -
+> 127.0.0.1 - - [25/Jan/2019 23:48:33] "GET /monitoring/1/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [25/Jan/2019 23:49:15] "GET /monitoring/1/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [25/Jan/2019 23:49:18] "GET /static/favicon.ico HTTP/1.1" 200 -
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:83: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:83: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> 192.168.137.9 - - [25/Jan/2019 23:49:23] "GET / HTTP/1.1" 200 -
+> 192.168.137.9 - - [25/Jan/2019 23:49:36] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.9 - - [25/Jan/2019 23:58:57] "POST /api/db/ HTTP/1.1" 200 -
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:83: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:83: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> 192.168.137.9 - - [25/Jan/2019 23:59:20] "GET / HTTP/1.1" 200 -
+> 192.168.137.9 - - [25/Jan/2019 23:59:22] "POST /api/db/ HTTP/1.1" 200 -
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:83: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:83: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> 192.168.137.9 - - [25/Jan/2019 23:59:23] "GET / HTTP/1.1" 200 -
+> 192.168.137.9 - - [25/Jan/2019 23:59:23] "GET /static/favicon.ico HTTP/1.1" 200 -
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:83: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:83: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> 192.168.137.9 - - [25/Jan/2019 23:59:25] "GET / HTTP/1.1" 200 -
+> 192.168.137.9 - - [25/Jan/2019 23:59:25] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 192.168.137.9 - - [25/Jan/2019 23:59:39] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.9 - - [26/Jan/2019 00:00:54] "POST /api/db/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Jan/2019 00:04:14] "GET /monitoring/1/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [26/Jan/2019 00:04:26] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 192.168.137.9 - - [26/Jan/2019 00:04:28] "POST /api/db/ HTTP/1.1" 200 -
