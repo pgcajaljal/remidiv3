@@ -1,0 +1,14 @@
+> Initialized logger
+>  * Restarting with stat
+>  * Restarting with stat
+>  * Restarting with stat
+> Traceback (most recent call last):
+>   File "run.py", line 11, in <module>
+> app.run('0.0.0.0', port=80, debug = True, threaded = True)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 943, in run
+> run_simple(host, port, self, **options)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\werkzeug\serving.py", line 812, in run_simple
+> reloader_type)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\werkzeug\_reloader.py", line 275, in run_with_reloader
+> sys.exit(reloader.restart_with_reloader())
+> KeyboardInterrupt

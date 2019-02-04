@@ -1,0 +1,470 @@
+> Initialized logger
+>  * Debugger is active!
+>  * Debugger PIN: 456-115-780
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+> 127.0.0.1 - - [03/Feb/2019 21:23:54] "GET / HTTP/1.1" 302 -
+> 127.0.0.1 - - [03/Feb/2019 21:23:55] "GET /records/1 HTTP/1.1" 200 -
+> 192.168.137.216 - - [03/Feb/2019 21:24:08] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.216 - - [03/Feb/2019 21:24:08] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1283, in upload_chunk
+>     print("SEC CHUNK " + chunk)
+> TypeError: cannot concatenate 'str' and 'Chunk' objects
+> 192.168.137.216 - - [03/Feb/2019 21:24:08] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1283, in upload_chunk
+>     print("SEC CHUNK " + chunk)
+> TypeError: cannot concatenate 'str' and 'Chunk' objects
+> 192.168.137.216 - - [03/Feb/2019 21:24:08] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1283, in upload_chunk
+>     print("SEC CHUNK " + chunk)
+> TypeError: cannot concatenate 'str' and 'Chunk' objects
+> 192.168.137.216 - - [03/Feb/2019 21:24:08] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1283, in upload_chunk
+>     print("SEC CHUNK " + chunk)
+> TypeError: cannot concatenate 'str' and 'Chunk' objects
+> 192.168.137.216 - - [03/Feb/2019 21:24:08] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1283, in upload_chunk
+>     print("SEC CHUNK " + chunk)
+> TypeError: cannot concatenate 'str' and 'Chunk' objects
+> 192.168.137.216 - - [03/Feb/2019 21:24:08] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1283, in upload_chunk
+>     print("SEC CHUNK " + chunk)
+> TypeError: cannot concatenate 'str' and 'Chunk' objects
+> 192.168.137.216 - - [03/Feb/2019 21:24:08] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1283, in upload_chunk
+>     print("SEC CHUNK " + chunk)
+> TypeError: cannot concatenate 'str' and 'Chunk' objects
+> 192.168.137.216 - - [03/Feb/2019 21:24:08] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1283, in upload_chunk
+>     print("SEC CHUNK " + chunk)
+> TypeError: cannot concatenate 'str' and 'Chunk' objects
+> 192.168.137.216 - - [03/Feb/2019 21:24:08] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1283, in upload_chunk
+>     print("SEC CHUNK " + chunk)
+> TypeError: cannot concatenate 'str' and 'Chunk' objects
+> 192.168.137.216 - - [03/Feb/2019 21:24:09] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1283, in upload_chunk
+>     print("SEC CHUNK " + chunk)
+> TypeError: cannot concatenate 'str' and 'Chunk' objects
+> 192.168.137.216 - - [03/Feb/2019 21:24:09] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1283, in upload_chunk
+>     print("SEC CHUNK " + chunk)
+> TypeError: cannot concatenate 'str' and 'Chunk' objects
+> 192.168.137.216 - - [03/Feb/2019 21:24:09] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1283, in upload_chunk
+>     print("SEC CHUNK " + chunk)
+> TypeError: cannot concatenate 'str' and 'Chunk' objects
+> 192.168.137.216 - - [03/Feb/2019 21:24:09] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1283, in upload_chunk
+>     print("SEC CHUNK " + chunk)
+> TypeError: cannot concatenate 'str' and 'Chunk' objects
+> 192.168.137.216 - - [03/Feb/2019 21:24:09] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1283, in upload_chunk
+>     print("SEC CHUNK " + chunk)
+> TypeError: cannot concatenate 'str' and 'Chunk' objects
+> 192.168.137.216 - - [03/Feb/2019 21:24:09] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1283, in upload_chunk
+>     print("SEC CHUNK " + chunk)
+> TypeError: cannot concatenate 'str' and 'Chunk' objects
+> 192.168.137.216 - - [03/Feb/2019 21:24:09] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1283, in upload_chunk
+>     print("SEC CHUNK " + chunk)
+> TypeError: cannot concatenate 'str' and 'Chunk' objects
+> 192.168.137.216 - - [03/Feb/2019 21:24:10] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1283, in upload_chunk
+>     print("SEC CHUNK " + chunk)
+> TypeError: cannot concatenate 'str' and 'Chunk' objects
+> 192.168.137.216 - - [03/Feb/2019 21:24:10] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1283, in upload_chunk
+>     print("SEC CHUNK " + chunk)
+> TypeError: cannot concatenate 'str' and 'Chunk' objects
+> 192.168.137.216 - - [03/Feb/2019 21:24:10] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1283, in upload_chunk
+>     print("SEC CHUNK " + chunk)
+> TypeError: cannot concatenate 'str' and 'Chunk' objects
+> 192.168.137.216 - - [03/Feb/2019 21:24:10] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1283, in upload_chunk
+>     print("SEC CHUNK " + chunk)
+> TypeError: cannot concatenate 'str' and 'Chunk' objects
+> 192.168.137.216 - - [03/Feb/2019 21:24:10] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1283, in upload_chunk
+>     print("SEC CHUNK " + chunk)
+> TypeError: cannot concatenate 'str' and 'Chunk' objects
+> 192.168.137.216 - - [03/Feb/2019 21:24:10] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1283, in upload_chunk
+>     print("SEC CHUNK " + chunk)
+> TypeError: cannot concatenate 'str' and 'Chunk' objects
+>  * Detected change in 'C:\\Users\\gherz-PC\\Desktop\\remidiv2\\serveus\\views.py', reloading

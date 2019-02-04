@@ -1028,9 +1028,11 @@ def update_db():
 				c.execute("INSERT INTO user(id, username, password) VALUES(NULL, '%s', '%s')" % (username, password))
 			conn.commit()
 			conn.close()
-			with open('updated.db', 'r') as f:
+			with open('updated.db', 'rb') as f:
 				g = f.read()
+			print("ORIG: " + g + "\n")
 			response = make_response(base64.b64encode(g))
+			print("ENCODED: " + base64.b64encode(g) + "\n")
 			response.headers["Expires"] = 'Thu, 01 Jan 1970 00:00:00 GMT'
 			return response
 		else:
@@ -1115,7 +1117,7 @@ def upload_chunk():
 			f.save(os.path.join(folder, filename))
 
 			# calculate md5
-			with open(os.path.join(folder, filename), 'r') as f:
+			with open(os.path.join(folder, filename), 'rb') as f:
 				m = hashlib.md5()
 				m.update(f.read())
 			md5 = m.hexdigest()
@@ -1132,6 +1134,7 @@ def upload_chunk():
 					os.remove(f.name)
 
 				pending_chunks = chunk.chunklist.chunks.filter(Chunk.id != chunk.id, Chunk.done == False).first()
+				print("pending_chunks: ", pending_chunks)
 				if not pending_chunks:
 					# get all chunks in chunklist
 					chunks = chunk.chunklist.chunks
@@ -1156,7 +1159,9 @@ def upload_chunk():
 							f.truncate()  
 
 					# read concatenated archive and extract content
-					print os.path.join(folder, filename)
+					# print os.path.join(folder, filename)
+					filename = filename+'.zip'
+					print("NOT A ZIP FILE : ", filename)
 					with open(os.path.join(folder, filename), 'rb') as f:
 						z = zipfile.ZipFile(f)
 						z.extractall(folder)
@@ -1277,25 +1282,27 @@ def upload_chunk():
 					os.remove(f.name)
 
 				chunk = Chunk.query.filter(Chunk.filename == filename, Chunk.done == False).first()
+				print("SEC CHUNK ", chunk)
 				if chunk:
 					print 'CHECKSUM'
 					return 'CHECKSUM'
 
 				chunk = Chunk.query.filter(Chunk.filename == filename, Chunk.checksum == md5).first()
-				if chunk:
-					print 'EXISTS'
-					return 'EXISTS'
+				print("THIRD CHUNK", chunk)
+				# if chunk:
+				print 'EXISTS'
+				return 'EXISTS'
 
-
-	return '''
-	<!doctype html>
-	<title>Upload chunk file</title>
-	<h1>Upload chunk file</h1>
-	<form action="" method=post enctype=multipart/form-data>
-	  <p><input type=file name=file>
-		 <input type=submit value=Upload>
-	</form>
-	'''
+	else:
+		return '''
+		<!doctype html>
+		<title>Upload chunk file</title>
+		<h1>Upload chunk file</h1>
+		<form action="" method=post enctype=multipart/form-data>
+		  <p><input type=file name=file>
+			 <input type=submit value=Upload>
+		</form>
+		'''
 
 """."""
 @app.route('/api/init/', methods=['GET','POST'])
@@ -1311,7 +1318,11 @@ def upload_start_file():
 
 			print 'INIT:', filename
 			folder = (app.config['UPLOAD_FOLDER'] + filename).replace('.zip', '')
-			os.makedirs(folder)
+			
+			# 2019 ERROR FILE ALREADY EXISTS CREATES AN INFINITE LOOP
+			if(not os.path.isdir(folder)):
+				os.makedirs(folder)
+
 			f.save(os.path.join(folder, filename))
 
 			with open(os.path.join(folder, filename), 'r+b') as f:
@@ -1353,7 +1364,7 @@ def upload_start_file():
 			aes_key = private_key.decrypt(enc_aes_key)
 
 			# decrypt image archive using decrypted AES key
-			with open(os.path.join(folder, 'cipher_listahan'), 'r') as f:
+			with open(os.path.join(folder, 'cipher_listahan'), 'rb') as f:
 				enc_list = f.read()
 				cipher = AES.new(aes_key, AES.MODE_ECB, 'dummy_parameter')
 				msg = cipher.decrypt(enc_list)

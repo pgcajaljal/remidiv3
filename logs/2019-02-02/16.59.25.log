@@ -1,0 +1,15 @@
+> Initialized logger
+>  * Debugger is active!
+>  * Debugger PIN: 456-115-780
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:84: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:84: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> 192.168.137.183 - - [02/Feb/2019 17:08:38] "GET / HTTP/1.1" 200 -
+> 192.168.137.183 - - [02/Feb/2019 17:08:41] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 192.168.137.183 - - [02/Feb/2019 17:08:41] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 192.168.137.183 - - [02/Feb/2019 17:08:41] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+> 192.168.137.183 - - [02/Feb/2019 17:08:41] "GET /static/js/sha1.js HTTP/1.1" 200 -
+> 192.168.137.183 - - [02/Feb/2019 17:08:41] "GET /static/js/jquery.js HTTP/1.1" 200 -
+> 192.168.137.183 - - [02/Feb/2019 17:08:42] "GET /static/favicon.ico HTTP/1.1" 200 -

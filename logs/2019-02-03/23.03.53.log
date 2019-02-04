@@ -1,0 +1,256 @@
+> Initialized logger
+>  * Debugger is active!
+>  * Debugger PIN: 456-115-780
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+> 127.0.0.1 - - [03/Feb/2019 23:04:36] "GET /records/1 HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+> 127.0.0.1 - - [03/Feb/2019 23:04:36] "GET /records/1 HTTP/1.1" 200 -
+>     self.wfile.close()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [03/Feb/2019 23:04:40] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 192.168.137.216 - - [03/Feb/2019 23:05:01] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1117, in upload_chunk
+>     f.save(os.path.join(folder, filename))
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\werkzeug\datastructures.py", line 2725, in save
+>     dst = open(dst, 'wb')
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190203_225903_dindinmt_5157241_32\\20190203_225903_dindinmt_5157241_32.zip.000001.part'
+> 192.168.137.216 - - [03/Feb/2019 23:05:10] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1117, in upload_chunk
+>     f.save(os.path.join(folder, filename))
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\werkzeug\datastructures.py", line 2725, in save
+>     dst = open(dst, 'wb')
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190203_225903_dindinmt_5157241_32\\20190203_225903_dindinmt_5157241_32.zip.000002.part'
+> 192.168.137.216 - - [03/Feb/2019 23:05:11] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1117, in upload_chunk
+>     f.save(os.path.join(folder, filename))
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\werkzeug\datastructures.py", line 2725, in save
+>     dst = open(dst, 'wb')
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190203_225903_dindinmt_5157241_32\\20190203_225903_dindinmt_5157241_32.zip.000003.part'
+> 192.168.137.216 - - [03/Feb/2019 23:05:17] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1117, in upload_chunk
+>     f.save(os.path.join(folder, filename))
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\werkzeug\datastructures.py", line 2725, in save
+>     dst = open(dst, 'wb')
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190203_225903_dindinmt_5157241_32\\20190203_225903_dindinmt_5157241_32.zip.000004.part'
+> 192.168.137.216 - - [03/Feb/2019 23:05:18] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1117, in upload_chunk
+>     f.save(os.path.join(folder, filename))
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\werkzeug\datastructures.py", line 2725, in save
+>     dst = open(dst, 'wb')
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190203_225903_dindinmt_5157241_32\\20190203_225903_dindinmt_5157241_32.zip.000005.part'
+> 192.168.137.216 - - [03/Feb/2019 23:05:38] "POST /api/init/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1367, in upload_start_file
+>     with open(os.path.join(folder, 'cipher_listahan'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190203_225132_dindinmt\\cipher_listahan'
+> 192.168.137.216 - - [03/Feb/2019 23:05:44] "POST /api/init/ HTTP/1.1" 200 -
+> 192.168.137.216 - - [03/Feb/2019 23:05:47] "POST /api/init/ HTTP/1.1" 200 -
+> 192.168.137.216 - - [03/Feb/2019 23:06:04] "POST /api/init/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [03/Feb/2019 23:06:24] "GET /records/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [03/Feb/2019 23:06:25] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 192.168.137.216 - - [03/Feb/2019 23:06:28] "POST /api/init/ HTTP/1.1" 200 -
+> 192.168.137.216 - - [03/Feb/2019 23:06:29] "POST /api/init/ HTTP/1.1" 200 -
+> 192.168.137.216 - - [03/Feb/2019 23:06:29] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1117, in upload_chunk
+>     f.save(os.path.join(folder, filename))
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\werkzeug\datastructures.py", line 2725, in save
+>     dst = open(dst, 'wb')
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190203_225903_dindinmt_5157241_32\\20190203_225903_dindinmt_5157241_32.zip.000001.part'
+> 192.168.137.216 - - [03/Feb/2019 23:06:29] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1117, in upload_chunk
+>     f.save(os.path.join(folder, filename))
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\werkzeug\datastructures.py", line 2725, in save
+>     dst = open(dst, 'wb')
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190203_225903_dindinmt_5157241_32\\20190203_225903_dindinmt_5157241_32.zip.000002.part'
+> 192.168.137.216 - - [03/Feb/2019 23:06:30] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1117, in upload_chunk
+>     f.save(os.path.join(folder, filename))
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\werkzeug\datastructures.py", line 2725, in save
+>     dst = open(dst, 'wb')
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190203_225903_dindinmt_5157241_32\\20190203_225903_dindinmt_5157241_32.zip.000003.part'
+> 192.168.137.216 - - [03/Feb/2019 23:06:30] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1117, in upload_chunk
+>     f.save(os.path.join(folder, filename))
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\werkzeug\datastructures.py", line 2725, in save
+>     dst = open(dst, 'wb')
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190203_225903_dindinmt_5157241_32\\20190203_225903_dindinmt_5157241_32.zip.000004.part'
