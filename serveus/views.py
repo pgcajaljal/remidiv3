@@ -1030,9 +1030,9 @@ def update_db():
 			conn.close()
 			with open('updated.db', 'rb') as f:
 				g = f.read()
-			print("ORIG: " + g + "\n")
+			# print("ORIG: " + g + "\n")
 			response = make_response(base64.b64encode(g))
-			print("ENCODED: " + base64.b64encode(g) + "\n")
+			# print("ENCODED: " + base64.b64encode(g) + "\n")
 			response.headers["Expires"] = 'Thu, 01 Jan 1970 00:00:00 GMT'
 			return response
 		else:

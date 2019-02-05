@@ -1,0 +1,29 @@
+> Initialized logger
+>  * Debugger is active!
+>  * Debugger PIN: 456-115-780
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+> 192.168.137.229 - - [05/Feb/2019 14:03:31] "POST /api/db/ HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10054] An existing connection was forcibly closed by the remote host
+> 192.168.137.229 - - [05/Feb/2019 14:03:36] "POST /api/db/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 14:03:55] "GET /records/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 14:03:56] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 192.168.137.229 - - [05/Feb/2019 14:04:00] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.229 - - [05/Feb/2019 14:04:17] "POST /api/init/ HTTP/1.1" 200 -
+> 192.168.137.229 - - [05/Feb/2019 14:04:18] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.229 - - [05/Feb/2019 14:04:18] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.229 - - [05/Feb/2019 14:04:18] "POST /api/db/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 14:04:57] "GET /records/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 14:04:58] "GET /static/favicon.ico HTTP/1.1" 200 -

@@ -1,0 +1,40 @@
+> Initialized logger
+>  * Debugger is active!
+>  * Debugger PIN: 456-115-780
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+> 192.168.137.229 - - [05/Feb/2019 13:53:56] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.229 - - [05/Feb/2019 13:53:56] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.229 - - [05/Feb/2019 13:54:06] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.229 - - [05/Feb/2019 13:54:06] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.229 - - [05/Feb/2019 13:54:48] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.229 - - [05/Feb/2019 13:54:51] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.229 - - [05/Feb/2019 13:54:52] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.229 - - [05/Feb/2019 13:54:59] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.229 - - [05/Feb/2019 13:54:59] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.229 - - [05/Feb/2019 13:55:48] "POST /api/init/ HTTP/1.1" 200 -
+> 192.168.137.229 - - [05/Feb/2019 13:55:50] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.229 - - [05/Feb/2019 13:55:50] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.229 - - [05/Feb/2019 13:55:50] "POST /api/db/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 13:55:55] "GET / HTTP/1.1" 302 -
+> 127.0.0.1 - - [05/Feb/2019 13:55:58] "GET /records/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 13:55:58] "GET /records/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 13:56:02] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 13:56:02] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 13:56:02] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 13:56:02] "GET /static/js/eyecon-datepicker.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 13:56:02] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 13:56:02] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 13:56:03] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 13:56:06] "GET /static/img/glyphicons-halflings-white.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 13:56:07] "GET /logout/ HTTP/1.1" 302 -
+> 127.0.0.1 - - [05/Feb/2019 13:56:08] "GET /index HTTP/1.1" 301 -
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:84: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:84: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> 127.0.0.1 - - [05/Feb/2019 13:56:08] "GET /index/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 13:56:10] "GET /static/js/sha1.js HTTP/1.1" 200 -
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:825: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   form = LoginForm()
+> 127.0.0.1 - - [05/Feb/2019 13:56:14] "POST /login/ HTTP/1.1" 302 -
+> 127.0.0.1 - - [05/Feb/2019 13:56:14] "GET /records/1 HTTP/1.1" 200 -
