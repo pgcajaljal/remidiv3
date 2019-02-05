@@ -1,0 +1,551 @@
+> Initialized logger
+>  * Debugger is active!
+>  * Debugger PIN: 456-115-780
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+> 127.0.0.1 - - [04/Feb/2019 23:38:35] "GET / HTTP/1.1" 302 -
+> 127.0.0.1 - - [04/Feb/2019 23:38:36] "GET /records/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [04/Feb/2019 23:38:38] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [04/Feb/2019 23:38:38] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [04/Feb/2019 23:38:38] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [04/Feb/2019 23:38:38] "GET /static/js/eyecon-datepicker.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [04/Feb/2019 23:38:38] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [04/Feb/2019 23:38:38] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [04/Feb/2019 23:38:38] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 192.168.137.52 - - [04/Feb/2019 23:38:56] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:01] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1185, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.52 - - [04/Feb/2019 23:39:01] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:02] "POST /api/init/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:02] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:03] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:03] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:03] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:04] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:04] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:04] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:04] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:05] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:05] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:05] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:06] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:06] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:06] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:07] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:07] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:07] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:07] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:08] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:08] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:08] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:09] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:09] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:09] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:10] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:10] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:10] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:10] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:11] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:13] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:13] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:13] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:14] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:14] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:14] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:14] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:15] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:15] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:15] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:16] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:16] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:16] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:16] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:17] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:17] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:17] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:17] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:18] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:18] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:18] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:19] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:19] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:19] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:20] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:20] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:20] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:20] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:21] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:21] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:21] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:22] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:22] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:22] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:22] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:23] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:23] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:23] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:23] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:24] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:24] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:24] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:25] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:25] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:25] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:25] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:25] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:26] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:26] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:26] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:27] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:27] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:27] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:28] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:28] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:28] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:29] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:29] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:29] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:29] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:29] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:30] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:30] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:31] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:31] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:31] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:32] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:32] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:32] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:32] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:33] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:33] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:33] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:34] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:34] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:35] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:35] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:36] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:36] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:36] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:36] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:37] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:37] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:37] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:38] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:38] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:39] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:39] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:40] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:40] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:40] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:41] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:41] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:41] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:41] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:42] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:42] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:43] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:43] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:44] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:44] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:45] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:46] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:47] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:47] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:48] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:49] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:49] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:50] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:50] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:50] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:51] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:51] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:52] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:52] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:52] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:53] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:53] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:53] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:55] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:55] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:55] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:56] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:56] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1185, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.52 - - [04/Feb/2019 23:39:56] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:57] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:57] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:57] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:58] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:58] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:59] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:59] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:39:59] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:40:00] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:40:00] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:40:01] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:40:01] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:40:01] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:40:02] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:40:02] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:40:02] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:40:03] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:40:03] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:40:04] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:40:04] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1185, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_233812_dindinmt_5659860_32\\cipherZipFile.zip'
+> 192.168.137.52 - - [04/Feb/2019 23:40:04] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:40:04] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1185, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.52 - - [04/Feb/2019 23:40:04] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1185, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_233812_dindinmt_5659860_32\\cipherZipFile.zip'
+> 192.168.137.52 - - [04/Feb/2019 23:40:04] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:47:23] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1185, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.52 - - [04/Feb/2019 23:47:23] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1185, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_233812_dindinmt_5659860_32\\cipherZipFile.zip'
+> 192.168.137.52 - - [04/Feb/2019 23:47:24] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:47:24] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1185, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.52 - - [04/Feb/2019 23:47:24] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1185, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_233812_dindinmt_5659860_32\\cipherZipFile.zip'
+> 192.168.137.52 - - [04/Feb/2019 23:47:24] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:47:57] "POST /api/init/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:47:57] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:47:57] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:47:58] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:47:58] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:47:58] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:47:59] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:47:59] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:00] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:00] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:01] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:01] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:01] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:02] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:02] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:03] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:03] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:04] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:04] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:04] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:05] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:05] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:05] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:06] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:06] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:07] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:07] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:07] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:07] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:08] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:08] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:08] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:08] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:09] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:09] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:09] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:09] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:10] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:10] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:10] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:10] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:11] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:11] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:11] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:11] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:12] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:12] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:12] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:12] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:13] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:13] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:14] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:14] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:14] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:15] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:15] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:15] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:15] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:16] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:16] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:17] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:17] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:17] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:17] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:18] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:18] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:18] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:18] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:18] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:19] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:19] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:19] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:19] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:20] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:20] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:20] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:20] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:20] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:21] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:21] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:21] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:21] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:22] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:22] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:22] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:22] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:23] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:23] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:24] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:24] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:24] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:24] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:24] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:25] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:25] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:25] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:25] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:26] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:26] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:26] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:26] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:27] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:27] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:27] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:27] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1185, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_234753_dindinmt_3384573_32\\cipherZipFile.zip'
+> 192.168.137.52 - - [04/Feb/2019 23:48:28] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1185, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.52 - - [04/Feb/2019 23:48:28] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1185, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_233812_dindinmt_5659860_32\\cipherZipFile.zip'
+> 192.168.137.52 - - [04/Feb/2019 23:48:28] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:48:28] "POST /api/db/ HTTP/1.1" 200 -
+>  * Detected change in 'C:\\Users\\gherz-PC\\Desktop\\remidiv2\\serveus\\views.py', reloading

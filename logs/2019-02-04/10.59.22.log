@@ -359,3 +359,1006 @@
 > IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_112305_ivy1_2544560_32\\cipherZipFile.zip'
 > 192.168.137.11 - - [04/Feb/2019 11:24:52] "POST /api/validation/ HTTP/1.1" 200 -
 > 192.168.137.11 - - [04/Feb/2019 11:24:52] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:13] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.11 - - [04/Feb/2019 11:38:13] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.11 - - [04/Feb/2019 11:38:14] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_112305_ivy1_2544560_32\\cipherZipFile.zip'
+> 192.168.137.11 - - [04/Feb/2019 11:38:14] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:33] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 11:38:33] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:35] "POST /api/init/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:36] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:37] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:39] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:40] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:42] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:42] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:44] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:44] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:45] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:45] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:46] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:46] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:47] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:48] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:48] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:48] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:49] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:50] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:50] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:51] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:52] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:52] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:53] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:54] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:56] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:56] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:57] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:57] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:58] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:38:59] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:00] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:01] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:01] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:02] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:03] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:03] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:04] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:05] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:06] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:06] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:07] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:08] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:08] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:09] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:10] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:10] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:11] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:11] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:12] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:12] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:13] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:14] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:14] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:15] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:15] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:16] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:16] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:17] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:18] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:18] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:19] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:19] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:20] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:20] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:20] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:21] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:22] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:22] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:23] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:23] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:24] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:25] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:25] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:26] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:27] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:28] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:28] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:29] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:30] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:30] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:32] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:33] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:34] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:34] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:36] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:37] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:39] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:40] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:41] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:43] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:44] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:45] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:46] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:47] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:48] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:49] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:50] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:51] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:52] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:53] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:53] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:53] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:54] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:55] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:55] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:56] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:56] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:57] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:58] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:58] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:58] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:59] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:39:59] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:40:00] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:40:00] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:40:01] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:40:02] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:40:02] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:40:03] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:40:04] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:40:04] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:40:05] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:40:05] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:40:06] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:40:06] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:40:07] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:40:08] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:40:08] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:40:09] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:40:10] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:40:12] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:40:12] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:40:13] "POST /api/chunk/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:40:13] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_113749_dindinmt_4381918_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 11:40:14] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 11:40:14] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:40:14] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_113749_dindinmt_4381918_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 11:40:14] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 11:40:14] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_113749_dindinmt_4381918_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 11:40:14] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 11:40:14] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:40:14] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_113749_dindinmt_4381918_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 11:40:15] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 11:40:15] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_113749_dindinmt_4381918_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 11:40:15] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 11:41:31] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:41:34] "POST /api/chunk/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [04/Feb/2019 11:41:47] "GET /records/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [04/Feb/2019 11:41:48] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:41:52] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 11:41:52] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:41:52] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 11:41:59] "GET /records/1 HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:42:03] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.1 - - [04/Feb/2019 11:42:07] "GET /case/4/ HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 11:42:07] "GET /thumb/pic/33 HTTP/1.1" 301 -
+> 192.168.137.1 - - [04/Feb/2019 11:42:13] "GET /thumb/pic/33/ HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 11:42:47] "GET /map/1 HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 11:42:48] "GET /static/js/markerwithlabel.js HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 11:43:06] "GET /case/4 HTTP/1.1" 301 -
+> 192.168.137.1 - - [04/Feb/2019 11:43:06] "GET /case/4/ HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 11:43:50] "GET /records/1 HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 11:44:05] "GET /static/img/glyphicons-halflings-white.png HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 11:44:06] "GET /admin/ HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 11:44:06] "GET /static/admin/css/bootstrap2/admin.css HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 11:44:06] "GET /static/bootstrap/bootstrap2/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 11:44:06] "GET /static/vendor/moment-2.8.4.min.js HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 11:44:06] "GET /static/bootstrap/bootstrap2/css/bootstrap.css HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 11:44:06] "GET /static/vendor/jquery-2.1.1.min.js HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 11:44:06] "GET /static/bootstrap/bootstrap2/js/bootstrap.min.js HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 11:44:07] "GET /static/vendor/select2/select2.min.js HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 11:44:08] "GET /favicon.ico HTTP/1.1" 404 -
+> 192.168.137.1 - - [04/Feb/2019 11:45:51] "GET /monitoring/1/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:52:01] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:52:27] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 11:52:27] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:52:27] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 11:52:27] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:84: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:84: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> 127.0.0.1 - - [04/Feb/2019 12:08:50] "GET / HTTP/1.1" 200 -
+> 127.0.0.1 - - [04/Feb/2019 12:08:51] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [04/Feb/2019 12:08:51] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:84: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:84: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> 127.0.0.1 - - [04/Feb/2019 12:08:51] "GET / HTTP/1.1" 200 -
+> 127.0.0.1 - - [04/Feb/2019 12:08:51] "GET /static/js/sha1.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [04/Feb/2019 12:08:51] "GET /static/js/jquery.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [04/Feb/2019 12:08:51] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+> 192.168.137.11 - - [04/Feb/2019 12:14:02] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.11 - - [04/Feb/2019 12:14:02] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_112305_ivy1_2544560_32\\cipherZipFile.zip'
+> 192.168.137.11 - - [04/Feb/2019 12:14:02] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.11 - - [04/Feb/2019 12:14:12] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.11 - - [04/Feb/2019 12:14:12] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_112305_ivy1_2544560_32\\cipherZipFile.zip'
+> 192.168.137.11 - - [04/Feb/2019 12:14:12] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:18:45] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:18:45] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 12:18:45] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:18:54] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 12:19:06] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:19:06] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 12:19:06] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:19:06] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:19:09] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:19:09] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 12:19:09] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:19:10] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 12:19:12] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:19:12] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 12:19:12] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:19:14] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 12:19:28] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:19:28] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 12:19:28] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:19:28] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:19:44] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:19:44] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 12:19:44] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:19:46] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:19:58] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:19:58] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 12:19:58] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:20:24] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:20:36] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:20:36] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 12:20:36] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 12:23:51] "GET /records/1 HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 12:24:08] "GET /case/4/ HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 12:24:38] "GET /records/2 HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 12:24:42] "GET /records/1 HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 12:25:42] "GET /admin/ HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 12:25:46] "GET /admin/usertype/ HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 12:25:46] "GET /static/vendor/select2/select2.css HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 12:25:46] "GET /static/admin/js/actions-1.0.0.js HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 12:25:46] "GET /static/vendor/bootstrap-daterangepicker/daterangepicker-bs2.css HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 12:25:46] "GET /static/admin/js/form-1.0.0.js HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 12:25:46] "GET /static/admin/js/filters-1.0.0.js HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 12:25:46] "GET /static/vendor/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 12:25:47] "GET /static/bootstrap/bootstrap2/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:84: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:84: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> 127.0.0.1 - - [04/Feb/2019 12:26:56] "GET / HTTP/1.1" 200 -
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:84: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:84: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> 127.0.0.1 - - [04/Feb/2019 12:26:56] "GET / HTTP/1.1" 200 -
+> 127.0.0.1 - - [04/Feb/2019 12:26:56] "GET /static/js/jquery.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [04/Feb/2019 12:26:56] "GET /static/js/sha1.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [04/Feb/2019 12:26:56] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [04/Feb/2019 12:26:56] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [04/Feb/2019 12:26:56] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py:825: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   form = LoginForm()
+> 127.0.0.1 - - [04/Feb/2019 12:27:08] "POST /login/ HTTP/1.1" 302 -
+> 127.0.0.1 - - [04/Feb/2019 12:27:08] "GET /monitoring/1 HTTP/1.1" 301 -
+> 127.0.0.1 - - [04/Feb/2019 12:27:09] "GET /monitoring/1/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [04/Feb/2019 12:27:09] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [04/Feb/2019 12:27:09] "GET /static/js/eyecon-datepicker.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [04/Feb/2019 12:27:09] "GET /static/images/loading.gif HTTP/1.1" 200 -
+> 127.0.0.1 - - [04/Feb/2019 12:27:09] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [04/Feb/2019 12:27:10] "GET /static/images/bar.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [04/Feb/2019 12:27:15] "GET /records/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [04/Feb/2019 12:27:24] "GET /case/4/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [04/Feb/2019 12:27:24] "GET /thumb/pic/33 HTTP/1.1" 301 -
+> 127.0.0.1 - - [04/Feb/2019 12:27:25] "GET /thumb/pic/33/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:29:11] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:29:12] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 12:29:12] "POST /api/db/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [04/Feb/2019 12:36:10] "GET /records/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [04/Feb/2019 12:38:46] "GET /case/4/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:39:05] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:39:05] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 12:39:05] "POST /api/db/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [04/Feb/2019 12:39:31] "POST /case/4/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:39:33] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:40:00] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:40:00] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 12:40:00] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:40:01] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:40:10] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:40:10] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 12:40:10] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:40:11] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 12:40:11] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:40:12] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1183, in upload_chunk
+>     with open(os.path.join(folder, 'cipherZipFile.zip'), 'rb') as f:
+> IOError: [Errno 2] No such file or directory: 'C:/Users/gherz-PC/Desktop/remidiv2\\upload/20190204_111224_dindinmt_4984242_32\\cipherZipFile.zip'
+> 192.168.137.184 - - [04/Feb/2019 12:40:12] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.184 - - [04/Feb/2019 12:40:12] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.1 - - [04/Feb/2019 13:01:32] "GET / HTTP/1.1" 302 -
+> 192.168.137.1 - - [04/Feb/2019 13:01:32] "GET /monitoring/1/ HTTP/1.1" 200 -

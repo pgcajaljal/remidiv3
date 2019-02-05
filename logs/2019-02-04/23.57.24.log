@@ -1,0 +1,341 @@
+> Initialized logger
+>  * Debugger is active!
+>  * Debugger PIN: 456-115-780
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+> 192.168.137.52 - - [04/Feb/2019 23:57:30] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:57:30] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1170, in upload_chunk
+>     z.extractall(folder)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 1040, in extractall
+>     self.extract(zipinfo, path, pwd)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 1028, in extract
+>     return self._extract_member(member, path, pwd)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 1082, in _extract_member
+>     with self.open(member, pwd=pwd) as source, \
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 971, in open
+>     raise BadZipfile("Bad magic number for file header")
+> BadZipfile: Bad magic number for file header
+> 192.168.137.52 - - [04/Feb/2019 23:57:30] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1170, in upload_chunk
+>     z.extractall(folder)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 1040, in extractall
+>     self.extract(zipinfo, path, pwd)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 1028, in extract
+>     return self._extract_member(member, path, pwd)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 1082, in _extract_member
+>     with self.open(member, pwd=pwd) as source, \
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 971, in open
+>     raise BadZipfile("Bad magic number for file header")
+> BadZipfile: Bad magic number for file header
+> 192.168.137.52 - - [04/Feb/2019 23:57:30] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1169, in upload_chunk
+>     z = zipfile.ZipFile(f)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 770, in __init__
+>     self._RealGetContents()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 839, in _RealGetContents
+>     raise BadZipfile("Bad magic number for central directory")
+> BadZipfile: Bad magic number for central directory
+> 192.168.137.52 - - [04/Feb/2019 23:57:30] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:57:33] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1170, in upload_chunk
+>     z.extractall(folder)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 1040, in extractall
+>     self.extract(zipinfo, path, pwd)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 1028, in extract
+>     return self._extract_member(member, path, pwd)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 1082, in _extract_member
+>     with self.open(member, pwd=pwd) as source, \
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 971, in open
+>     raise BadZipfile("Bad magic number for file header")
+> BadZipfile: Bad magic number for file header
+> 192.168.137.52 - - [04/Feb/2019 23:57:33] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1170, in upload_chunk
+>     z.extractall(folder)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 1040, in extractall
+>     self.extract(zipinfo, path, pwd)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 1028, in extract
+>     return self._extract_member(member, path, pwd)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 1082, in _extract_member
+>     with self.open(member, pwd=pwd) as source, \
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 971, in open
+>     raise BadZipfile("Bad magic number for file header")
+> BadZipfile: Bad magic number for file header
+> 192.168.137.52 - - [04/Feb/2019 23:57:33] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1169, in upload_chunk
+>     z = zipfile.ZipFile(f)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 770, in __init__
+>     self._RealGetContents()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 839, in _RealGetContents
+>     raise BadZipfile("Bad magic number for central directory")
+> BadZipfile: Bad magic number for central directory
+> 192.168.137.52 - - [04/Feb/2019 23:57:36] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:57:36] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1170, in upload_chunk
+>     z.extractall(folder)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 1040, in extractall
+>     self.extract(zipinfo, path, pwd)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 1028, in extract
+>     return self._extract_member(member, path, pwd)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 1082, in _extract_member
+>     with self.open(member, pwd=pwd) as source, \
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 971, in open
+>     raise BadZipfile("Bad magic number for file header")
+> BadZipfile: Bad magic number for file header
+> 192.168.137.52 - - [04/Feb/2019 23:57:36] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1170, in upload_chunk
+>     z.extractall(folder)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 1040, in extractall
+>     self.extract(zipinfo, path, pwd)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 1028, in extract
+>     return self._extract_member(member, path, pwd)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 1082, in _extract_member
+>     with self.open(member, pwd=pwd) as source, \
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 971, in open
+>     raise BadZipfile("Bad magic number for file header")
+> BadZipfile: Bad magic number for file header
+> 192.168.137.52 - - [04/Feb/2019 23:57:37] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1169, in upload_chunk
+>     z = zipfile.ZipFile(f)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 770, in __init__
+>     self._RealGetContents()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 839, in _RealGetContents
+>     raise BadZipfile("Bad magic number for central directory")
+> BadZipfile: Bad magic number for central directory
+> 192.168.137.52 - - [04/Feb/2019 23:57:37] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.52 - - [04/Feb/2019 23:57:44] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1170, in upload_chunk
+>     z.extractall(folder)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 1040, in extractall
+>     self.extract(zipinfo, path, pwd)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 1028, in extract
+>     return self._extract_member(member, path, pwd)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 1082, in _extract_member
+>     with self.open(member, pwd=pwd) as source, \
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 971, in open
+>     raise BadZipfile("Bad magic number for file header")
+> BadZipfile: Bad magic number for file header
+> 192.168.137.52 - - [04/Feb/2019 23:57:45] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1170, in upload_chunk
+>     z.extractall(folder)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 1040, in extractall
+>     self.extract(zipinfo, path, pwd)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 1028, in extract
+>     return self._extract_member(member, path, pwd)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 1082, in _extract_member
+>     with self.open(member, pwd=pwd) as source, \
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 971, in open
+>     raise BadZipfile("Bad magic number for file header")
+> BadZipfile: Bad magic number for file header
+> 192.168.137.52 - - [04/Feb/2019 23:57:45] "POST /api/chunk/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 1169, in upload_chunk
+>     z = zipfile.ZipFile(f)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 770, in __init__
+>     self._RealGetContents()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\zipfile.py", line 839, in _RealGetContents
+>     raise BadZipfile("Bad magic number for central directory")
+> BadZipfile: Bad magic number for central directory
+>  * Detected change in 'C:\\Users\\gherz-PC\\Desktop\\remidiv2\\serveus\\views.py', reloading

@@ -1136,18 +1136,20 @@ def upload_chunk():
 				pending_chunks = chunk.chunklist.chunks.filter(Chunk.id != chunk.id, Chunk.done == False).first()
 				print("pending_chunks: ", pending_chunks)
 				if not pending_chunks:
+					print('NO MORE PENDING CHUNKS')
 					# get all chunks in chunklist
 					chunks = chunk.chunklist.chunks
 					filename = chunk.chunklist.filename
 					chunk_data = []
-
+					print('CHUNK.CHUNKLIST.FILENAME ', chunk.chunklist.filename)
 					# store chunk data in list and concatenate to file
 					# assumption: chunklist filenames are sortable (correct order)
 					for chunk_filename in sorted([temp_chunk.filename for temp_chunk in chunks]):
-						with open(os.path.join(folder, chunk_filename), 'r') as f:
+						with open(os.path.join(folder, chunk_filename), 'rb') as f:
 							chunk_data.append(f.read())
 					data = ''.join(chunk_data)
-					with open(os.path.join(folder, chunk.chunklist.filename), 'w') as f:
+
+					with open(os.path.join(folder, chunk.chunklist.filename), 'wb') as f:
 						f.write(data)
 
 					with open(os.path.join(folder, filename), 'r+b') as f:
@@ -1160,8 +1162,6 @@ def upload_chunk():
 
 					# read concatenated archive and extract content
 					# print os.path.join(folder, filename)
-					filename = filename+'.zip'
-					print("NOT A ZIP FILE : ", filename)
 					with open(os.path.join(folder, filename), 'rb') as f:
 						z = zipfile.ZipFile(f)
 						z.extractall(folder)
