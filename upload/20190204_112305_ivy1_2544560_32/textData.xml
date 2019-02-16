@@ -1,0 +1,15 @@
+<entry>
+  <date-created>2019/02/04</date-created>
+  <time-created>11:23:05</time-created>
+  <latitude>14.6484525</latitude>
+  <longitude>121.0686491</longitude>
+  <specimen>Blood</specimen>
+  <disease>Malaria</disease>
+  <disease-num>1</disease-num>
+  <priority>High</priority>
+  <description>qqqwer</description>
+  <region>Region X (Northern Mindanao)</region>
+  <province>Bukidnon</province>
+  <municipality>Baungon</municipality>
+  <flags>false</flags>
+</entry>

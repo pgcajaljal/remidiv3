@@ -1,0 +1,19 @@
+> Initialized logger
+>  * Debugger is active!
+>  * Debugger PIN: 220-276-153
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+> 192.168.137.240 - - [05/Feb/2019 16:24:47] "GET /logout/ HTTP/1.1" 302 -
+> 192.168.137.240 - - [05/Feb/2019 16:24:48] "GET /index HTTP/1.1" 301 -
+> C:\Users\Patricia Cajaljal\Desktop\remidiv3\serveus\views.py:84: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> C:\Users\Patricia Cajaljal\Desktop\remidiv3\serveus\views.py:84: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> 192.168.137.240 - - [05/Feb/2019 16:24:48] "GET /index/ HTTP/1.1" 200 -
+> 192.168.137.240 - - [05/Feb/2019 16:24:48] "GET /static/img/glyphicons-halflings-white.png HTTP/1.1" 200 -
+> C:\Users\Patricia Cajaljal\Desktop\remidiv3\serveus\views.py:825: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   form = LoginForm()
+> 192.168.137.240 - - [05/Feb/2019 16:24:51] "POST /login/ HTTP/1.1" 302 -
+> 192.168.137.240 - - [05/Feb/2019 16:24:52] "GET /records/1 HTTP/1.1" 200 -
+> 192.168.137.240 - - [05/Feb/2019 16:24:56] "GET /case/10/ HTTP/1.1" 200 -
+> 192.168.137.240 - - [05/Feb/2019 16:25:15] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.240 - - [05/Feb/2019 16:25:15] "POST /api/db/ HTTP/1.1" 200 -

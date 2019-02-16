@@ -1,0 +1,2258 @@
+> Initialized logger
+>  * Debugger is active!
+>  * Debugger PIN: 220-276-153
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+> 192.168.137.240 - - [05/Feb/2019 16:35:10] "GET /records/1 HTTP/1.1" 200 -
+> 192.168.137.240 - - [05/Feb/2019 16:35:10] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 192.168.137.240 - - [05/Feb/2019 16:35:15] "GET /case/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 16:35:24] "GET /logout/ HTTP/1.1" 302 -
+> C:\Users\Patricia Cajaljal\Desktop\remidiv3\serveus\views.py:84: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> C:\Users\Patricia Cajaljal\Desktop\remidiv3\serveus\views.py:84: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> 127.0.0.1 - - [05/Feb/2019 16:35:24] "GET /index/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 16:35:24] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 16:35:24] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 16:35:25] "GET /static/favicon.ico HTTP/1.1" 200 -
+> C:\Users\Patricia Cajaljal\Desktop\remidiv3\serveus\views.py:825: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   form = LoginForm()
+> 127.0.0.1 - - [05/Feb/2019 16:35:41] "POST /login/ HTTP/1.1" 302 -
+> 127.0.0.1 - - [05/Feb/2019 16:35:41] "GET /records/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 16:35:41] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 16:35:42] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 16:35:50] "GET /case/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 16:35:53] "GET /favicon.ico HTTP/1.1" 404 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 16:35:54] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 16:35:54] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 16:35:56] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> C:\Users\Patricia Cajaljal\Desktop\remidiv3\serveus\views.py:93: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   changepass_form = ChangePassForm()
+> 127.0.0.1 - - [05/Feb/2019 16:55:52] "GET /profilepage/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 16:55:52] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 16:55:52] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 16:55:52] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 16:55:52] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 16:55:52] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 16:55:58] "GET /logout/ HTTP/1.1" 302 -
+> C:\Users\Patricia Cajaljal\Desktop\remidiv3\serveus\views.py:84: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> C:\Users\Patricia Cajaljal\Desktop\remidiv3\serveus\views.py:84: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> 127.0.0.1 - - [05/Feb/2019 16:55:58] "GET /index/ HTTP/1.1" 200 -
+> C:\Users\Patricia Cajaljal\Desktop\remidiv3\serveus\views.py:825: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   form = LoginForm()
+> 127.0.0.1 - - [05/Feb/2019 16:56:02] "POST /login/ HTTP/1.1" 302 -
+> 127.0.0.1 - - [05/Feb/2019 16:56:02] "GET /monitoring/1 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 16:56:03] "GET /monitoring/1/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 16:56:03] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 16:56:03] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+> Traceback (most recent call last):
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.finish_request(request, client_address)
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.RequestHandlerClass(request, client_address, self)
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.finish()
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.wfile.close()
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self.flush()
+> 127.0.0.1 - - [05/Feb/2019 16:56:03] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 16:56:03] "GET /static/images/loading.gif HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 16:56:04] "GET /static/images/bar.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:25:47] "GET /records/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:25:48] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:25:48] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+> 127.0.0.1 - - [05/Feb/2019 18:25:48] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 18:25:48] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 18:25:48] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:25:52] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:25:52] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:25:52] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> Traceback (most recent call last):
+> 127.0.0.1 - - [05/Feb/2019 18:25:52] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+> 127.0.0.1 - - [05/Feb/2019 18:25:52] "GET /thumb/pic/37 HTTP/1.1" 301 -
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+> Traceback (most recent call last):
+>     self.flush()
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 18:25:52] "GET /static/favicon.ico HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 18:25:53] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 18:26:00] "GET /static/img/glyphicons-halflings-white.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:26:01] "GET /logout/ HTTP/1.1" 302 -
+> C:\Users\Patricia Cajaljal\Desktop\remidiv3\serveus\views.py:84: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> C:\Users\Patricia Cajaljal\Desktop\remidiv3\serveus\views.py:84: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> 127.0.0.1 - - [05/Feb/2019 18:26:01] "GET /index/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:26:02] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 18:26:02] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 18:26:02] "GET /static/favicon.ico HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> C:\Users\Patricia Cajaljal\Desktop\remidiv3\serveus\views.py:825: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   form = LoginForm()
+> 127.0.0.1 - - [05/Feb/2019 18:26:06] "POST /login/ HTTP/1.1" 302 -
+> 127.0.0.1 - - [05/Feb/2019 18:26:06] "GET /records/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:26:06] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:26:06] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> Traceback (most recent call last):
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 18:26:12] "GET /detect/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:26:14] "GET /favicon.ico HTTP/1.1" 404 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 18:26:20] "GET /case/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:26:20] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+> 127.0.0.1 - - [05/Feb/2019 18:26:20] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 18:26:22] "GET /favicon.ico HTTP/1.1" 404 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 18:26:24] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:26:24] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:26:24] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+> Traceback (most recent call last):
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish_request(request, client_address)
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.RequestHandlerClass(request, client_address, self)
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.finish()
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self.wfile.close()
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 18:26:25] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 18:26:29] "GET /static/img/glyphicons-halflings-white.png HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 18:26:30] "GET /logout/ HTTP/1.1" 302 -
+> C:\Users\Patricia Cajaljal\Desktop\remidiv3\serveus\views.py:84: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> C:\Users\Patricia Cajaljal\Desktop\remidiv3\serveus\views.py:84: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   return render_template("index.html",login_form = LoginForm(), recovery_form = RecoveryForm())
+> 127.0.0.1 - - [05/Feb/2019 18:26:30] "GET /index/ HTTP/1.1" 200 -
+> C:\Users\Patricia Cajaljal\Desktop\remidiv3\serveus\views.py:825: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+>   form = LoginForm()
+> 127.0.0.1 - - [05/Feb/2019 18:26:32] "POST /login/ HTTP/1.1" 302 -
+> 127.0.0.1 - - [05/Feb/2019 18:26:33] "GET /monitoring/1 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 18:26:33] "GET /monitoring/1/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:26:33] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:26:33] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> Traceback (most recent call last):
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 18:26:33] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 18:26:46] "GET /detect/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:26:46] "GET /favicon.ico HTTP/1.1" 404 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 18:26:57] "GET /detect/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:26:57] "GET /favicon.ico HTTP/1.1" 404 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 18:27:19] "GET /records/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:27:19] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:27:19] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+> 127.0.0.1 - - [05/Feb/2019 18:27:19] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:27:19] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:27:19] "GET /static/favicon.ico HTTP/1.1" 200 -
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+> Traceback (most recent call last):
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+> Traceback (most recent call last):
+>     self.finish_request(request, client_address)
+> Traceback (most recent call last):
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+>     self.finish_request(request, client_address)
+>     self.RequestHandlerClass(request, client_address, self)
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>     self.finish()
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>     self.wfile.close()
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>     self.flush()
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 18:27:23] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:27:23] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:27:23] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:27:23] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:27:23] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 18:27:23] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:27:23] "GET /static/favicon.ico HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 18:27:23] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 18:29:13] "GET /detect/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:33:31] "GET /favicon.ico HTTP/1.1" 404 -
+> 127.0.0.1 - - [05/Feb/2019 18:33:31] "GET /static/favicon.ico HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 18:33:38] "GET /detect/3 HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:33:38] "GET /favicon.ico HTTP/1.1" 404 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 18:33:45] "GET /detect/15 HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:33:56] "GET /timeline/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:33:56] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:33:56] "GET /static/css/iThing-min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:33:56] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 18:33:56] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 18:33:56] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:33:57] "GET /static/js/jquery-ui-1.10.3.custom.min.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:33:57] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:34:01] "GET /static/js/jQDateRangeSlider-min.js HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 18:34:08] "GET /detect/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 18:34:08] "GET /favicon.ico HTTP/1.1" 404 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 19:34:12] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 19:34:12] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 19:34:12] "GET /static/images/loading.gif HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+> Traceback (most recent call last):
+> Traceback (most recent call last):
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.finish_request(request, client_address)
+>     self.finish_request(request, client_address)
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.RequestHandlerClass(request, client_address, self)
+>     self.RequestHandlerClass(request, client_address, self)
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.finish()
+>     self.finish()
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.wfile.close()
+>     self.wfile.close()
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self.flush()
+>     self.flush()
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 19:34:12] "GET /static/css/iThing-min.css HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 19:34:12] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 19:34:13] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 19:34:13] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 19:34:14] "GET /static/js/jquery-ui-1.10.3.custom.min.js HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 19:34:14] "GET /static/js/jQDateRangeSlider-min.js HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 19:34:24] "GET /records/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 19:34:24] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 19:34:24] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> Traceback (most recent call last):
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 19:34:29] "GET /case/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 19:34:30] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> Traceback (most recent call last):
+> 127.0.0.1 - - [05/Feb/2019 19:34:30] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> Traceback (most recent call last):
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 19:34:30] "GET /static/favicon.ico HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 19:34:44] "GET /favicon.ico HTTP/1.1" 404 -
+> 127.0.0.1 - - [05/Feb/2019 19:34:48] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 19:34:48] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 19:34:48] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 19:34:48] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+> Traceback (most recent call last):
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.RequestHandlerClass(request, client_address, self)
+>     self.finish_request(request, client_address)
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.finish()
+>     self.RequestHandlerClass(request, client_address, self)
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.wfile.close()
+>     self.finish()
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.flush()
+>     self.wfile.close()
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+>     self.flush()
+>     self.flush()
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 19:34:48] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 20:07:59] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 20:08:34] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 20:08:34] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 20:08:34] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 20:08:35] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 20:08:35] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 20:08:35] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 20:08:35] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 20:08:36] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 20:08:36] "GET /static/js/jquery.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 20:08:36] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:44:28] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:44:29] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:44:31] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:44:31] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:44:31] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 21:44:31] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:44:31] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:44:31] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:44:32] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:44:32] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:44:45] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:44:45] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:44:45] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:44:45] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:44:45] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:44:45] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:44:45] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 21:44:45] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:44:45] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:45:29] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:45:29] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:45:29] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:45:29] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:45:29] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:45:29] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:45:29] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 21:45:29] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:45:30] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:47:11] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:47:11] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:47:11] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:47:11] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:47:11] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 21:47:11] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:47:11] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:47:11] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:47:12] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:47:38] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:47:38] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:47:38] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:47:38] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:47:38] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:47:38] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:47:38] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 21:47:38] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:47:39] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:47:57] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:47:57] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:47:57] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:47:57] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:47:57] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:47:57] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:47:57] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 21:47:57] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:47:58] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:48:49] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:48:50] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:48:50] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:48:50] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:48:50] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:48:50] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:48:50] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 21:48:50] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:48:50] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:49:03] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:49:03] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:49:03] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:49:03] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:49:03] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:49:03] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:49:03] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 21:49:03] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:49:03] "GET /static/favicon.ico HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 21:49:04] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:49:35] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:49:35] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:49:35] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:49:35] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:49:35] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:49:35] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:49:35] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 21:49:35] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:49:36] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:49:43] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:49:45] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 21:50:33] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:50:33] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:50:33] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:50:33] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:50:33] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 21:50:33] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:50:33] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:50:34] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:50:34] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:50:52] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:50:52] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:50:52] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:50:52] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:50:52] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:50:52] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:50:52] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 21:50:52] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:50:52] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:51:55] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:51:55] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:51:55] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:51:55] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:51:55] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:51:55] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:51:55] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 21:51:55] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:51:56] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:52:07] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:52:08] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:52:08] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:52:08] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:52:08] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:52:08] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 21:52:09] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:52:09] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:52:09] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:52:38] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:52:38] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:52:38] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:52:38] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:52:38] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:52:38] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:52:38] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 21:52:38] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:52:39] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:53:03] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:53:03] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:53:03] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:53:03] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:53:03] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:53:03] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:53:03] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 21:53:03] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 21:53:04] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:59:58] "GET /records/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:59:58] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 21:59:58] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 21:59:59] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 21:59:59] "GET /static/js/eyecon-datepicker.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:00:00] "GET /static/favicon.ico HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 22:00:01] "GET /case/5/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:00:01] "GET /thumb/pic/34 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:00:02] "GET /thumb/pic/34/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:00:07] "GET /records/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:00:15] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:00:15] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 22:00:16] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 22:06:12] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:06:12] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:06:12] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:06:12] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:06:12] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:06:12] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:06:12] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:06:13] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:06:13] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:08:54] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:08:54] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:08:54] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:08:54] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:08:54] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:08:54] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:08:54] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:08:55] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:08:55] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:11:01] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:11:02] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:11:02] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:11:02] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:11:02] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:11:02] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:11:02] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:11:02] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:11:02] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:11:39] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:11:39] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:11:40] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:11:40] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:11:40] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:11:40] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:11:40] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:11:40] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:11:40] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:12:22] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:12:22] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:12:22] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:12:22] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:12:22] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:12:22] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:12:22] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:12:22] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:12:22] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:12:49] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:12:49] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:12:49] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:12:49] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:12:49] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:12:49] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:12:49] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:12:49] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:12:50] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:12:51] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:12:51] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:12:51] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:12:51] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:12:51] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:12:51] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:12:51] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:12:51] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:12:52] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:13:06] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:13:06] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:13:06] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:13:06] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:13:06] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:13:06] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:13:06] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:13:06] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:13:07] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:13:39] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:13:39] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:13:39] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:13:39] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:13:39] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:13:39] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:13:39] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:13:39] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:13:39] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:14:16] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:14:16] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:14:16] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:14:16] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:14:16] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:14:16] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:14:16] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:14:16] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:14:17] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:16:04] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:16:04] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:16:04] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:16:04] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:16:04] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:16:04] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:16:04] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:16:04] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:16:05] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:16:28] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:16:28] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:16:28] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:16:28] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:16:28] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:16:28] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:16:28] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:16:28] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:16:28] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:17:10] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:17:10] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:17:10] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:17:10] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:17:10] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:17:10] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:17:10] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:17:10] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:17:10] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:17:48] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:17:48] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:17:48] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:17:48] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:17:48] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:17:48] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:17:48] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:17:48] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:17:48] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:19:03] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:19:03] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:19:03] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:19:03] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:19:03] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:19:03] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:19:03] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:19:03] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:19:04] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:20:05] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:20:05] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:20:05] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:20:05] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:20:05] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:20:05] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:20:05] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:20:05] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:20:06] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:20:35] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:20:36] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:20:36] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:20:36] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:20:36] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:20:36] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:20:36] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:20:36] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:20:36] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:21:42] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:21:42] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:21:42] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:21:42] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:21:42] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:21:42] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:21:42] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:21:42] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:21:42] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:21:43] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:21:43] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:21:43] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:21:43] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:21:43] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:21:43] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:21:43] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:21:43] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:21:44] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:21:53] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:21:53] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:21:53] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:21:53] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:21:53] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:21:53] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:21:53] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:21:53] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:21:53] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:22:42] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:22:42] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:22:42] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:22:42] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:22:42] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:22:42] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:22:42] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:22:42] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:22:43] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:23:23] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:23:23] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:23:23] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:23:23] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:23:23] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:23:23] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:23:23] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:23:23] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:23:23] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:23:30] "GET /case/8/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:23:30] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:23:30] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:23:30] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:23:30] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:23:30] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:23:30] "GET /thumb/pic/37 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:23:30] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:23:30] "GET /thumb/pic/37/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:25:46] "GET /records/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:25:46] "GET /static/js/eyecon-datepicker.js HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 22:25:52] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:25:52] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:25:52] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:25:52] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:25:52] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:25:52] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:25:52] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:25:52] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:25:52] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:25:52] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:25:52] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:25:52] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:25:52] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:25:52] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:25:52] "GET /thumb/pic/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:25:52] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:25:52] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:28:22] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:28:22] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:28:22] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:28:22] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:28:23] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:28:23] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:28:23] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:28:23] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:28:23] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:28:23] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:28:23] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:28:23] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:28:23] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:28:23] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:28:23] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:28:23] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:28:23] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:28:23] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:28:23] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:28:23] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:28:23] "GET /thumb/pic/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:28:23] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:28:23] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:36] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:36] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:36] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:36] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:36] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:36] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:36] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:36] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:36] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:36] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:37] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:37] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:37] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:37] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:37] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:37] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:37] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:37] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:37] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:37] "GET /thumb/pic/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:37] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:37] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:37] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:42] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:42] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:42] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:42] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:42] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:42] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:42] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:42] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:42] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:42] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:42] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:42] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:42] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:42] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:42] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:42] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:42] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:42] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:42] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:42] "GET /thumb/pic/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:42] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:42] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:30:42] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:31:36] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:31:36] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:31:36] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:31:36] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:31:36] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:31:36] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:31:36] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:31:36] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:31:36] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:31:36] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:31:36] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:31:36] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:31:36] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:31:36] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:31:36] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:31:36] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:31:36] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:31:36] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:31:36] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:31:36] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:31:36] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:31:36] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:31:36] "GET /thumb/pic/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:03] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:03] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:03] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:03] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:03] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:03] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:03] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:03] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:03] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:03] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:03] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:04] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:04] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:04] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:04] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:04] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:04] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:04] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:04] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:04] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:04] "GET /thumb/pic/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:04] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:04] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:19] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:19] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:19] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:19] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:19] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:19] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:19] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:19] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:19] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:19] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:19] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:19] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:19] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:19] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:19] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:19] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:19] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:19] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:19] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:20] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:20] "GET /thumb/pic/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:20] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:33:20] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:08] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:08] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:08] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:08] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:08] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:08] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:08] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:08] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:08] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:08] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:08] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:08] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:08] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:08] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:08] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:08] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:08] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:08] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:08] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:08] "GET /thumb/pic/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:08] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:08] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:08] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:48] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:48] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:48] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:48] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:48] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:48] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:48] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:48] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:48] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:48] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:48] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:48] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:48] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:48] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:48] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:48] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:48] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:48] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:48] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:48] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:48] "GET /thumb/pic/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:48] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:34:48] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:04] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:04] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:04] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:04] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:04] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:04] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:04] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:04] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:04] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:04] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:04] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:04] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:04] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:04] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:04] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:04] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:04] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:04] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:04] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:04] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:04] "GET /thumb/pic/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:04] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:04] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:37] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:37] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:37] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:37] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:37] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:37] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:37] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:37] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:37] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:37] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:37] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:37] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:37] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:37] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:37] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:37] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:37] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:37] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:37] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:37] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:37] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:37] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:35:37] "GET /thumb/pic/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:36:04] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:36:04] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:36:04] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:36:04] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:36:04] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:36:04] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:36:04] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:36:04] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:36:04] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:36:04] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:36:04] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:36:04] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:36:04] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:36:04] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:36:04] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:36:05] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:36:05] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:36:05] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:36:05] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:36:05] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:36:05] "GET /thumb/pic/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:36:05] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:36:05] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:37:16] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:37:16] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:37:16] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:37:16] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:37:16] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:37:16] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:37:16] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:37:16] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:37:16] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:37:16] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:37:16] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:37:16] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:37:16] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:37:16] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:37:16] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:37:16] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:37:16] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:37:16] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:37:16] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:37:16] "GET /thumb/pic/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:37:16] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:37:16] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:37:16] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:38:20] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:38:21] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:38:21] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:38:21] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:38:21] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:38:21] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:38:21] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:38:21] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:38:21] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:38:21] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:38:21] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:38:21] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:38:21] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:38:21] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:38:21] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:38:21] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:38:21] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:38:21] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:38:21] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:38:21] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:38:21] "GET /thumb/pic/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:38:21] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:38:21] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:40:35] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:40:35] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:40:35] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:40:35] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:40:35] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:40:35] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:40:35] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:40:35] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:40:35] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:40:35] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:40:35] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:40:35] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:40:35] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:40:35] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:40:35] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:40:35] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:40:36] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:40:36] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:40:36] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:40:36] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:40:36] "GET /thumb/pic/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:40:36] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:40:36] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:49:36] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:49:36] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:49:36] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:49:36] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:49:36] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:49:36] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:49:36] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:49:36] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:49:36] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:49:36] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:49:36] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:49:36] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:49:36] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:49:36] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:49:36] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:49:36] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:49:36] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:49:36] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:49:37] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:49:37] "GET /thumb/pic/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:49:37] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:49:37] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:49:37] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:49:37] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:52:47] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:52:47] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:52:47] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:52:47] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:52:47] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:52:47] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:52:47] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:52:47] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:52:47] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:52:47] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:52:47] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:52:47] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:52:47] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:52:47] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:52:47] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:52:47] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:52:47] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:52:47] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:52:47] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:52:48] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:52:48] "GET /thumb/pic/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:52:48] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:52:48] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:53:17] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:53:17] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:53:17] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:53:17] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:53:17] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:53:17] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:53:17] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:53:17] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:53:17] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:53:17] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:53:17] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:53:17] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:53:17] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:53:17] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:53:17] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:53:17] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:53:17] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:53:17] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:53:17] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:53:17] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:53:17] "GET /thumb/pic/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:53:17] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:53:17] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:54:08] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:54:08] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:54:08] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:54:08] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:54:08] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:54:08] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:54:08] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:54:08] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:54:08] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:54:08] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:54:08] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:54:08] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:54:08] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:54:08] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 22:54:08] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 22:54:08] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:54:08] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:54:08] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:54:08] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:54:08] "GET /thumb/pic/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:54:08] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:54:08] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 22:54:08] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 192.168.137.240 - - [05/Feb/2019 23:08:03] "GET /case/10/ HTTP/1.1" 200 -
+> 192.168.137.240 - - [05/Feb/2019 23:08:04] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 192.168.137.240 - - [05/Feb/2019 23:08:32] "GET /case/10/ HTTP/1.1" 200 -
+> 192.168.137.240 - - [05/Feb/2019 23:08:32] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:11:57] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:14:38] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:14:38] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:14:38] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:14:38] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:14:38] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:14:38] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:14:38] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:14:38] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:14:38] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:14:38] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:14:38] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:14:38] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:14:38] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:14:38] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:14:38] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:14:38] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:14:38] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:14:38] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:14:38] "GET /thumb/pic/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:14:38] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:14:38] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:14:38] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:14:39] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:14:39] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:16:13] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:16:13] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:16:13] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:16:13] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:16:13] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:16:13] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:16:13] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:16:13] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:16:13] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:16:13] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:16:13] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:16:13] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:16:13] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:16:13] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:16:13] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:16:16] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:16:16] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:16:16] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:16:16] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:16:16] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:16:16] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:16:16] "GET /thumb/pic/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:16:16] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:16:55] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:16:56] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:17:18] "GET /pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:17:18] "GET /pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:17:19] "GET /favicon.ico HTTP/1.1" 404 -
+> 127.0.0.1 - - [05/Feb/2019 23:17:30] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:17:31] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:17:34] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:17:35] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:21:52] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:21:52] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:21:52] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:21:52] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:21:52] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:21:52] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:21:52] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:21:52] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:21:52] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:21:52] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:21:52] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:21:52] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:21:52] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:21:52] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:21:52] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:21:52] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:21:52] "GET /thumb/pic/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:21:53] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:21:53] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:21:53] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:21:53] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:21:53] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:21:53] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:23:53] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:23:53] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:23:53] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:23:53] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:23:53] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:23:53] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:23:53] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:23:53] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:23:53] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:23:53] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:23:53] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:23:53] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:23:53] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:23:53] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:23:53] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:23:53] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:23:53] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:23:53] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:23:53] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:23:53] "GET /thumb/pic/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:23:53] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:23:53] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:23:53] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 192.168.137.240 - - [05/Feb/2019 23:24:02] "GET /case/10/ HTTP/1.1" 200 -
+> 192.168.137.240 - - [05/Feb/2019 23:24:03] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 192.168.137.240 - - [05/Feb/2019 23:25:18] "GET /case/10/ HTTP/1.1" 200 -
+> 192.168.137.240 - - [05/Feb/2019 23:25:18] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:26:20] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:26:20] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:26:20] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:26:20] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:26:20] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:26:20] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:26:20] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:26:20] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:26:20] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:26:20] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:26:20] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:26:20] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:26:20] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:26:20] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:26:20] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:26:20] "GET /thumb/pic/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:26:20] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:26:20] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:26:20] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:26:20] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:26:20] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:26:20] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:26:20] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 192.168.137.240 - - [05/Feb/2019 23:26:24] "GET /case/10/ HTTP/1.1" 200 -
+> 192.168.137.240 - - [05/Feb/2019 23:26:24] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:27:52] "GET /records/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:27:52] "GET /static/js/eyecon-datepicker.js HTTP/1.1" 200 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 23:27:55] "GET /case/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:28:05] "GET /records/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:28:09] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:28:09] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> Traceback (most recent call last):
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 596, in process_request_thread
+>     self.finish_request(request, client_address)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 331, in finish_request
+>     self.RequestHandlerClass(request, client_address, self)
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 654, in __init__
+>     self.finish()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\SocketServer.py", line 713, in finish
+>     self.wfile.close()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 283, in close
+>     self.flush()
+>   File "C:\ProgramData\Anaconda3\envs\py27\lib\socket.py", line 307, in flush
+>     self._sock.sendall(view[write_offset:write_offset+buffer_size])
+> error: [Errno 10053] An established connection was aborted by the software in your host machine
+> 127.0.0.1 - - [05/Feb/2019 23:29:15] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:16] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:16] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:16] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:16] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:16] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:16] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:16] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:16] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:16] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:16] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:16] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:16] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:16] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:16] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:16] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:16] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:16] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:16] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:16] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:16] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:16] "GET /thumb/pic/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:16] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 192.168.137.240 - - [05/Feb/2019 23:29:21] "GET /case/10/ HTTP/1.1" 200 -
+> 192.168.137.240 - - [05/Feb/2019 23:29:21] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 192.168.137.240 - - [05/Feb/2019 23:29:25] "GET /case/10/ HTTP/1.1" 200 -
+> 192.168.137.240 - - [05/Feb/2019 23:29:25] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:50] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:50] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:50] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:50] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:50] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:50] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:50] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:50] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:50] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:50] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:50] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:50] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:50] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:50] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:50] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:50] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:50] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:50] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:50] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:50] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:50] "GET /thumb/pic/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:50] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:29:50] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 192.168.137.240 - - [05/Feb/2019 23:29:58] "GET /case/10/ HTTP/1.1" 200 -
+> 192.168.137.240 - - [05/Feb/2019 23:29:58] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:30:40] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:30:40] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:30:40] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:30:40] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:30:40] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:30:40] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:30:40] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:30:40] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:30:40] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:30:40] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:30:40] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:30:40] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:30:40] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:30:41] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:30:41] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:30:41] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:30:41] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:30:41] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:30:41] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:30:41] "GET /thumb/pic/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:30:41] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:30:41] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:30:41] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:31:26] "GET /case/2/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:31:26] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:31:26] "GET /static/css/bootstrap-responsive.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:31:26] "GET /static/css/eyecon-datepicker.css HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:31:26] "GET /static/js/jquery.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:31:26] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:31:26] "GET /thumb/pic/9 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:31:26] "GET /thumb/pic/10 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:31:26] "GET /thumb/pic/11 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:31:26] "GET /thumb/pic/12 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:31:26] "GET /thumb/pic/13 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:31:26] "GET /thumb/pic/14 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:31:26] "GET /thumb/pic/15 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:31:26] "GET /thumb/pic/16 HTTP/1.1" 301 -
+> 127.0.0.1 - - [05/Feb/2019 23:31:26] "GET /static/img/glyphicons-halflings.png HTTP/1.1" 304 -
+> 127.0.0.1 - - [05/Feb/2019 23:31:26] "GET /thumb/pic/9/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:31:26] "GET /thumb/pic/10/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:31:26] "GET /thumb/pic/11/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:31:26] "GET /thumb/pic/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:31:26] "GET /thumb/pic/13/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:31:26] "GET /thumb/pic/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:31:26] "GET /thumb/pic/15/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [05/Feb/2019 23:31:26] "GET /thumb/pic/16/ HTTP/1.1" 200 -
+> 192.168.137.240 - - [05/Feb/2019 23:31:37] "GET /case/10/ HTTP/1.1" 200 -
+> 192.168.137.240 - - [05/Feb/2019 23:31:37] "GET /static/favicon.ico HTTP/1.1" 200 -
