@@ -1,0 +1,15 @@
+<entry>
+  <date-created>2019/02/11</date-created>
+  <time-created>11:28:27</time-created>
+  <latitude>14.6485024</latitude>
+  <longitude>121.0686355</longitude>
+  <specimen>Blood</specimen>
+  <disease>Malaria</disease>
+  <disease-num>1</disease-num>
+  <priority>Normal</priority>
+  <description>--</description>
+  <region>Region I (Ilocos Region)</region>
+  <province>Ilocos Norte</province>
+  <municipality>Adams</municipality>
+  <flags>false</flags>
+</entry>
