@@ -1,0 +1,22 @@
+> Initialized logger
+>  * Debugger is active!
+>  * Debugger PIN: 456-115-780
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+> 192.168.137.9 - - [17/Feb/2019 19:32:28] "POST /api/validation/ HTTP/1.1" 200 -
+> 192.168.137.9 - - [17/Feb/2019 19:32:28] "POST /api/db/ HTTP/1.1" 200 -
+> 192.168.137.9 - - [17/Feb/2019 19:32:28] "POST /api/validation/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:32:58] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:32:59] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:33:01] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:33:01] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:33:45] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:33:45] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:35:23] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:35:24] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:35:32] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:35:32] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:35:41] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:35:42] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:36:05] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:36:05] "GET /static/favicon.ico HTTP/1.1" 200 -
+>  * Detected change in 'C:\\Users\\gherz-PC\\Desktop\\remidiv2\\serveus\\views.py', reloading

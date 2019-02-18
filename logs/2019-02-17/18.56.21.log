@@ -1,0 +1,46 @@
+> Initialized logger
+>  * Debugger is active!
+>  * Debugger PIN: 456-115-780
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+> 127.0.0.1 - - [17/Feb/2019 18:56:58] "GET /case/4/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 18:56:59] "GET /thumb/pic/33 HTTP/1.1" 301 -
+> 127.0.0.1 - - [17/Feb/2019 18:57:01] "GET /thumb/pic/33/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:01:48] "GET / HTTP/1.1" 302 -
+> 127.0.0.1 - - [17/Feb/2019 19:01:48] "GET /monitoring/1/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:01:51] "GET /apk/update HTTP/1.1" 301 -
+> 127.0.0.1 - - [17/Feb/2019 19:01:51] "GET /apk/update/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:01:54] "GET /favicon.ico HTTP/1.1" 404 -
+> 127.0.0.1 - - [17/Feb/2019 19:01:56] "POST /apk/update/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+>     return func(*args, **kwargs)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 69, in returned
+>     return function(*args, **kwargs)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 929, in apk_update
+>     f = request.files['apk']
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\werkzeug\datastructures.py", line 431, in __getitem__
+>     raise exceptions.BadRequestKeyError(key)
+> BadRequestKeyError: 400 Bad Request: KeyError: 'apk'
+> 127.0.0.1 - - [17/Feb/2019 19:01:57] "GET /apk/update/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:01:57] "GET /apk/update/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:01:57] "GET /apk/update/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:01:58] "GET /apk/update/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:01:58] "GET /apk/update/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:01:58] "GET /apk/update/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+>  * Detected change in 'C:\\Users\\gherz-PC\\Desktop\\remidiv2\\serveus\\views.py', reloading
