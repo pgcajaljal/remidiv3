@@ -155,78 +155,6 @@ def is_done():
         abort(404)
     return jsonify(done=background_scripts[id])
 
-@app.route('/detect/<int:disease_id>', methods = ['GET', 'POST'])
-@login_required
-def detect(disease_id):
-	# return 'Hi :('
-	# update_text = "Hi :("
-	update_text = " "
-	if not request.args.get('page'):
-		page = 1
-	else:
-		page = int(request.args.get('page'))
-
-	disease_list = Infection.query.all()
-	 
-
-	# if disease_id != 1:
-	# 	return "Not Malaria"
-	# if request.method == 'POST':		
-	# 	UPLOAD_FOLDER = '\\serveus\\detectionfiles\\plasmodium\\thick\\'
-	# 	ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
-	# 	# check if the post request has the file part
-	# 	if 'plasmodium' not in request.files:
-	# 		flash('No file part')
-	# 		# return 'No file part'
-	# 		return redirect(request.url)
-	# 	file = request.files['plasmodium']
-	# 	# if user does not select file, browser also
-	# 	# submit a empty part without filename
-	# 	if file.filename == '':
-	# 		flash('No selected file')
-	# 		# return 'No selected filename	'
-	# 		return redirect(request.url)
-	# 	# if file and allowed_file(file.filename):
-	# 	if file:
-	# 		filename = secure_filename(file.filename)
-	# 		# return filename
-	# 		file.save(os.path.join(UPLOAD_FOLDER, filename))
-	# 		update_text = 'File uploaded!'
-	# 	else:
-	# 		update_text = 'File not uploaded :('
-	import subprocess
-	# from subprocess import check_output
-	# import os
-	import sys
-	mypath = os.path.abspath(__file__)
-	mydir = os.path.dirname(mypath)
-	start = os.path.join(mydir)
-	# subprocess.call([sys.executable, start])
-	# return start
-	# try:
-	# 	out = subprocess.run(['ls '+ '.'], shell=True, stderr=subprocess.PIPE, capture_output=True)
-	# except subprocess.CalledProcessError as e:
- #   		raise RuntimeError("command '{}' return with error (code {}): {}".format(e.cmd, e.returncode, e.output))
-	# return out
-	try:
-		# cmd = ["python","detection.py"]
-		# cmd = ["dir"]
-		cmd = ["serveus\\detectionfiles\\darknet-plasmodium.bat"]
-		p = subprocess.Popen(cmd, stdout = subprocess.PIPE,
-	                            stderr=subprocess.PIPE,
-	                            stdin=subprocess.PIPE, shell = True)
-		out,err = p.communicate()
-		status = p.returncode
-		if status:
-			return "error"
-		# os.system("serveus\\darknet-plasmodium.bat")
-		# out = subprocess.run(['ls '+ '.'], shell=True, stderr=subprocess.PIPE, capture_output=True)
-		return out
-	except: 
-		pass
-
-	return render_template("detect.html", user = current_user, menu_active='detect', disease_list = disease_list, disease_id = disease_id, update_text = update_text)
-
 @app.route('/records/<int:disease_id>')
 @login_required
 def records(disease_id):
@@ -622,13 +550,14 @@ def case(id):
 	if current_user.usertype == get_microscopist():
 		if case.user != current_user:
 			abort(401)
+	
 	images = []
 	for img in case.images:
 		images.append((img.number, 'pic/' + str(img.id)))
 	images = sorted(images)
 	# Print out of case
 	if request.method == 'POST':
-		if request.form['choice'] == 'Submit':
+		if 'choice' in request.form and request.form['choice'] == 'Submit':
 			if 'validator_diagnosis' in request.form.keys() or 'validator_remarks' in request.form.keys():
 				if request.form['validator_diagnosis']:
 					case.parasite_validator = request.form['validator_diagnosis']
@@ -640,6 +569,15 @@ def case(id):
 
 				db.session.add(Validation(user=current_user,case=case,diagnosis=str(request.form['validator_diagnosis']),remarks=str(request.form['validator_remarks']),final=1))
 				db.session.commit();
+		elif 'detection' in request.form and request.form['detection'] == 'Submit':
+			case = Case.query.get(id)
+			images = []
+			for img in case.images:
+				images.append((img.number, 'pic/' + str(img.id)))
+			images = sorted(images)
+			
+			import detection 
+			detection.main(images, Image)
 		else:
 			def t(x, y):
 				return {'x': x + 20, 'y': 580 - y}
@@ -1060,7 +998,10 @@ def update_apk():
 """Returns the JPG requested."""
 @app.route('/pic/<int:picture_id>/', methods=['GET'])
 def fetch_image(picture_id):
+
 	x = Image.query.get(picture_id)
+
+	print("fetch_image", picture_id,x)
 	response = make_response(x.im)
 	response.headers['Content-Type'] = 'image/jpeg'
 	return response

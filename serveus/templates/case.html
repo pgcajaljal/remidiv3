@@ -52,8 +52,19 @@
                         <!--<textarea style="resize:none; width: 500px; height: 150px;" id="validator_remarks" name="validator_remarks">{{case.description_validator}}</textarea>-->
                         <br />
                         <input class="btn btn-medium" name="choice" type="submit" value="Submit" style="height: 30px">
+                        
+                        <!-- This is edited by Dindin - 02-17-19  -->
+                        <!-- Can't figure out how to isolate malaria cases, brb -->
+                        {% if images != []%}
+                        <h4>Preliminary Diagnosis: </h4>
+
+                        <input class="btn btn-medium" name="detection" type="submit" value="Submit" style="height: 30px">
+                        {% endif %}
+                        <!-- END 02-17-19 -->
+                    
                     </div>
-					{% endif %}
+
+                    {% endif %}
                 </div>
 				<div class="span2 well" style="background-color: white; overflow-y: auto; overflow-x:hidden; position: relative; height: 100%; padding: 5px; padding-top: 0;">
                     <!--

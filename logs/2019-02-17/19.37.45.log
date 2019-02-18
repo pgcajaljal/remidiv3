@@ -1,0 +1,195 @@
+> Initialized logger
+>  * Debugger is active!
+>  * Debugger PIN: 456-115-780
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+> 127.0.0.1 - - [17/Feb/2019 19:37:55] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:37:56] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:38:06] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:38:07] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:38:20] "GET /records/1 HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:38:25] "GET /records/3 HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:38:32] "GET /case/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:41:58] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:41:59] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:42:36] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:42:37] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:42:42] "GET /case/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:42:42] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:43:30] "GET /case/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:43:31] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:43:34] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:43:35] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:43:56] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:43:56] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:44:05] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:44:06] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:44:23] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:44:24] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:44:49] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:44:50] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:44:53] "GET /case/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:44:54] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:45:01] "GET /case/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:45:02] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:45:06] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:45:07] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:45:32] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:45:32] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:45:40] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:45:41] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:45:44] "GET /case/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:45:44] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:45:51] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:45:52] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:46:02] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:46:03] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:46:12] "GET /case/14/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 648, in case
+>     return render_template("case.html", case = case, user = current_user, images=images, disease_list=disease_list, specimen_types=specimen_types, hide_microscopist=app.config['HIDE_MICROSCOPIST_FROM_VALIDATOR'])
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\templating.py", line 135, in render_template
+>     context, ctx.app)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\templating.py", line 117, in _render
+>     rv = template.render(context)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\jinja2\environment.py", line 1008, in render
+>     return self.environment.handle_exception(exc_info, True)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\templates\case.html", line 1, in top-level template code
+>     {% extends "layout.html" %}
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\templates\layout.html", line 184, in top-level template code
+>     {% block content %}
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\templates\case.html", line 58, in block "content"
+>     {% if len(images) == 1 %}
+> UndefinedError: 'len' is undefined
+> 127.0.0.1 - - [17/Feb/2019 19:46:12] "GET /case/14/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:46:12] "GET /case/14/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:46:13] "GET /case/14/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:46:13] "GET /case/14/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:46:14] "GET /case/14/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:46:14] "GET /case/14/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:46:53] "GET /case/14/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+> 127.0.0.1 - - [17/Feb/2019 19:46:53] "GET /case/14/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 648, in case
+>     return render_template("case.html", case = case, user = current_user, images=images, disease_list=disease_list, specimen_types=specimen_types, hide_microscopist=app.config['HIDE_MICROSCOPIST_FROM_VALIDATOR'])
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\templating.py", line 134, in render_template
+> 127.0.0.1 - - [17/Feb/2019 19:46:53] "GET /case/14/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+>     return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+>     return self.get_template(template_name_or_list, parent, globals)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\jinja2\environment.py", line 830, in get_template
+>     return self._load_template(name, self.make_globals(globals))
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+>     template = self.loader.load(self, name, globals)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\jinja2\loaders.py", line 125, in load
+>     code = environment.compile(source, name, filename)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\jinja2\environment.py", line 591, in compile
+>     self.handle_exception(exc_info, source_hint=source_hint)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\templates\case.html", line 58, in template
+>     {% if images ! = [] %}
+> TemplateSyntaxError: unexpected char u'!' at 4911
+> 127.0.0.1 - - [17/Feb/2019 19:46:53] "GET /case/14/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:46:54] "GET /case/14/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:46:54] "GET /case/14/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:47:03] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:47:03] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:47:06] "GET /case/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:47:07] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:47:26] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:47:26] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:47:28] "POST /case/14/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 559, in case
+>     if request.form['choice'] == 'Submit':
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\werkzeug\datastructures.py", line 431, in __getitem__
+>     raise exceptions.BadRequestKeyError(key)
+> BadRequestKeyError: 400 Bad Request: KeyError: 'choice'
+> 127.0.0.1 - - [17/Feb/2019 19:47:28] "GET /case/14/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:47:29] "GET /case/14/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:47:29] "GET /case/14/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:47:29] "GET /case/14/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:47:29] "GET /case/14/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:47:29] "GET /case/14/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:47:54] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:47:55] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:47:57] "POST /case/14/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 559, in case
+>     if request.form['choice'] == 'Submit':
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\werkzeug\datastructures.py", line 431, in __getitem__
+>     raise exceptions.BadRequestKeyError(key)
+> BadRequestKeyError: 400 Bad Request: KeyError: 'choice'
+> 127.0.0.1 - - [17/Feb/2019 19:47:58] "GET /case/14/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:47:58] "GET /case/14/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:47:58] "GET /case/14/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:47:58] "GET /case/14/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:47:58] "GET /case/14/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:47:59] "GET /case/14/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+>  * Detected change in 'C:\\Users\\gherz-PC\\Desktop\\remidiv2\\serveus\\views.py', reloading

@@ -1,0 +1,15 @@
+<entry>
+  <date-created>2019/02/17</date-created>
+  <time-created>19:20:36</time-created>
+  <latitude>14.4446595</latitude>
+  <longitude>120.913877</longitude>
+  <specimen>Blood</specimen>
+  <disease>Malaria</disease>
+  <disease-num>1</disease-num>
+  <priority>High</priority>
+  <description>I'm positive that this is positive</description>
+  <region>Region I (Ilocos Region)</region>
+  <province>Ilocos Norte</province>
+  <municipality>Adams</municipality>
+  <flags>false</flags>
+</entry>

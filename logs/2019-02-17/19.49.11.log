@@ -1,0 +1,18 @@
+> Initialized logger
+>  * Debugger is active!
+>  * Debugger PIN: 456-115-780
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+> 127.0.0.1 - - [17/Feb/2019 19:50:26] "GET /case/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:50:28] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:50:28] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:50:31] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:50:31] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:50:33] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:50:33] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:50:34] "GET /case/12/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:50:34] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:50:36] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:50:36] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:50:44] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:50:44] "GET /static/favicon.ico HTTP/1.1" 200 -
+>  * Detected change in 'C:\\Users\\gherz-PC\\Desktop\\remidiv2\\serveus\\views.py', reloading

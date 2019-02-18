@@ -1,0 +1,62 @@
+> Initialized logger
+>  * Debugger is active!
+>  * Debugger PIN: 456-115-780
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+> 127.0.0.1 - - [17/Feb/2019 20:02:14] "GET /case/14/ HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 553, in case
+>     print(Case.query.get(all))
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\query.py", line 924, in get
+>     ident, loading.load_on_pk_identity)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\query.py", line 1007, in _get_impl
+>     return db_load_fn(self, primary_key_identity)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\loading.py", line 250, in load_on_pk_identity
+>     return q.one()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\query.py", line 2954, in one
+>     ret = self.one_or_none()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\query.py", line 2924, in one_or_none
+>     ret = list(self)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\query.py", line 2995, in __iter__
+>     return self._execute_and_instances(context)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\orm\query.py", line 3018, in _execute_and_instances
+>     result = conn.execute(querycontext.statement, self._params)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 948, in execute
+>     return meth(self, multiparams, params)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\sql\elements.py", line 269, in _execute_on_connection
+>     return connection._execute_clauseelement(self, multiparams, params)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 1060, in _execute_clauseelement
+>     compiled_sql, distilled_params
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 1200, in _execute_context
+>     context)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 1413, in _handle_dbapi_exception
+>     exc_info
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\util\compat.py", line 265, in raise_from_cause
+>     reraise(type(exception), exception, tb=exc_tb, cause=cause)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\base.py", line 1193, in _execute_context
+>     context)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\sqlalchemy\engine\default.py", line 509, in do_execute
+>     cursor.execute(statement, parameters)
+> InterfaceError: (sqlite3.InterfaceError) Error binding parameter 0 - probably unsupported type. [SQL: u'SELECT "case".id AS case_id, "case".date AS case_date, "case".description AS case_description, "case".comment AS case_comment, "case".lat AS case_lat, "case".lng AS case_lng, "case".user_id AS case_user_id, "case".test AS case_test, "case".infection_id AS case_infection_id, "case".region_id AS case_region_id, "case".province_id AS case_province_id, "case".municipality_id AS case_municipality_id, "case".chunklist_id AS case_chunklist_id, "case".parasite_validator AS case_parasite_validator, "case".description_validator AS case_description_validator, "case".patient_id AS case_patient_id \nFROM "case" \nWHERE "case".id = ?'] [parameters: (<built-in function all>,)] (Background on this error at: http://sqlalche.me/e/rvf5)
+> 127.0.0.1 - - [17/Feb/2019 20:02:15] "GET /case/14/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 20:02:15] "GET /case/14/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 20:02:15] "GET /case/14/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 20:02:15] "GET /case/14/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 20:02:15] "GET /case/14/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 20:02:15] "GET /case/14/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+>  * Detected change in 'C:\\Users\\gherz-PC\\Desktop\\remidiv2\\serveus\\views.py', reloading

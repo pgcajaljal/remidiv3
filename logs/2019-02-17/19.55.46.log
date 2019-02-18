@@ -1,0 +1,50 @@
+> Initialized logger
+>  * Debugger is active!
+>  * Debugger PIN: 456-115-780
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+> 127.0.0.1 - - [17/Feb/2019 19:55:55] "GET /records/1 HTTP/1.1" 500 -
+> Traceback (most recent call last):
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2309, in __call__
+>     return self.wsgi_app(environ, start_response)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+>     response = self.handle_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+>     response = self.full_dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+>     rv = self.handle_user_exception(e)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+>     rv = self.dispatch_request()
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+>     return self.view_functions[rule.endpoint](**req.view_args)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+>     return func(*args, **kwargs)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\views.py", line 285, in records
+>     return render_template("records.html", caseList = caseList, pagination = pagination, parasiteList = parasiteList, parasiteIndex = parasiteIndex, date_start = date_start, date_end = date_end, sort_by = sort_by, order = order, user = current_user, menu_active='records', regionList = regionList, regionIndex = regionIndex, provinceList = provinceList, provinceIndex = provinceIndex, municipalityList = municipalityList, municipalityIndex = municipalityIndex, microscopistList = microscopistList, microscopistIndex = microscopistIndex, disease_list = disease_list, disease_id = disease_id, specimen_types = specimen_types, hide_microscopist=app.config['HIDE_MICROSCOPIST_FROM_VALIDATOR'], description = description)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\templating.py", line 135, in render_template
+>     context, ctx.app)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\flask\templating.py", line 117, in _render
+>     rv = template.render(context)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\jinja2\environment.py", line 1008, in render
+>     return self.environment.handle_exception(exc_info, True)
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+>     reraise(exc_type, exc_value, tb)
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\templates\records.html", line 1, in top-level template code
+>     {% extends "layout.html" %}
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\templates\layout.html", line 184, in top-level template code
+>     {% block content %}
+>   File "C:\Users\gherz-PC\Desktop\remidiv2\serveus\templates\records.html", line 181, in block "content"
+>     <tr><td {%if i.test %}style="color:red;"{%endif%}>{{i.code}}<td>{{i.date}}<td>{{i.region}}, {{i.province}}, {{i.municipality}}<td>{{i.partype}}<td>{{i.description}}{% if not user.is_doctor() or not hide_microscopist %}<td>{{i.user.firstname}} {{i.user.lastname}} ({{i.user.username}}){% endif %}<td><a href="/case/{{ disease.id }}/{{ i.id }}/" class="btn" style="width: calc(100% - 25px)">View</a>
+>   File "C:\Users\gherz-PC\Anaconda3\envs\py27\lib\site-packages\jinja2\environment.py", line 430, in getattr
+>     return getattr(obj, attribute)
+> UndefinedError: 'disease' is undefined
+> 127.0.0.1 - - [17/Feb/2019 19:55:56] "GET /records/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:55:56] "GET /records/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:55:56] "GET /records/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:55:56] "GET /records/1?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:55:57] "GET /records/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 19:55:57] "GET /records/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+>  * Detected change in 'C:\\Users\\gherz-PC\\Desktop\\remidiv2\\serveus\\views.py', reloading

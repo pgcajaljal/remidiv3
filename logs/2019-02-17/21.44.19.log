@@ -1,0 +1,11 @@
+> Initialized logger
+>  * Debugger is active!
+>  * Debugger PIN: 456-115-780
+>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+> 127.0.0.1 - - [17/Feb/2019 21:46:30] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 21:46:32] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 21:46:49] "GET /pic/39/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 21:48:48] "GET /case/14/ HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 21:48:49] "GET /static/favicon.ico HTTP/1.1" 200 -
+> 127.0.0.1 - - [17/Feb/2019 21:49:44] "POST /case/14/ HTTP/1.1" 200 -
+>  * Detected change in 'C:\\Users\\gherz-PC\\Desktop\\remidiv2\\serveus\\detection.py', reloading

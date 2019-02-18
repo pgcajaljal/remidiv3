@@ -151,27 +151,6 @@
                             </li>
                             {% endif %}
 
-                            <li class="dropdown {% if menu_active == 'detect' %}active{% endif %}" >
-                                {% if menu_active == 'detect' %}
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-search"></i> Detect - {{ disease_list[disease_id-1].name }}<span class="caret"></span></a>
-                                {% else %}
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-search"></i> Detect<span class="caret"></span></a>
-                                {% endif %}
-                            <ul class="dropdown-menu">
-                                 {% for k in specimen_types %}
-                                    <li class="menu-item dropdown dropdown-submenu">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ k.specimen_type }}</a>
-                                    <ul class="dropdown-menu">
-                                        {% for i in disease_list %}
-                                            {% if i.specimen_type == k.specimen_type %}
-                                             <li class="menu-item"><a href="/detect/{{ i.id }}">{{ i.name }}</a></li>
-                                        {% endif %}
-                                        {% endfor %}
-                                   </ul>
-                                    </li>
-                                 {% endfor %}
-                                </ul>
-                            </li>
 
                             
                             <li><a href="#helpModal" id="help" data-toggle="modal"><i class="icon-question-sign"></i> Help</a></li>
